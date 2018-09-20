@@ -1,0 +1,414 @@
+/* 初始化代码 */
+body,
+div,
+span,
+a,
+i,
+em,
+img,
+input,
+textarea,
+ul,
+li,
+h1,
+h2,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a,
+a:visited, .colortext {
+    border: none;
+    text-decoration: none;
+    font-weight: normal;
+    color: #ffa600
+}
+
+#zyfmain a:hover {
+    text-decoration: underline;
+    color: #ffa600
+}
+
+input,
+textarea {
+    border: 0 none;
+    outline: 0 none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #6e6e6e;
+    line-height: 20px;
+    background: #dedede;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: normal;
+}
+
+/* 初始化代码结束 */
+
+#zyfmain {
+    background-color: #fff;
+}
+
+#zyfcontent {
+    margin: 0 30px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+
+#zyfcontent-left {
+    float: left;
+    width: 645px;
+}
+
+#zyfcontent-right {
+    float: right;
+    width: 260px;
+    margin-left: 35px;
+}
+
+#zyfdate {
+    float: left;
+    font-size: 11px;
+    overflow: hidden;
+    text-align: center;
+    margin: 23px 30px 0 0;
+    width: 67px;
+    color: #999;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    line-height: 18px;
+}
+
+#zyfdate .zyftime {
+    padding: 10px 15px;
+    line-height: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #2c2c2c;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    line-height: 23px;
+}
+
+#zyfdate .zyfyear {
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1px 0;
+    background: #ffbc40;
+    color: #2c2c2c;
+    margin-bottom: 5px;
+}
+
+#zyfdate a {
+    color: #666;
+}
+
+#zyftitle {
+    width: 548px;
+    height: 56px;
+    float: right;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: #2d2d2d;
+    line-height: 28px;
+    margin: 0 0 15px 0;
+}
+
+#zyftitle a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #2d2d2d;
+    line-height: 28px;
+}
+
+#zyftitle a:hover {
+    color: #ffbc40;
+}
+
+#zyfshangpin {
+    float: right;
+    width: 548px;
+    /* height: 722px;*/
+}
+
+#zyfshangpin .zyfpostimg {
+    width: 546px;
+    height: 296px;
+    border: 1px solid #ffbc40;
+    margin-bottom: 16px;
+    /*float: right;*/
+    position: relative;
+}
+
+#zyfshangpin .zyfpostimg img {
+    border: 1px solid #fff;
+    display: block;
+    box-shadow: 0px 5px 15px #ccc;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#zyfshangpin .zyftext {
+    width: 548px;
+    height: 320px;
+    padding: 12px 0px 5px 0px;
+    margin-bottom: 25px;
+}
+
+#zyfcontent-left .zyfcenter {
+    width: 645px;
+    height: 3px;
+    border-top: 1px solid rgba(222, 222, 222, .5);
+    border-bottom: 1px solid rgba(222, 222, 222, .5);
+    float: left;
+    margin-bottom: 40px;
+}
+
+#zyfcontent-left .zyfpinlun {
+    width: 645px;
+    /*height: 1105px;*/
+    float: left;
+}
+
+#zyfcontent-left .zyfpinlun h2 {
+    width: 645px;
+    height: 17px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#zyfplist {
+    padding-left: 0px;
+    position: relative;
+}
+
+#zyfplist li {
+    width: 645px;
+    height: 100px;
+    border-bottom: 1px solid rgba(222, 222, 222, .5);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    text-align: -webkit-match-parent;
+    position: relative;
+}
+
+#zyfplist li div.zyfplcontent {
+    margin: 0 0 0 90px;
+    padding: 0px;
+}
+
+#zyfplist li div.zyfplcontent img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+textarea {
+    -webkit-appearance: textarea;
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    width: 580px;
+    height: 140px;
+    padding: 5px;
+    cursor: text;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    font: 400 14px Arial;
+    border: 1px solid #ccc;
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+#zyfcommentform input {
+    border: 1px solid #ccc;
+    width: 226px;
+    height: 14px;
+    padding: 8px 5px;
+    margin-bottom: 8px;
+}
+
+#zyfcommentform #father {
+    position: relative;
+}
+
+#zyfcommentform #father #index0 {
+    display: none;
+    position: absolute;
+    top: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 226px;
+    height: 14px;
+    padding: 8px 5px;
+}
+
+#zyfcommentform #father #index1 {
+    display: none;
+    position: absolute;
+    top: 108px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 226px;
+    height: 14px;
+    padding: 8px 5px;
+}
+
+#zyfcommentform label {
+    display: block;
+}
+
+#zyfbtn {
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: #ffbc40;
+    border: 0;
+    margin-top: 20px;
+    outline: 0 none;
+}
+
+#zyfbtn:hover {
+    background-color: #6e6e6e;
+}
+
+/*左边结束*/
+
+#zyfsearch {
+    margin-bottom: 30px;
+    padding: 20px 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #ededed;
+}
+
+#zyfsearch h2 {
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    color: #2d2d2d;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid #ededed;
+}
+
+#zyfsousuo {
+    width: 94%;
+    padding: 8px 5px !important;
+    color: #707070;
+    background: #ededed;
+    -moz-box-shadow: inset 0px 1px 2px 0 #dadada;
+    -webkit-box-shadow: inset 0px 1px 2px 0 #dadada;
+    box-shadow: inner 0px 1px 2px 0 #dadada;
+    border-bottom: 0px;
+}
+
+#zyfCate {
+    margin-bottom: 30px;
+    padding: 20px 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #ededed;
+}
+
+#zyfCate h2{
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    color: #2d2d2d;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid #ededed;
+}
+
+#zyfcontent-right ul{
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+#zyfCate li{
+    list-style-type: none;
+    margin: 6px 0 0px 0;
+    padding: 6px 0 0px 0;
+    border-top: 1px solid #ededed;
+}
+#zyfCate li:first-child{
+    border-top: 0px;
+    padding-top: 0px;
+}
+#zyfCate li a{
+    color: #6e6e6e;
+    text-decoration: none;
+}
+#zyfCate li a:hover{
+    color: #ffbc40;
+}

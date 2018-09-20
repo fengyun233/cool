@@ -1,0 +1,1963 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刺激战场首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.4.js"></script>
+</head>
+
+<body style="padding-top: 42px">
+    <div class="wrap">
+        <div class="top-nav">
+        <!--[if lt IE 8]><!--<p class="browser-tips">您的浏览器版本过低，请升级浏览器获得更好的体验<p>--><![endif]-->
+        <div class="container">
+            <div class="top-title">
+                <a href="//pg.qq.com/main.shtml" >
+                    <img src="./image/top-tag.png" alt="logo" class="tag" width="125" height="125">
+                </a>
+                <h1>绝地求生：刺激战场<span>正版战斗特训手游</span></h1>
+            </div>
+            <div class="navnav">
+                <a href="//pg.qq.com/main.shtml" onclick="PTTSendClick('hdtopnav','navlink1','头部导航链接');" target="_blank">官网首页 <span>HOME</span> </a>
+                <a href="赛事中心/赛事中心.html" target="_blank">赛事中心<span>MATCH</span> </a>
+                <!-- <a href="/gicp/news/101/2/1998/1.html"  onclick="PTTSendClick('hdtopnav','navlink2','头部导航链接');"  target="_blank">新闻中心<span>NEWS</span> </a> -->
+                <a href="Video%20center.html" onclick="PTTSendClick('hdtopnav','navlink3','头部导航链接');" target="_blank">视频中心<span>VIDEO</span> </a>
+                <a href="Live%20center.html" onclick="PTTSendClick('hdtopnav','navlink4','头部导航链接');" target="_blank">直播中心<span>LIVE</span> </a>
+                <a href="Strategy%20center.html" onclick="PTTSendClick('hdtopnav','navlink5','头部导航链接');" target="_blank">攻略中心<span>GAMETIPS</span> </a>
+                <div class="nav_yx">
+                    游戏资料
+                    <span>DATA</span>
+                    <ul class="subnav">
+                        <li>
+                            <a href="Game data.html" onclick="PTTSendClick('hdtopnav','navlink61','头部导航链接');">
+                                武器配件
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://pg.qq.com/zlkdatasys/a20180420verlistpc/ztsy.shtml" onclick="PTTSendClick('hdtopnav','navlink62','头部导航链接');">
+                                版本更新
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:" onclick="PTTSendClick('hdtopnav','navlink7','头部导航链接');" target="_blank" id="playerLink">社区互动 <span>COMMUNITY</span>
+                    <div class="tips-player" id="tipsPlayer" style="display: none;">
+                        <ul>
+                            <li class="on">手Q部落</li>
+                            <li class="">微信公众号</li>
+                            <li class="">微信圈子</li>
+                            <li class="">官方微博</li>
+                        </ul>
+                        <p class="tips-img1" style="display: block;">
+                            <img src="./image/qrcode_sq.jpg" alt="手Q部落">
+                            <i class="ips-arrow"></i>
+                        </p>
+                        <p class="tips-img2" style="display: none;">
+                            <img src="./image/qrcode_wxqz.jpg" alt="微信公众号">
+                            <i class="ips-arrow"></i>
+                        </p>
+                        <p class="tips-img3" style="display: none;">
+                            <img src="./image/qrcode_wx.jpg" alt="微信圈子">
+                            <i class="ips-arrow"></i>
+                        </p>
+                        <p class="tips-img4" style="display: none;">
+                            <img src="./image/qrcode_wb.jpg" alt="官方微博">
+                            <i class="ips-arrow"></i>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="ost_box ost_bg " id="ost_box" style="position:absolute">
+        <ul class="ost_inner ost_lsn ">
+            <li class="ost_logo ost_h40 ost_fl ost_bg">
+                <a href='' class="ost_blnk ost_hdn" title="腾讯游戏LOGO">腾讯游戏LOGO</a>
+            </li>
+            <li id="ost_g" class="ost_ad ost_h40 ost_fl">
+                <img class="ost_nb" id="ost_go" src="image/7257.jpg" alt="" style="display:block" />
+            </li>
+            <li class="ost_total ost_ml10 ost_fr">
+                <h3 class="ost_czsh ost_h40">
+                    <a href="https://jiazhang.qq.com/jz/home.html?ADTAG=gamepcbanner" target="_blank">成长守护平台</a>
+                </h3>
+                <h3 class="ost_title ost_h40" id="ost_t">
+                    腾讯游戏排行榜
+                    <i class="ost_icon_arrow ost_bg"></i>
+                    <sup class="ost_icon_reddot" id="ost_rank_v"></sup>
+                    <div class="ost_rank">
+                        <span class="before"></span>
+                        <span class="after"></span>
+                        <div class="ost_rank_col" id="rank_control1">
+                            <div class="col-head">
+                                <h2 class="rank-title">新游排行榜</h2>
+                                <a href="#" class="rank-more">更多<i class="icon-font">»</i></a>
+                            </div>
+                            <div class="col-body">
+                                <ul class="rank-list">
+                                    <li class="rank-head">
+                                        <span class="rank-order-hd">排名</span>
+                                        <span class="rank-name-hd">游戏</span>
+                                    </li>
+                                    <li class="rank-item current">
+                                        <span class="rank-order-color">1</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">NBA2K OL2</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/NBA2KOL2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-color">2</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">FIFA Online 4</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/FIFAOL4-KV194_82.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-color">3</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">灵山奇缘</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/lsqy.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">4</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >流放之路</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/lfzl-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">5</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >冒险岛2</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/mxd2-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">6</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >使命召唤OL</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src=" ./image/cod-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">7</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >极品飞车ONLINE</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/jpfcol-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">8</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >穿越火线</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/cf-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">9</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >QQ炫舞</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/x5-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">10</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >御龙在天</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/yl-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- hot game -->
+                        <div class="ost_rank_col" id="rank_control2">
+                            <div class="col-head">
+                                <h2 class="rank-title">热门排行榜</h2>
+                                <a href="#" class="rank-more">更多<i class="icon-font">»</i></a>
+                            </div>
+                            <div class="col-body">
+                                <ul class="rank-list">
+                                    <li class="rank-head">
+                                        <span class="rank-order-hd">排名</span>
+                                        <span class="rank-name-hd">游戏</span>
+                                    </li>
+                                    <li class="rank-item current">
+                                        <span class="rank-order-color">1</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">英雄联盟</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/lol-2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">2</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">穿越火线</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/cf-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">3</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">地下城与勇士</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/dnf-2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">4</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >逆战</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/nz-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">5</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >使命召唤OL</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/cod-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">6</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >QQ炫舞</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/x5-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">7</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >QQ飞车</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/speed-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">8</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >炫舞时代</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/5s-2.jpg" width="194"
+                                                     height="82" alt="">
+                                            <p class="game-meta">
+                                                <a href="#" target="_blank" class="game-link">
+                                                    <i class="icon-home"></i>进入官网</a>
+                                                <a href="#" target="_blank" class="game-link">
+                                                    <i class="icon-download"></i>下载游戏</a>
+                                            </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">9</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >天涯明月刀</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/wuxia-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">10</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >FIFA Online3</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/fifa-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ost_rank_col" id="rank_control3">
+                            <div class="col-head">
+                                <h2 class="rank-title">新品手游排行榜</h2>
+                                <a href="#" target="_blank" class="rank-more">更多<i class="icon-font">»</i></a>
+                            </div>
+                            <div class="col-body">
+                                <ul class="rank-list">
+                                    <li class="rank-head"><span class="rank-order-hd">排名</span><span class="rank-name-hd">游戏</span></li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">1</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">我叫MT4</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/wjmt4.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">2</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">FIFA足球世界</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/FIFAMobile-KV194_82.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">3</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">拳皇命运手游</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/KV19482.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">4</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >火影忍者手游</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/hyrz-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta2">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home2"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-ios"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-android"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">5</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >梦幻诛仙</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/mhzx-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta2">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home2"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-ios"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-android"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-head2">
+                                <h2 class="rank-title">热门手游排行榜</h2>
+                                <a href="#" target="_blank" class="rank-more">更多<i class="icon-font">»</i></a>
+                            </div>
+                            <div class="col-body">
+                                <ul class="rank-list">
+                                    <li class="rank-item current">
+                                        <span class="rank-order-color">1</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">王者荣耀</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/sgame-22.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">2</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">穿越火线之枪战王者</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/cfsy-2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">3</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">奇迹暖暖</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/qjnn-2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">4</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >天天爱消除</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/peng-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta2">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home2"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-ios"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-android"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">5</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >火影忍者手游</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/hyrz-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta2">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home2"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-ios"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-android"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </h3>
+            </li>
+        </ul>
+        <div id="ost_d" class="ost_big" style="display:none;">
+            <a href="https://www.baidu.com/" target="_blank">
+                <img class="ost_nb" src="./image/44181.jpg" width="970" height="185" alt=""></a>
+        </div>
+    </div>
+        <div class="bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+            <div class="bg4">
+                <div class="logo">
+                    <img src="image/foot-logo1.png" width="246" height="45" alt="腾讯互动娱乐">
+                    <img src="image/foot-logo3.png" width="205" height="73" alt="光子工作室群">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="top-theme"></div>
+        <a class="aa" href="#"></a>
+        <a id="play" href="javascript:void(0);" class="play">
+            <img src="image/播放图标.png" id="tubiao" alt="">
+        </a>
+        <div class="show" id="show">
+            <video id="vid" src="1.mp4" controls="controls" width="800" height="450"></video>
+        </div>
+        <span class="chacha" id="chacha">
+            <img src="image/close.jpg" alt="">
+        </span>
+    </div>
+    <div class="box1">
+        <div class="container w">
+            <div class="left">
+                <a href="#" class="android">苹果下载</a>
+                <a href="#" class="iphone">安卓下载</a>
+                <a href="#" class="experience">体验专区</a>
+                <a href="#" class="eQ">
+                    <img src="image/首页二维码.jpg" alt="">
+                </a>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href=""><img src="image/活动1.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="image/活动2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="image/活动3.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="image/活动4.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="image/活动5.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""> <img src="image/活动1.jpg" alt=""></a>
+                    </li>
+                </ul>
+
+                <div class="liks">
+                    <ul>
+                        <li class="current"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="title">
+                    <ul class="sss">
+                        <li>
+                            <a href="javascript:void(0)">最新</a>
+                            <i class="nnn active"></i>
+                        </li>
+                        <li class="line"></li>
+                        <li>
+                            <a href="javascript:void(0)">新闻</a>
+                            <i class="nnn"></i>
+                        </li>
+                        <li class="line"></li>
+                        <li>
+                            <a href="javascript:void(0)">公告</a>
+                            <i class="nnn "></i>
+                        </li>
+                        <li class="line"></li>
+                        <li>
+                            <a href="javascript:void(0)">活动</a>
+                            <i class="nnn"></i>
+                        </li>
+                    </ul>
+                    <span>
+                        <a href="News center.html" class="more">更多</a>
+                        <a href="News center.html" class="tu"></a>
+                    </span>
+                </div>
+                <div class="first">
+                    <a href="#">【职业俱乐部特训营】助力粉丝团，快来Pick你喜欢的战队...</a>
+                </div>
+                <div class="news select">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】SnakeTC战队22杀创造单场最高分</a>
+                            <span class="shijian">08-20</span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【战报速递】DR战队单局击杀18人，积分反超吃鸡队LGD</a>
+                            <span class="shijian">08-20</span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【职业选手秀翻天】CW杀神然：杀敌无所畏惧，19s团灭...</a>
+                            <span class="shijian">08-20</span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">今晚7点Miss刺激战场首秀内！附！大！料！</a>
+                            <span class="shijian">08-20</span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【福利】更新夏日新版本 海量福利等你拿</a>
+                            <span class="shijian">08-20</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的 </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的...</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> 【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】SnakeTC战队22杀创造单场最高分</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【战报速递】DR战队单局击杀18人，积分反超吃鸡队LGD</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【职业选手秀翻天】CW杀神然：杀敌无所畏惧，19s团灭...</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">今晚7点Miss刺激战场首秀内！附！大！料！</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【福利】更新夏日新版本 海量福利等你拿</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的...</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">【特训营战报】哒哒哒哒哒哒哒哒哒冒蓝火的</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="container w">
+            <ul>
+                <li>
+                    <img src="image/新手引导.png" alt="">
+                </li>
+                <li>
+                    <img src="image/官方助手.png" alt="">
+                </li>
+                <li>
+                    <img src="image/CDkey.png" alt="">
+                </li>
+                <li>
+                    <img src="image/客服专区.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="container w">
+            <div class="left">
+                <h3 class="title">
+                    <span class="tu"></span>
+                    <span>视频中心</span>
+                    <em>VIDEO</em>
+                </h3>
+                <div class="nav">
+                    <div class="left1">
+                        <ul>
+                            <li class="vd active">
+                                <a href="javascript:void(0)">最新</a>
+                            </li>
+                            <li class="xian"></li>
+                            <li  class="vd">
+                                <a href="javascript:void(0)">新手</a>
+                            </li>
+                            <li class="xian"></li>
+                            <li  class="vd">
+                                <a href="javascript:void(0)">进阶</a>
+                            </li>
+                            <li class="xian"></li>
+                        </ul>
+                    </div>
+                    <div class="right1">
+                        <a class="a1" href="javascript:void(0)">我要投稿
+                            <span class="tougao"></span>
+                        </a>
+                        <a href="Live center.html">更多
+                            <span class="more"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="new select">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video1.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span class="play"></span>
+                            </a>
+                            <p>老司机上线了：别人是队友情深...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video2.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激一夏：小仙女只负责舔包...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video3.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激奇闻：暗夜伏地魔最佳利器...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video4.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>激激复唧唧：容嬷嬷针厉害</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video5.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激测评室：近战步枪AKM和GK...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video6.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>吃鸡切克闹：4倍M4精准点射...</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video7.png" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>老司机上线了：别人是队友情深...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video8.png" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激一夏：小仙女只负责舔包...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video9.png" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激奇闻：暗夜伏地魔最佳利器...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video10.png" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>激激复唧唧：容嬷嬷针厉害</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video11.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激测评室：近战步枪AKM和GK...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video6.jpg" alt="">
+                            </a>
+                            
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>吃鸡切克闹：4倍M4精准点射...</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video13.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>老司机上线了：别人是队友情深...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video14.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激一夏：小仙女只负责舔包...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video15.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激奇闻：暗夜伏地魔最佳利器...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video16.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>激激复唧唧：容嬷嬷针厉害</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video17.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激测评室：近战步枪AKM和GK...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video18.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>吃鸡切克闹：4倍M4精准点射...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="shang">
+                    <h3 class="title">
+                        <span class="tu"></span>
+                        <span>主播中心</span>
+                        <em>ANCHOR</em>
+                    </h3>
+                    <div class="zb">
+                        <div class="zuo">
+                            <img src="image/小苍.png" alt="">
+                            <a class="name" href="Live center.html">小苍</a>
+                            <a class="enter" href="Live center.html">
+                                <span></span>点击进入</a>
+                        </div>
+                        <div class="you">
+                            <img src="image/若风.png" alt="">
+                            <a class="name" href="Live center.html">若风</a>
+                            <a class="enter" href="Live center.html">
+                                <span></span>点击进入</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xia">
+                        <a href="javascript:void(0)"><span class="zuo"></span></a>
+                        <a href="javascript:void(0)"><span class="you"></span></a>
+                        <a href="javascript:void(0)"><span class="jia"></span></a>
+                    <div class="bottom">
+                        
+                        <div class="botu">
+                            <ul>
+                                <li><a href="Live center.html"><img src="image/zhubo1.png" alt=""></a></li>
+                                <li><a href="Live center.html"><img src="image/zhubo2.png" alt=""></a></li>
+                                <li><a href="Live center.html"><img src="image/zhubo3.png" alt=""></a></li>
+                                <li><a href="Live center.html"><img src="image/zhubo4.png" alt=""></a></li>
+                                <li><a href="Live center.html"><img src="image/zhubo5.png" alt=""></a></li>
+                                <li><a href="Live center.html"><img src="image/zhubo6.png" alt=""></a></li>
+                                <li><a href="Live center.html"><img src="image/zhubo7.png" alt=""></a></li>
+                                <li><a href="Live center.html"><img src="image/zhubo8.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box4">
+        <div class="container w">
+            <div class="left">
+                <h3 class="title">
+                    <span class="tu"></span>
+                    <span>赛事中心</span>
+                    <em>MATCH</em>
+                </h3>
+
+                <div class="nav">
+                    <ul class="ink">
+                        <li class="tab-item active">
+                            <a href="javascript:void(0)">最新资讯</a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="tab-item">
+                            <a href="javascript:void(0)">特训营</a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="tab-item">
+                            <a href="javascript:void(0)">TGA</a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="tab-item">
+                            <a href="javascript:void(0)">QGC</a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="tab-item">
+                            <a href="javascript:void(0)">WGC</a>
+                        </li>
+                        <li class="line"></li>
+                        <li style="font-size: 12px ;text-align: right;">
+                            <a href="赛事中心/赛事中心.html">更多
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="conn select">
+                        <div class="zuo">
+                            <img src="image/职业俱乐部LOGO.jpg" alt="">
+                        </div>
+                        <div class="you">
+                            <a class="biaoti">【战报速递】VG战队获9日特训积分榜榜首...</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">-【战况分析】SnakeTC完成霸榜成就...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【职业选手秀翻天】DR战队叶凡，人工轰炸...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【背后故事】特训营只有“彪形大汉”？梓瑜...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【特训营神预测】SnakeTC第二轮连破记录...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【战报速递】EDGM21杀强势吃鸡...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="conn">
+                        <div class="zuo">
+                            <img src="image/职业俱乐部LOGO1.jpg" alt="">
+                        </div>
+                        <div class="you">
+                            <a class="biaoti">刺激战场赛事助手上线了！鸡友，今天起你的...</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">-京东电器QGC刺激战场总决赛 冠军归属AGFOX</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-巅峰时刻！2018京东电器QGC刺激战场公开...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-2018京东电器QGC刺激战场复活赛火热来袭！</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-企鹅电竞QGC刺激战场公开赛：安全区变尬...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-2018京东电器QGC刺激战场第二期复赛即将...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="conn">
+                        <div class="zuo">
+                            <img src="image/职业俱乐部LOGO2.jpg" alt="">
+                        </div>
+                        <div class="you">
+                            <a class="biaoti">【战报速递】VG战队获9日特训积分榜榜首...</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">-2018WGC微信游戏精英赛·春季赛《绝地求生...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-WGC微信精英赛刺激战场总决赛即将热血开战</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-WGC精英赛五月月赛 OurGlor战队夺冠...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-WGC微信游戏精英赛《绝地求生：刺激战场...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-《刺激战场》WGC五月报名火热开启 释放夏...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="match">
+                    <ul class="game">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video1.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>老司机上线了：别人是队友情深...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video2.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激一夏：小仙女只负责舔包...</p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/video3.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <span></span>
+                            </a>
+                            <p>刺激奇闻：暗夜伏地魔最佳利器...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <h3 class="title">
+                    <span class="tu"></span>
+                    <span>刺激风云榜</span>
+                    <em>RANKING LIST</em>
+                </h3>
+                <div class="cjfyb">
+                    <div class="top">
+                        <ul>
+                            <li>微信</li>
+                            <li>单人</li>
+                            <li>第一人称</li>
+                            <li>本周排行</li>
+                            <li>筛选
+                                <span class="shaixuan"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tit">
+                        <table style="text-align: center;border-collapse:collapse;">
+                            <tr style="height: 49px;">
+                                <td style="width: 34px;">排名</td>
+                                <td style="width: 110px">积分</td>
+                                    <td style="width: 62px">场数</td>
+                                    <td style="width: 62px">吃鸡数 </td>
+                                    <td style="width: 62px">前十数</td>
+                            </tr>
+                            <tr style="height: 76px; border-bottom:1px solid #dadada;">
+                                <td>
+                                    <span class="num" style=" background: url('image/icon.png') -973px -214px no-repeat;">1</span>
+                                </td>
+                                <td>
+                                    <p>请来虎..</p>
+                                    <p>5243</p>
+                                </td>
+                                <td>561</td>
+                                <td>163</td>
+                                <td>376</td>
+                            </tr>
+                            <tr style="height: 76px; border-bottom:1px solid #dadada;">
+                                <td>
+                                    <span class="num" style=" background: url('image/icon.png') -1002px -45px no-repeat;">2</span>
+                                </td>
+                                <td>
+                                    <p>请来虎..</p>
+                                    <p>5243</p>
+                                </td>
+                                <td>561</td>
+                                <td>163</td>
+                                <td>376</td>
+                            </tr>
+                            <tr style="height: 76px; border-bottom:1px solid #dadada;">
+                                <td>
+                                    <span class="num" style=" background: url('image/icon.png') -1002px -45px no-repeat;">3</span>
+                                </td>
+                                <td>
+                                    <p>请来虎..</p>
+                                    <p>5243</p>
+                                </td>
+                                <td>561</td>
+                                <td>163</td>
+                                <td>376</td>
+                            </tr>
+                            <tr style="height: 76px; border-bottom:1px solid #dadada;">
+                                <td>
+                                    <span class="num" style=" background: url('image/icon.png') -1002px 0 no-repeat;">4</span>
+                                </td>
+                                <td>
+                                    <p>请来虎..</p>
+                                    <p>5243</p>
+                                </td>
+                                <td>561</td>
+                                <td>163</td>
+                                <td>376</td>
+                            </tr>
+                            <tr style="height: 76px; ">
+                                <td>
+                                    <span class="num" style=" background: url('image/icon.png') -1002px 0 no-repeat;">5</span>
+                                </td>
+                                <td>
+                                    <p>请来虎..</p>
+                                    <p>5243</p>
+                                </td>
+                                <td>561</td>
+                                <td>163</td>
+                                <td>376</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- <div class="contant"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box5">
+        <div class="container w">
+            <div class="left">
+                <h3 class="title">
+                    <span class="tu"></span>
+                    <span>攻略中心</span>
+                    <em>GUIDE</em>
+                </h3>
+                <div class="nav">
+                    <div class="left1">
+                        <ul>
+                            <li class="tab active">
+                                <a href="javascript:void(0)">最新</a>
+                            </li>
+                            <li class="xian"></li>
+                            <li class="tab">
+                                <a href="javascript:void(0)">综合</a>
+                            </li>
+                            <li class="xian"></li>
+                            <li class="tab">
+                                <a href="javascript:void(0)">新手</a>
+                            </li>
+                            <li class="xian"></li>
+                            <li class="tab">
+                                <a href="javascript:void(0)">百科</a>
+                            </li>
+                            <li class="xian"></li>
+                        </ul>
+                    </div>
+                    <div class="right1">
+                        <a class="a1" href="javascript:void(0)">我要投稿
+                            <span class="tougao"></span>
+                        </a>
+                        <a href="Strategy%20center.html">更多
+                            <span class="more"></span>
+                        </a>
+                    </div>
+                    <div class="main select">
+                        <div class="zuo">
+                            <img src="image/职业俱乐部LOGO.jpg" alt="">
+                            <p>打不过别人？让姐告诉你新地图...</p>
+                            <img src="image/职业俱乐部LOGO.jpg" alt="">
+                            <p>屋内有鬼？这几点教你应对屋内...</p>
+                        </div>
+                        <div class="you">
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">-【娱乐】竞技模式大联想，硬核的极限究竟在哪里？...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-主流枪械大吐槽，看看跟你想的一样不...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【娱乐】竞技模式大联想，硬核的极限究竟在哪里？...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-团队之眼，自由人上手指南...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-舔包妹妹出击：天上掉馅饼？不存在的！...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-舔包妹妹出击：额……小哥哥，给我几个时日定让你刮目...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【娱乐】竞技模式大联想，硬核的极限究竟在哪里？...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【娱乐】刚枪必备小技巧都在这，不用再羡慕大佬了！...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【光子鸡传奇】没有救援键？真假难分的队友...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="zuo">
+                            <img src="image/职业俱乐部LOGO1.jpg" alt="">
+                            <p>打不过别人？让姐告诉你新地图...</p>
+                            <img src="image/职业俱乐部LOGO1.jpg" alt="">
+                            <p>屋内有鬼？这几点教你应对屋内...</p>
+                        </div>
+                        <div class="you">
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">-【娱乐】竞技模式大联想，硬核的极限究竟在哪里？...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-主流枪械大吐槽，看看跟你想的一样不...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【娱乐】竞技模式大联想，硬核的极限究竟在哪里？...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-团队之眼，自由人上手指南...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-舔包妹妹出击：天上掉馅饼？不存在的！...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-舔包妹妹出击：额……小哥哥，给我几个时日定让你刮目...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【娱乐】竞技模式大联想，硬核的极限究竟在哪里？...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【娱乐】刚枪必备小技巧都在这，不用再羡慕大佬了！...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">-【光子鸡传奇】没有救援键？真假难分的队友...</a>
+                                    <em class="time">08-20</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <h3 class="title">
+                    <span class="tu"></span>
+                    <span>游戏资料</span>
+                    <em>DATA</em>
+                </h3>
+                <div class="nav">
+                    <ul class="wq">
+                        <li>
+                            <a href="javascript:void(0)">武器</a>
+                            <i class="item active"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">配件</a>
+                            <i class="item"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">载具</a>
+                            <i class="item"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">装备</a>
+                            <i class="item"></i>
+                        </li>
+                        <li style="font-size: 12px ;text-align: right;">
+                            <a href="Game data.html">更多
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="data select">
+                        <div class="datatop">
+                            <img src="image/AKM.png" alt="">
+                            <h3 class="qname">AKM</h3>
+                        </div>
+                        <div class="databottom">
+                            <div class="v1">
+                                <img src="image/M16A4.png" alt="">
+                                <p style="font-size: 12px" class="qname">M16A4</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/M416.png" alt="">
+                                <p style="font-size: 12px" class="qname">M416</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/SCAR-L.png" alt="">
+                                <p style="font-size: 12px" class="qname">SCAR_L</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/Groza.png" alt="">
+                                <p style="font-size: 12px" class="qname">Groza</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data ">
+                        <div class="datatop">
+                            <img src="image/wq2.png" alt="">
+                            <h3 class="qname">AKM</h3>
+                        </div>
+                        <div class="databottom">
+                            <div class="v1">
+                                <img src="image/M16A4.png" alt="">
+                                <p style="font-size: 12px" class="qname">M16A4</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/M416.png" alt="">
+                                <p style="font-size: 12px" class="qname">M416</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/SCAR-L.png" alt="">
+                                <p style="font-size: 12px" class="qname">SCAR_L</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/Groza.png" alt="">
+                                <p style="font-size: 12px" class="qname">Groza</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data ">
+                        <div class="datatop">
+                            <img src="image/wq3.png" alt="">
+                            <h3 class="qname">AKM</h3>
+                        </div>
+                        <div class="databottom">
+                            <div class="v1">
+                                <img src="image/M16A4.png" alt="">
+                                <p style="font-size: 12px" class="qname">M16A4</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/M416.png" alt="">
+                                <p style="font-size: 12px" class="qname">M416</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/SCAR-L.png" alt="">
+                                <p style="font-size: 12px" class="qname">SCAR_L</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/Groza.png" alt="">
+                                <p style="font-size: 12px" class="qname">Groza</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data ">
+                        <div class="datatop">
+                            <img src="image/wq4.png" alt="">
+                            <h3 class="qname">AKM</h3>
+                        </div>
+                        <div class="databottom">
+                            <div class="v1">
+                                <img src="image/M16A4.png" alt="">
+                                <p style="font-size: 12px" class="qname">M16A4</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/M416.png" alt="">
+                                <p style="font-size: 12px" class="qname">M416</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/SCAR-L.png" alt="">
+                                <p style="font-size: 12px" class="qname">SCAR_L</p>
+                            </div>
+                            <div class="v1">
+                                <img src="image/Groza.png" alt="">
+                                <p style="font-size: 12px" class="qname">Groza</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box6">
+        <div class="container w">
+            <h3 class="title">
+                <span class="tu"></span>
+                <span>同人专区</span>
+                <em>DOUJIN</em>
+            </h3>
+            <div class="nav">
+                <ul>
+                    <li  class="tongren active">
+                        <a href="javascript:void(0)">官方漫画</a>
+                    </li>
+                    <li class="xian"></li>
+                    <li  class="tongren">
+                        <a href="javascript:void(0)">光子鸡系列</a>
+                    </li>
+                    <li class="xian"></li>
+                    <li  class="tongren">
+                        <a href="javascript:void(0)">最新</a>
+                    </li>
+                    <li class="xian"></li>
+                    <li  class="tongren">
+                        <a href="javascript:void(0)">动漫</a>
+                    </li>
+                    <li style="font-size: 12px ;">
+                        <a class="a1" href="javascript:void(0)">我要投稿
+                            <span class="tougao"></span>
+                        </a>
+                        <a href="javascript:void(0)">更多
+                            <span class="more"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="doujin select">
+                    <div class="zuo">
+                        <img src="image/tongren1.jpg" alt="">
+                        <p>刺激小剧场-春季快乐</p>
+                    </div>
+                    <div class="you">
+                        <div class="base">
+                             <a href="#"><img src="image/tongren2.jpg" alt=""></a>
+                             <p>刺激小剧场-春季快乐</p>
+                        </div>
+                        <div class="base">
+                            <a href="#"><img src="image/tongren3.jpg" alt=""></a>
+                            <p>刺激小剧场-春季快乐</p>
+                        </div>
+                        <div class="base">
+                            <a href="#"><img src="image/tongren4.jpg" alt=""></a>
+                            <p>刺激小剧场-春季快乐</p>
+                          </div>
+                          <div class="base">
+                               <a href="#"><img src="image/tongren5.png" alt=""></a>
+                               <p>刺激小剧场-春季快乐</p>
+                          </div>
+                          <div class="base">
+                               <a href="#"><img src="image/tongren6.png" alt=""></a>
+                               <p>刺激小剧场-春季快乐</p>
+                          </div>
+                          <div class="base">
+                               <a href="#"><img src="image/tongren7.png" alt=""></a>
+                               <p>刺激小剧场-春季快乐</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="doujin">
+                        <div class="zuo">
+                            <img src="image/tongren8.jpg" alt="">
+                            <p>刺激小剧场-春季快乐</p>
+                        </div>
+                        <div class="you">
+                            <div class="base">
+                                 <a href="#"><img src="image/tongren9.jpg" alt=""></a>
+                                 <p>刺激小剧场-春季快乐</p>
+                            </div>
+                            <div class="base">
+                                <a href="#"><img src="image/tongren10.jpg" alt=""></a>
+                                <p>刺激小剧场-春季快乐</p>
+                            </div>
+                            <div class="base">
+                                <a href="#"><img src="image/tongren11.jpg" alt=""></a>
+                                <p>刺激小剧场-春季快乐</p>
+                              </div>
+                              <div class="base">
+                                   <a href="#"><img src="image/tongren12.jpg" alt=""></a>
+                                   <p>刺激小剧场-春季快乐</p>
+                              </div>
+                              <div class="base">
+                                   <a href="#"><img src="image/tongren13.jpg" alt=""></a>
+                                   <p>刺激小剧场-春季快乐</p>
+                              </div>
+                              <div class="base">
+                                   <a href="#"><img src="image/tongren14.jpg" alt=""></a>
+                                   <p>刺激小剧场-春季快乐</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="doujin">
+                            <div class="zuo">
+                                <img src="image/tongren15.jpg" alt="">
+                                <p>刺激小剧场-春季快乐</p>
+                            </div>
+                            <div class="you">
+                                <div class="base">
+                                     <a href="#"><img src="image/tongren16.jpg" alt=""></a>
+                                     <p>刺激小剧场-春季快乐</p>
+                                </div>
+                                <div class="base">
+                                    <a href="#"><img src="image/tongren17.jpg" alt=""></a>
+                                    <p>刺激小剧场-春季快乐</p>
+                                </div>
+                                <div class="base">
+                                    <a href="#"><img src="image/tongren18.jpg" alt=""></a>
+                                    <p>刺激小剧场-春季快乐</p>
+                                  </div>
+                                  <div class="base">
+                                       <a href="#"><img src="image/tongren19.jpg" alt=""></a>
+                                       <p>刺激小剧场-春季快乐</p>
+                                  </div>
+                                  <div class="base">
+                                       <a href="#"><img src="image/tongren20.jpg" alt=""></a>
+                                       <p>刺激小剧场-春季快乐</p>
+                                  </div>
+                                  <div class="base">
+                                       <a href="#"><img src="image/tongren16.jpg" alt=""></a>
+                                       <p>刺激小剧场-春季快乐</p>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="doujin">
+                                <div class="zuo">
+                                    <img src="image/tongren1.jpg" alt="">
+                                    <p>刺激小剧场-春季快乐</p>
+                                </div>
+                                <div class="you">
+                                    <div class="base">
+                                         <a href="#"><img src="image/tongren2.jpg" alt=""></a>
+                                         <p>刺激小剧场-春季快乐</p>
+                                    </div>
+                                    <div class="base">
+                                        <a href="#"><img src="image/tongren3.jpg" alt=""></a>
+                                        <p>刺激小剧场-春季快乐</p>
+                                    </div>
+                                    <div class="base">
+                                        <a href="#"><img src="image/tongren4.jpg" alt=""></a>
+                                        <p>刺激小剧场-春季快乐</p>
+                                      </div>
+                                      <div class="base">
+                                           <a href="#"><img src="image/tongren5.png" alt=""></a>
+                                           <p>刺激小剧场-春季快乐</p>
+                                      </div>
+                                      <div class="base">
+                                           <a href="#"><img src="image/tongren6.png" alt=""></a>
+                                           <p>刺激小剧场-春季快乐</p>
+                                      </div>
+                                      <div class="base">
+                                           <a href="#"><img src="image/tongren7.png" alt=""></a>
+                                           <p>刺激小剧场-春季快乐</p>
+                                      </div>
+                                </div>
+                            </div>
+
+
+
+            </div>
+           
+        </div>
+    </div>
+    <div class="box7">
+        <div class="container w">
+            <h3 class="title">
+                <span class="tu"></span>
+                <span>游戏特色</span>
+                <em>GAME FEATURES</em>
+            </h3>
+            <div class="lunbo">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="image/游戏特色1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="image/游戏特色2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="image/游戏特色3.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="image/游戏特色4.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="image/游戏特色5.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="image/游戏特色1.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="arr">
+                    <span class="arr-left"></span>
+                    <span class="arr-right"></span>
+                </div>
+            </div>
+            <div class="lik">
+                <ul>
+                    <li class="current"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="bg" class="login-bg"></div>
+    <div id="afooter">
+        <div id="footer_ieg">
+            <div class="wrap_ieg"><p><a href="#" target="_blank">腾讯互动娱乐</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">服务条款</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">隐私政策</a>&nbsp;|&nbsp;<a href="//game.qq.com/hr/"
+                                                                    target="_blank">腾讯游戏招聘</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">腾讯游戏客服</a>&nbsp;|&nbsp;<a href="//game.qq.com/gnav"
+                                                                      target="_blank">游戏地图</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">成长守护平台</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">商务合作</a>&nbsp;|&nbsp;<a href="//www.qq.com/map/"
+                                                                    target="_blank">网站导航</a>
+            </p>
+
+                <p class="e copyright_en">COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+
+                <p class="copyright_zh"><a href="#" target="_blank">腾讯公司
+                    版权所有</a></p></div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+<script>
+    $(function(){
+        $('#ost_g').on('mouseenter',function(){
+            $('#ost_go').css({
+                'display':'none'
+            })
+            $('#ost_d').css({
+                'display':'block'
+            })
+        })
+        $('#ost_d').on('mouseleave',function(){
+            $(this).css({
+                'display':'none'
+            })
+            $('#ost_go').css({
+                'display':'block'
+            })
+        })
+        $('.navnav>a').on('mouseenter',function(){
+            $(this).css({
+                'color': '#ffb400',
+            })
+            $(this).children().css({
+                'color': '#ffb400',
+            })
+        })
+        $('.navnav>a').on('mouseleave',function(){
+            $(this).css({
+                'color': '#ffffff',
+            })
+            $(this).children().css({
+                'color': '#515151',
+            })
+        })
+        $('.nav_yx').on('mouseenter',function(){
+            $(this).css({
+                'color':'#ffb400'
+            })
+            $(this).children().css({
+                'color': '#ffb400',
+            })
+            $('.subnav').css({
+                'display': 'block',
+                'width':110
+            })
+        })
+        $('.nav_yx').on('mouseleave',function(){
+            $('.subnav').css({
+                'display': 'none',
+                'width':110
+            })
+            $(this).css({
+                'color':'#ffffff'
+            })
+            $(this).children().css({
+                'color': '#515151',
+            })
+        })
+        $('#playerLink').on('mouseenter',function(){
+            $('#tipsPlayer').css({
+                'display': 'block',
+                'width':100,
+            })
+        })
+        $('#playerLink').on('mouseleave',function(){
+            $('#tipsPlayer').css({
+                'display': 'none',
+                'width':100,
+            })
+        })
+        var $tipsPlayers = $('#tipsPlayer ul li')
+        var $tips = $('#tipsPlayer p')
+        $tipsPlayers.on('mouseenter', function () {
+            var index1 = $(this).index()
+            $(this).addClass("on").siblings("li").removeClass("on")
+            $($tips[index1]).show().siblings("p").hide()
+        })
+        $('#ost_t').on('mouseenter',function(){
+            $('.ost_rank').css({
+                'display':'block'
+            })
+        })
+        $('#ost_t').on('mouseleave',function(){
+            $('.ost_rank').css({
+                'display':'none'
+            })
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刺激开播月 进击决战圈-《绝地求生：刺激战场》官网</title>
+    <link rel="stylesheet" href="./css/live.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/live.js"></script>
+</head>
+<body style="padding-top: 42px">
+    <div class="wrap">
+        <div class="top-nav">
+            <!--[if lt IE 8]>&lt;!&ndash;<p class="browser-tips">您的浏览器版本过低，请升级浏览器获得更好的体验<p>&ndash;&gt;<![endif]-->
+            <div class="container">
+                <div class="top-title">
+                    <a href="//pg.qq.com/main.shtml" >
+                        <img src="./image/top-tag.png" alt="logo" class="tag" width="125" height="125">
+                    </a>
+                    <h1>绝地求生：刺激战场<span>正版战斗特训手游</span></h1>
+                </div>
+                <div class="navnav">
+                    <a href="index.html" onclick="PTTSendClick('hdtopnav','navlink1','头部导航链接');" target="_blank">官网首页 <span>HOME</span> </a>
+                    <a href="./赛事中心/赛事中心.html" target="_blank">赛事中心<span>MATCH</span> </a>
+                    <!-- <a href="/gicp/news/101/2/1998/1.html"  onclick="PTTSendClick('hdtopnav','navlink2','头部导航链接');"  target="_blank">新闻中心<span>NEWS</span> </a> -->
+                    <a href="Video%20center.html" onclick="PTTSendClick('hdtopnav','navlink3','头部导航链接');" target="_blank">视频中心<span>VIDEO</span> </a>
+                    <a href="Live%20center.html" onclick="PTTSendClick('hdtopnav','navlink4','头部导航链接');" target="_blank">直播中心<span>LIVE</span> </a>
+                    <a href="Strategy%20center.html" onclick="PTTSendClick('hdtopnav','navlink5','头部导航链接');" target="_blank">攻略中心<span>GAMETIPS</span> </a>
+                    <div class="nav_yx">
+                        游戏资料
+                        <span>DATA</span>
+                        <ul class="subnav">
+                            <li>
+                                <a href="Game%20data.html" onclick="PTTSendClick('hdtopnav','navlink61','头部导航链接');">
+                                    武器配件
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://pg.qq.com/zlkdatasys/a20180420verlistpc/ztsy.shtml" onclick="PTTSendClick('hdtopnav','navlink62','头部导航链接');">
+                                    版本更新
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:" onclick="PTTSendClick('hdtopnav','navlink7','头部导航链接');" target="_blank" id="playerLink">社区互动 <span>COMMUNITY</span>
+                        <div class="tips-player" id="tipsPlayer" style="display: none;">
+                            <ul>
+                                <li class="on">手Q部落</li>
+                                <li class="">微信公众号</li>
+                                <li class="">微信圈子</li>
+                                <li class="">官方微博</li>
+                            </ul>
+                            <p class="tips-img1" style="display: block;">
+                                <img src="./image/qrcode_sq.jpg" alt="手Q部落">
+                                <i class="ips-arrow"></i>
+                            </p>
+                            <p class="tips-img2" style="display: none;">
+                                <img src="./image/qrcode_wxqz.jpg" alt="微信公众号">
+                                <i class="ips-arrow"></i>
+                            </p>
+                            <p class="tips-img3" style="display: none;">
+                                <img src="./image/qrcode_wx.jpg" alt="微信圈子">
+                                <i class="ips-arrow"></i>
+                            </p>
+                            <p class="tips-img4" style="display: none;">
+                                <img src="./image/qrcode_wb.jpg" alt="官方微博">
+                                <i class="ips-arrow"></i>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ost_box ost_bg " id="ost_box" style="position:absolute">
+            <ul class="ost_inner ost_lsn ">
+                <li class="ost_logo ost_h40 ost_fl ost_bg">
+                    <a href='' class="ost_blnk ost_hdn" title="腾讯游戏LOGO">腾讯游戏LOGO</a>
+                </li>
+                <li id="ost_g" class="ost_ad ost_h40 ost_fl">
+                    <img class="ost_nb" id="ost_go" src="image/7257.jpg" alt="" style="display:block" />
+                </li>
+                <li class="ost_total ost_ml10 ost_fr">
+                    <h3 class="ost_czsh ost_h40">
+                        <a href="https://jiazhang.qq.com/jz/home.html?ADTAG=gamepcbanner" target="_blank">成长守护平台</a>
+                    </h3>
+                    <h3 class="ost_title ost_h40" id="ost_t">
+                        腾讯游戏排行榜
+                        <i class="ost_icon_arrow ost_bg"></i>
+                        <sup class="ost_icon_reddot" id="ost_rank_v"></sup>
+                        <div class="ost_rank">
+                            <span class="before"></span>
+                            <span class="after"></span>
+                            <div class="ost_rank_col" id="rank_control1">
+                                <div class="col-head">
+                                    <h2 class="rank-title">新游排行榜</h2>
+                                    <a href="#" class="rank-more">更多<i class="icon-font">»</i></a>
+                                </div>
+                                <div class="col-body">
+                                    <ul class="rank-list">
+                                        <li class="rank-head">
+                                            <span class="rank-order-hd">排名</span>
+                                            <span class="rank-name-hd">游戏</span>
+                                        </li>
+                                        <li class="rank-item current">
+                                            <span class="rank-order-color">1</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">NBA2K OL2</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/NBA2KOL2.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-color">2</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">FIFA Online 4</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/FIFAOL4-KV194_82.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-color">3</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">灵山奇缘</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/lsqy.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">4</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >流放之路</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/lfzl-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">5</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >冒险岛2</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/mxd2-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">6</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >使命召唤OL</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src=" ./image/cod-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">7</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >极品飞车ONLINE</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/jpfcol-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">8</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >穿越火线</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/cf-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">9</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >QQ炫舞</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/x5-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">10</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >御龙在天</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/yl-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- hot game -->
+                            <div class="ost_rank_col" id="rank_control2">
+                                <div class="col-head">
+                                    <h2 class="rank-title">热门排行榜</h2>
+                                    <a href="#" class="rank-more">更多<i class="icon-font">»</i></a>
+                                </div>
+                                <div class="col-body">
+                                    <ul class="rank-list">
+                                        <li class="rank-head">
+                                            <span class="rank-order-hd">排名</span>
+                                            <span class="rank-name-hd">游戏</span>
+                                        </li>
+                                        <li class="rank-item current">
+                                            <span class="rank-order-color">1</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">英雄联盟</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/lol-2.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item ">
+                                            <span class="rank-order-color">2</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">穿越火线</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/cf-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item ">
+                                            <span class="rank-order-color">3</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">地下城与勇士</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/dnf-2.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">4</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >逆战</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/nz-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">5</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >使命召唤OL</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/cod-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">6</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >QQ炫舞</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/x5-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">7</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >QQ飞车</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/speed-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">8</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >炫舞时代</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/5s-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">9</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >天涯明月刀</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/wuxia-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">10</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >FIFA Online3</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/fifa-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ost_rank_col" id="rank_control3">
+                                <div class="col-head">
+                                    <h2 class="rank-title">新品手游排行榜</h2>
+                                    <a href="#" target="_blank" class="rank-more">更多<i class="icon-font">»</i></a>
+                                </div>
+                                <div class="col-body">
+                                    <ul class="rank-list">
+                                        <li class="rank-head"><span class="rank-order-hd">排名</span><span class="rank-name-hd">游戏</span></li>
+                                        <li class="rank-item ">
+                                            <span class="rank-order-color">1</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">我叫MT4</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/wjmt4.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item ">
+                                            <span class="rank-order-color">2</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">FIFA足球世界</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/FIFAMobile-KV194_82.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item ">
+                                            <span class="rank-order-color">3</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">拳皇命运手游</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/KV19482.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">4</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >火影忍者手游</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/hyrz-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta2">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home2"></i></a>
+                                                        <a href="#" target="_blank" class="game-link" >
+                                                            <i class="icon-ios"></i></a>
+                                                        <a href="#" target="_blank" class="game-link" >
+                                                            <i class="icon-android"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">5</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >梦幻诛仙</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/mhzx-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta2">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home2"></i></a>
+                                                        <a href="#" target="_blank" class="game-link" >
+                                                            <i class="icon-ios"></i></a>
+                                                        <a href="#" target="_blank" class="game-link" >
+                                                            <i class="icon-android"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-head2">
+                                    <h2 class="rank-title">热门手游排行榜</h2>
+                                    <a href="#" target="_blank" class="rank-more">更多<i class="icon-font">»</i></a>
+                                </div>
+                                <div class="col-body">
+                                    <ul class="rank-list">
+                                        <li class="rank-item current">
+                                            <span class="rank-order-color">1</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">王者荣耀</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/sgame-22.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item ">
+                                            <span class="rank-order-color">2</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">穿越火线之枪战王者</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/cfsy-2.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item ">
+                                            <span class="rank-order-color">3</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank">奇迹暖暖</a>
+                                                <div class="rank-game-cover cover-bottom" style="">
+                                                    <img class="game-img" src="./image/qjnn-2.jpg" width="194" height="82"
+                                                         alt="">
+                                                    <p class="game-meta">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home"></i>进入官网</a>
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-download"></i>下载游戏</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">4</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >天天爱消除</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/peng-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta2">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home2"></i></a>
+                                                        <a href="#" target="_blank" class="game-link" >
+                                                            <i class="icon-ios"></i></a>
+                                                        <a href="#" target="_blank" class="game-link" >
+                                                            <i class="icon-android"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rank-item">
+                                            <span class="rank-order-gray">5</span>
+                                            <div class="rank-name-game cover-tip">
+                                                <a class="ctip-text" href="#" target="_blank" >火影忍者手游</a>
+                                                <div class="rank-game-cover cover-top" style="">
+                                                    <img class="game-img" src="./image/hyrz-2.jpg" width="194"
+                                                         height="82" alt="">
+                                                    <p class="game-meta2">
+                                                        <a href="#" target="_blank" class="game-link">
+                                                            <i class="icon-home2"></i></a>
+                                                        <a href="#" target="_blank" class="game-link" >
+                                                            <i class="icon-ios"></i></a>
+                                                        <a href="#" target="_blank" class="game-link" >
+                                                            <i class="icon-android"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </h3>
+                </li>
+            </ul>
+            <div id="ost_d" class="ost_big" style="display:none;">
+                <a href="https://www.baidu.com/" target="_blank">
+                    <img class="ost_nb" src="./image/44181.jpg" width="970" height="185" alt=""></a>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+            <div class="bg4"></div>
+            <div class="bg5"></div>
+            <div class="bg6"></div>
+        </div>
+        <div class="content">
+            <div class="inner w">
+                <div class="head">
+                    <div class="logo-con">
+                        <a href="#" target="_blank" class="logo-pubg"></a>
+                        <a href="#" target="_blank" class="logo-guangzi"></a>
+                    </div>
+                    <div class="downloadBox icon">
+                        <a href="#" target="_blank" class="iosDown"></a>
+                        <a href="#" target="_blank" class="androidDown"></a>
+                    </div>
+                    <div class="login_box">
+                        <p id="no_login">亲爱的玩家，请
+                            <a href="javascript:void(0)">【登录】</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="model1" id="model1">
+                    <div class="liveBox">
+                        <div class="liveIntro">
+                            <p class="p1">
+                                <i class="icon qedj"></i>
+                                <span class="pingtai">企鹅电竞</span>：
+                                <span class="name">东北马大哈</span>
+                            </p>
+                        </div>
+                        <div id="live_doc" class="video">
+                            <iframe src="http://egame.qq.com/share/live?anchorid=254592251&gifttab=false&adtab=false"></iframe>
+                        </div>
+                    </div>
+                    <div class="radioHostBox">
+                        <h3 class="title1 icon"></h3>
+                        <div class="hostInfo">
+                            <div class="bigPhoto">
+                                <img src="./image/31.jpg" style="width: 198px;height: 206px"  alt="主播">
+                            </div>
+                            <div class="intro">
+                                <h5 class="icon"></h5>
+                                <i class="line icon"></i>
+                                <p class="p1" id="zb_name">东北马大哈</p>
+                                <div class="p2">
+                                    <!--直播平台：企鹅电竞<br>
+                                    房间ID&nbsp;&nbsp;&nbsp;：254592251<br> 
+                                    开播时间：10：00-14：00<br>-->
+                                    <div>
+                                        <span class="l">直播平台：</span>
+                                        <span id="zb_platform">企鹅电竞</span>
+                                    </div>
+                                    <div>
+                                        <span class="l">房间ID &nbsp;&nbsp;：</span>
+                                        <span id="zb_room">254592251</span>
+                                    </div>
+                                    <div>
+                                        <span class="l">开播时间：</span>
+                                        <span id="zb_time1">10：00-14：00</span>
+                                    </div>
+                                    <div>
+                                        <span class="l">&nbsp;</span>
+                                        <span id="zb_time2">18：00-22：00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hostSelectBox">
+                            <a class="arrow-left1 icon" href="javascript:void(0)"></a>
+                            <a class="arrow-right1 icon" href="javascript:void(0)"></a>
+                            <div class="swiper-container1">
+                                <div id="zbInfo" class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <ul class="hostSelect box1">
+                                            <li class="li1">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/31.jpg"> </a>
+                                            </li>
+                                            <li class="li2">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/32.jpg"> </a>
+                                            </li>
+                                            <li class="li3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/33.jpg"> </a>
+                                            </li>
+                                            <li class="li4">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/34.jpg"> </a>
+                                            </li>
+                                            <li class="li5">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/35.jpg"> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <ul class="hostSelect box2">
+                                            <li class="li1">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/37.jpg"> </a>
+                                                <li class="li2">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./image/38.jpg"> </a>
+                                                </li>
+                                                <li class="li3">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./image/39.jpg"> </a>
+                                                </li>
+                                                <li class="li4">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./image/40.jpg"> </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <ul class="hostSelect box3">
+                                            <li class="li1">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/42.jpg"> </a>
+                                            </li>
+                                            <li class="li2">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/43.jpg"> </a>
+                                            </li>
+                                            <li class="li3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/44.jpg"> </a>
+                                            </li>
+                                            <li class="li4">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/45.jpg"> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <ul class="hostSelect box4">
+                                            <li class="li1">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/46.jpg"> </a>
+                                            </li>
+                                            <li class="li2">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/47.jpg"> </a>
+                                            </li>
+                                            <li class="li3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/48.jpg"> </a>
+                                            </li>
+                                            <li class="li4">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/49.jpg"> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <ul class="hostSelect box1">
+                                            <li class="li1">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/31.jpg"> </a>
+                                            </li>
+                                            <li class="li2">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/32.jpg"> </a>
+                                            </li>
+                                            <li class="li3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/33.jpg"> </a>
+                                            </li>
+                                            <li class="li4">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/34.jpg"> </a>
+                                            </li>
+                                            <li class="li5">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./image/35.jpg"> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="model2" id="model2">
+                    <h3 class="title icon"></h3>
+                    <a href="javascript:void(0);" class="schedule">直播排期</a>
+                    <div class="carousel">
+                        <a class="arrow-left2 icon" href="javascript:void(0);"></a>
+                        <a class="arrow-right2 icon" href="javascript:void(0);"></a>
+                        <div class="swiper-container2">
+                            <div id="zbInfo2" class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <ul class="hostSelect2 hostBox1">
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xiaocang.png" alt="主播">
+                                                <p class="fName">小苍</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/ruofeng.png" alt="主播">
+                                                <p class="fName">若风</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xxkk.png" alt="主播">
+                                                <p class="fName">笑笑西卡</p>
+                                                <div class="airtime">
+                                                    <p class="platform lz">
+                                                        <i class="icon"></i>龙珠直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/dongxiaosa.png" alt="主播">
+                                                <p class="fName">董小飒</p>
+                                                <div class="airtime">
+                                                    <p class="platform hy">
+                                                        <i class="icon"></i>虎牙直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/gaobai.png" alt="主播">
+                                                <p class="fName">告白</p>
+                                                <div class="airtime">
+                                                    <p class="platform hy">
+                                                        <i class="icon"></i>虎牙直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/wensengte.png" alt="主播">
+                                                <p class="fName">文森特</p>
+                                                <div class="airtime">
+                                                    <p class="platform zq">
+                                                        <i class="icon"></i>战旗直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="hostSelect2 hostBox2">
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/qqq.png" alt="主播">
+                                                <p class="fName">QQQ</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/binggan.png" alt="主播">
+                                                <p class="fName">饼干</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/caomei.png" alt="主播">
+                                                <p class="fName">草莓</p>
+                                                <div class="airtime">
+                                                    <p class="platform qedj">
+                                                        <i class="icon"></i>企鹅电竞</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/liushaji.png" alt="主播">
+                                                <p class="fName">刘杀鸡</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/a.png" alt="主播">
+                                                <p class="fName">A+</p>
+                                                <div class="airtime">
+                                                    <p class="platform yy">
+                                                        <i class="icon"></i>YY直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/huli.png" alt="主播">
+                                                <p class="fName">狐狸不太Sao</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="hostSelect2 hostBox3">
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/cuojue.png" alt="主播">
+                                                <p class="fName">错觉</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/lanzhanfei.png" alt="主播">
+                                                <p class="fName">蓝战非</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xiaolou.png" alt="主播">
+                                                <p class="fName">小楼</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/tulafu.png" alt="主播">
+                                                <p class="fName">ToveLo图拉夫</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/susu.png" alt="主播">
+                                                <p class="fName">酥酥</p>
+                                                <div class="airtime">
+                                                    <p class="platform qedj">
+                                                        <i class="icon"></i>企鹅电竞</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xiaozhang.png" alt="主播">
+                                                <p class="fName">EL-校长Sun</p>
+                                                <div class="airtime">
+                                                    <p class="platform qedj">
+                                                        <i class="icon"></i>企鹅电竞</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="hostSelect2 hostBox4">
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/mozi.png" width="312" height="187" alt="主播">
+                                                <p class="fName">SnakeTC-沫子</p>
+                                                <div class="airtime">
+                                                    <p class="platform qedj">
+                                                        <i class="icon"></i>企鹅电竞</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/yanzi.png" alt="主播">
+                                                <p class="fName">寅子</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xiaobawang.png" alt="主播">
+                                                <p class="fName">呆妹儿小霸王</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/bage.png" alt="主播">
+                                                <p class="fName">霸哥</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/bangzhu.png" alt="主播">
+                                                <p class="fName">星际少帮主</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xiaoyuan.png" alt="主播">
+                                                <p class="fName">小缘</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="hostSelect2 hostBox5">
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/daidai.png" alt="主播">
+                                                <p class="fName">呆呆</p>
+                                                <div class="airtime">
+                                                    <p class="platform lz">
+                                                        <i class="icon"></i>龙珠直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xiaosusu.png" alt="主播">
+                                                <p class="fName">小苏苏-豚首</p>
+                                                <div class="airtime">
+                                                    <p class="platform qedj">
+                                                        <i class="icon"></i>企鹅电竞</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/scboy.png" alt="主播">
+                                                <p class="fName">scboy</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/beiwang.png" alt="主播">
+                                                <p class="fName">北望你的涵</p>
+                                                <div class="airtime">
+                                                    <p class="platform qm">
+                                                        <i class="icon"></i>全民直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/qedjxbw.png" alt="主播">
+                                                <p class="fName">企鹅电竞小霸王</p>
+                                                <div class="airtime">
+                                                    <p class="platform qedj">
+                                                        <i class="icon"></i>企鹅电竞</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xuefei.png" alt="主播">
+                                                <p class="fName">雪飞</p>
+                                                <div class="airtime">
+                                                    <p class="platform lz">
+                                                        <i class="icon"></i>龙珠直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="hostSelect2 hostBox6">
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/shiyue.png" alt="主播">
+                                                <p class="fName">誓约中二约</p>
+                                                <div class="airtime">
+                                                    <p class="platform dy">
+                                                        <i class="icon"></i>斗鱼直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/kost.png" alt="主播">
+                                                <p class="fName">kost-酒客</p>
+                                                <div class="airtime">
+                                                    <p class="platform qedj">
+                                                        <i class="icon"></i>企鹅电竞</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/laowang.png" alt="主播">
+                                                <p class="fName">隔壁老王</p>
+                                                <div class="airtime">
+                                                    <p class="platform qm">
+                                                        <i class="icon"></i>全民直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/dea.png" alt="主播">
+                                                <p class="fName">Dea-豆豆哥</p>
+                                                <div class="airtime">
+                                                    <p class="platform qedj">
+                                                        <i class="icon"></i>企鹅电竞</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/zhangege.png" alt="主播">
+                                                <p class="fName">战哥哥</p>
+                                                <div class="airtime">
+                                                    <p class="platform lz">
+                                                        <i class="icon"></i>龙珠直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <ul class="hostSelect2 hostBox1">
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xiaocang.png" alt="主播">
+                                                <p class="fName">小苍</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/ruofeng.png" alt="主播">
+                                                <p class="fName">若风</p>
+                                                <div class="airtime">
+                                                    <p class="platform xm">
+                                                        <i class="icon"></i>熊猫直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/xxkk.png" alt="主播">
+                                                <p class="fName">笑笑西卡</p>
+                                                <div class="airtime">
+                                                    <p class="platform lz">
+                                                        <i class="icon"></i>龙珠直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/dongxiaosa.png" alt="主播">
+                                                <p class="fName">董小飒</p>
+                                                <div class="airtime">
+                                                    <p class="platform hy">
+                                                        <i class="icon"></i>虎牙直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/gaobai.png" alt="主播">
+                                                <p class="fName">告白</p>
+                                                <div class="airtime">
+                                                    <p class="platform hy">
+                                                        <i class="icon"></i>虎牙直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="主播">
+                                                <img src="./image/wensengte.png" alt="主播">
+                                                <p class="fName">文森特</p>
+                                                <div class="airtime">
+                                                    <p class="platform zq">
+                                                        <i class="icon"></i>战旗直播</p>
+                                                    <p class="live icon"></p>
+                                                </div>
+                                                <i class="playBtn icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="model3" id="model3">
+                    <h3 class="title icon"></h3>
+                    <p class="des">观看3分钟视频可以获取一次抽奖机会</p>
+                    <div class="conBox">
+                        <div class="lottery" id="lotterycontent">
+                            <img src="./image/lottery.png" width="574" height="360">
+                            <a href="javascript:void(0);" class="lottery-btn"></a>
+                        </div>
+                        <div class="ruleRecord">
+                            <img src="./image/props.png" width="390" height="360">
+                            <a href="javascript:void(0);" class="ruleBtn icon">活动规则</a>
+                            <a href="javascript:void(0);" class="recordBtn icon">抽奖记录</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="addressBtn">实物奖励填写地址>></a>
+                </div>
+                <div class="model4" id="model4">
+                    <h3 class="title icon"></h3>
+                    <ul class="platformBox">
+                        <li class="li1">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li2">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li3">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li4">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li5">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li6">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li7">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li8">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li9">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                        <li class="li10">
+                            <a href="#" class="platformBtn"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="model5" id="model5">
+                    <ul class="ewmBox">
+                        <li class="li1">
+                            <i class="ewm"></i>
+                            <p>手Q部落二维码</p>
+                        </li>
+                        <li class="li2">
+                            <i class="ewm"></i>
+                            <p>微信圈子二维码</p>
+                        </li>
+                        <li class="li3">
+                            <i class="ewm"></i>
+                            <p>微信公众号二维码</p>
+                        </li>
+                        <li class="li4">
+                            <i class="ewm"></i>
+                            <p>微博二维码</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 登录弹窗 -->
+    <div class="loginPop" id="loginPop">
+        <div class="dia-con">
+            <h5>
+                <i class="i1 icon"></i>
+                请登录
+                <i class="i2 icon"></i>
+            </h5>
+            <a class="wechat icon" href="javascript:void(0);" title="微信登录">微信登录</a>
+            <a class="qq icon" href="javascript:void(0);" title="QQ登录">QQ登录</a>
+        </div>
+        <a class="close icon" href="javascript:void(0);" title="关闭"></a>
+    </div>
+    <!-- 遮罩层 -->
+    <div id="mask"></div>
+    <!-- 活动规则 -->
+    <div class="activeRulePop">
+        <div class="dia-con">
+            <h5>
+                <i class="i1 icon"></i>
+                活动规则
+                <i class="i2 icon"></i>
+            </h5>
+            <p>1.活动时间：2018年4月13日-2018年5月13日；</p>
+            <p> 2.直播期间，用户登录页面，并在此页面观看3分钟直播即可获得一次抽奖机会，每日仅可获取一次；</p>
+            <p>3.游戏奖励将在抽取后30个工作日内发放；</p>
+            <p>4.如使用外挂、作弊器以及其他不正当的方式参加本活动的,《绝地求生：刺激战场》手游官网团队将取消用户参与资格、获奖资格。</p>
+        </div>
+        <a class="close icon" href="javascript:void(0);" title="关闭"></a>
+    </div>
+    <!-- 直播时间弹窗 -->
+    <div class="schedulePop" id="schedulePop">
+            <div class="dia-con">
+                <h5>
+                    <i class="i1 icon"></i>
+                    直播时间表
+                    <i class="i2 icon"></i>
+                </h5>
+                <div class="scheduleBox">
+                    <table class="table1">
+                        <tbody><tr>
+                            <th class="th1">日期</th>
+                            <th class="th2"> 直播时段</th>
+                            <th class="th3">主播名</th>
+                        </tr>
+                        </tbody><tbody>
+                        <tr><td>5月4日</td><td>19-20点</td><td>狐狸不太Sao</td></tr>
+                        <tr><td>5月4日</td><td>20-21点</td><td>SnakeTC-沫子</td></tr>
+                        <tr><td>5月4日</td><td>21-22点</td><td>蓝战非</td></tr>
+                        <tr><td>5月5日</td><td>19-20点</td><td>董小飒</td></tr>
+                        <tr><td>5月5日</td><td>20-21点</td><td>战哥哥</td></tr>
+                        <tr><td>5月5日</td><td>21-22点</td><td>刘杀鸡</td></tr>
+                        <tr><td>5月6日</td><td>19-20点</td><td>呆妹儿小霸王</td></tr>
+                        <tr><td>5月6日</td><td>20-21点</td><td>小苍Cany</td></tr>
+                        <tr><td>5月11日</td><td>19-20点</td><td>Kots-酒客</td></tr>
+                        </tbody>
+                    </table>
+                    <table class="table2">
+                        <tbody><tr>
+                            <th class="th1">日期</th>
+                            <th class="th2"> 直播时段</th>
+                            <th class="th3">主播名</th>
+                        </tr>
+                        </tbody><tbody id="">
+                        <tr><td>5月11日</td><td>20-21点</td><td>文森特</td></tr>
+                        <tr><td>5月11日</td><td>21-22点</td><td>若风</td></tr>
+                        <tr><td>5月12日</td><td>19-20点</td><td>呆妹儿小霸王</td></tr>
+                        <tr><td>5月12日</td><td>20-21点</td><td>董小飒</td></tr>
+                        <tr><td>5月12日</td><td>21-22点</td><td>A+</td></tr>
+                        <tr><td>5月13日</td><td>19-20点</td><td>狐狸不太Sao</td></tr>
+                        <tr><td>5月13日</td><td>20-21点</td><td>SnakeTC-沫子</td></tr>
+                        <tr><td>5月13日</td><td>21-22点</td><td>小缘</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a class="close icon" href="javascript:void(0);" title="关闭"></a>
+        </div>
+    <div id="footer_ied">
+        <div class="wrap_ied"><p><a href="#" target="_blank”">腾讯互动娱乐</a> | <a
+                href="#" target="_blank">服务条款</a> | <a href="#" target="_blank">广告服务</a>
+            | <a href="#" target="_blank">腾讯游戏招聘</a> | <a href="#"
+                                                          target="_blank">腾讯游戏客服</a> | <a
+                    href="#" target="_blank">游戏地图</a> | <a
+                    href="#" target="_blank">成长守护平台</a> | <a
+                    href="#" target="_blank">商务合作</a> | <a href="#"
+                                                           target="_blank">网站导航</a></p>
+
+            <p class="e">COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+
+            <p><a href="#" target="_blank">腾讯公司 版权所有</a></p></div>
+    </div>
+        </div>
+    <script>
+        $(function(){
+            $('#ost_g').on('mouseenter',function(){
+                $('#ost_go').css({
+                    'display':'none'
+                })
+                $('#ost_d').css({
+                    'display':'block'
+                })
+            })
+            $('#ost_d').on('mouseleave',function(){
+                $(this).css({
+                    'display':'none'
+                })
+                $('#ost_go').css({
+                    'display':'block'
+                })
+            })
+            $('.navnav>a').on('mouseenter',function(){
+                $(this).css({
+                    'color': '#ffb400',
+                })
+                $(this).children().css({
+                    'color': '#ffb400',
+                })
+            })
+            $('.navnav>a').on('mouseleave',function(){
+                $(this).css({
+                    'color': '#ffffff',
+                })
+                $(this).children().css({
+                    'color': '#515151',
+                })
+            })
+            $('.nav_yx').on('mouseenter',function(){
+                $(this).css({
+                    'color':'#ffb400'
+                })
+                $(this).children().css({
+                    'color': '#ffb400',
+                })
+                $('.subnav').css({
+                    'display': 'block',
+                    'width':110
+                })
+            })
+            $('.nav_yx').on('mouseleave',function(){
+                $('.subnav').css({
+                    'display': 'none',
+                    'width':110
+                })
+                $(this).css({
+                    'color':'#ffffff'
+                })
+                $(this).children().css({
+                    'color': '#515151',
+                })
+            })
+            $('#playerLink').on('mouseenter',function(){
+                $('#tipsPlayer').css({
+                    'display': 'block',
+                    'width':100,
+                })
+            })
+            $('#playerLink').on('mouseleave',function(){
+                $('#tipsPlayer').css({
+                    'display': 'none',
+                    'width':100,
+                })
+            })
+            var $tipsPlayers = $('#tipsPlayer ul li')
+            var $tips = $('#tipsPlayer p')
+            $tipsPlayers.on('mouseenter', function () {
+                var index1 = $(this).index()
+                $(this).addClass("on").siblings("li").removeClass("on")
+                $($tips[index1]).show().siblings("p").hide()
+            })
+            $('#ost_t').on('mouseenter',function(){
+                $('.ost_rank').css({
+                    'display':'block'
+                })
+            })
+            $('#ost_t').on('mouseleave',function(){
+                $('.ost_rank').css({
+                    'display':'none'
+                })
+            })
+        })
+    </script>
+</body>
+</html>

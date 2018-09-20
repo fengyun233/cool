@@ -1,0 +1,769 @@
+/*初始代码*/
+p,
+a,
+i,
+li,
+ul,
+em,
+input,
+img,
+span,
+body,
+div,
+strong,
+h1,
+h2,
+h3,
+del {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+li {
+    list-style: none;
+}
+i {
+    font-style: normal;
+}
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+body {
+    font:12px/100% "微软雅黑";
+    background-color: #f6f6f6;
+    color: black;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 初始化代码结束 */
+/*中间部分*/
+.top-box{
+    width: 1349px;
+    height: 348px;
+    background:url("./chiji/baike/info-kv.jpg")no-repeat;
+    position: relative;
+}
+.log  {
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.head {
+    height: 40px;
+
+}
+
+.game {
+    height: 30px;
+    width: 105px;
+    margin-left:80px;
+    background: url(./imags/game-logo.png) no-repeat ;
+    background-size:contain;
+    float: left;
+    margin-top: 2px;
+}
+
+.game a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.line {
+    width: 2px;
+    height: 18px;
+    background-color: #ccc;
+    float: left;
+    margin: 10px 15px 0px 10px;
+
+}
+
+.game2 {
+    width: 230px;
+    height: 40px;
+    background:url("./imags/1036346959555539684153311890023040.1533118950.d484d609b5c6304c2f25b414df70e4fd.230x40_7257.jpg");
+    float: left;
+}
+.game2 a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.game2 a:hover{
+    width: 970px;
+    height: 185px;
+    z-index: 5;
+
+    margin: 0px -225px;
+    background:url("./imags/83445944012793976651533118900970185.1533118953.edaa1f6cc78905e06b1e0e2032597bc5.970x185_46440.jpg");
+}
+
+.one {
+    width: 100px;
+    height: 40px;
+    background: url("./imags/logo.png") no-repeat;
+    float: right;
+    margin-top: 10px;
+
+
+}
+.one a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-left: 20px;
+    line-height: 20px;
+}
+.one a:hover,
+.two a:hover{
+    color: red;;
+}
+
+.two {
+    width: 100px;
+    height: 40px;
+    float: right;
+    margin-right: 80px;
+}
+.two a{
+    display: block;
+    line-height: 40px;
+}
+
+/*.two a:hover{*/
+/**/
+/*}*/
+
+
+.top-nav {
+    height: 110px;
+    width: 100%;
+    background:url('./imags/bg-nav.png')no-repeat;
+
+
+}
+
+.top-title{
+    width: 362px;
+    height: 135px;
+    margin-left: 83px;
+    float: left;
+
+}
+
+.top-title a {
+    width: 125px;
+    height: 125px;
+    padding-top: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.top-title h1{
+    font-size: 24px;
+    color: #ffb400;
+    display: block;
+    line-height: 36px;
+    font-weight: bold;
+    float: left;
+    margin-top: 27px;
+    margin-left: 10px;
+}
+
+.top-title h1 span {
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+
+}
+
+.nav {
+    float: left;
+    margin-top: 34px;
+
+}
+
+.nav li{
+    float: left;
+}
+
+.nav a {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    width: 115px;
+    height: 110px;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 2px;
+}
+
+.nav li a:hover{
+    color: #ffb400;
+}
+.nav a span:hover{
+    color:#ffb400
+}
+
+.nav a span {
+    font-size: 10px;
+    color: #515151;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+.subnav>ul>li{
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+
+.zl{
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    width: 115px;
+    height: 110px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: default;
+}
+.subnav {
+    box-sizing: border-box;
+    padding: 20px 5px 10px 5px;
+    text-align: center;
+    background: #000;
+    margin-top: 22px;
+    display: none;
+    width: 80px;
+}
+.spcenter{
+    width: 1200px;
+    height: 99px;
+    position: absolute;
+    top: 143px;
+    left: 151px;
+}
+.spcenter .tit{
+    width: 167px;
+    height: 62px;
+    background: url("./chiji/baike/video-tit.png") no-repeat;
+    margin-top: 17px;
+}
+.spcenter .local{
+    padding-top: 17px;
+    color: #b8b8b8;
+    font-size: 16px;
+    line-height: 20px;
+}
+.spcenter .local a{
+    padding-top: 17px;
+    color: #b8b8b8;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: underline;
+}
+
+
+
+
+
+body{
+    background-color:#e9e9e9;
+}
+.main{
+    position: relative;
+}
+.main .center{
+    height: 701px;
+}
+.main .center .tab ul{
+    position: absolute;
+    width: 880px;
+
+}
+.main .center .tab li{
+    font-size: 20px;
+    float: left;
+    margin-right: 68px;
+    height: 20px;
+}
+/*.main .center .tab:nth-child(1) li{*/
+    /*margin-left: 9px;*/
+/*}*/
+.news-list{
+    height:36px ;
+    margin: 50px 0px 18px 80px;
+    border-bottom: 1px solid #b2b1b1;
+}
+.news-list ul{
+    width: 1000px;
+}
+.main .center .tab li a:hover{
+    font-weight: bold;
+    color: #e8a026;
+}
+.main .center .tab li a{
+    height: 27px;
+    width: 50px;
+    display: block;
+    transition: 100ms;
+    text-align: center;
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+.main .center .tab li a.on {
+    color: #e8a026;
+    border-bottom: 3px solid #e8a026;
+    font-weight: bold;
+}
+
+.video1{
+    padding: 0 0 0 80px;
+    overflow: hidden;
+    width: 1120px;
+    height: 596px;
+}
+.video1 ul{
+    min-height: 500px;
+}
+.video1 ul li{
+    position: relative;
+    float: left;
+    margin: 0 26px 50px 0;
+    width: 192px;
+    height: 160px;
+}
+.video1 ul li a{
+    width: 192px;
+    height: 118px;
+    display:block;
+    color: #000;
+}
+.video1 ul li a img{
+    width: 192px;
+    height: 118px;
+    background-color:black;
+}
+.video1 ul li p{
+    height: 38px;
+    overflow: hidden;
+    width: 192px;
+    padding-top: 4px;
+    line-height: 21px;
+    font-size: 14px;
+}
+.video1 ul li p:hover{
+    color: #e8a626;
+}
+.video1 ul li a i.ico-play{
+    background: url("./chiji/zuixin/sp.png") no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    width: 57px;
+    height: 57px;
+    background-position: -319px -108px;
+}
+.video2{
+    padding: 0 0 0 80px;
+    overflow: hidden;
+    width: 1120px;
+    height: 596px;
+}
+.video2 ul{
+    min-height: 500px;
+}
+.video2 ul li{
+    position: relative;
+    float: left;
+    margin: 0 26px 50px 0;
+    width: 192px;
+    height: 160px;
+}
+.video2 ul li a{
+    width: 192px;
+    height: 118px;
+    display:block;
+    color: #000;
+}
+.video2 ul li a img{
+    width: 192px;
+    height: 118px;
+    background-color:black;
+}
+.video2 ul li p{
+    height: 38px;
+    overflow: hidden;
+    width: 192px;
+    padding-top: 4px;
+    line-height: 21px;
+    font-size: 14px;
+}
+.video2 ul li p:hover{
+    color: #e8a626;
+}
+.video2 ul li a i.ico-play{
+    background: url("./chiji/zuixin/sp.png") no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    width: 57px;
+    height: 57px;
+    background-position: -319px -108px;
+}
+.video3{
+    padding: 0 0 0 80px;
+    overflow: hidden;
+    width: 1120px;
+    height: 596px;
+}
+.video3 ul{
+    min-height: 500px;
+}
+.video3 ul li{
+    position: relative;
+    float: left;
+    margin: 0 26px 50px 0;
+    width: 192px;
+    height: 160px;
+}
+.video3 ul li a{
+    width: 192px;
+    height: 118px;
+    display:block;
+    color: #000;
+}
+.video3 ul li a img{
+    width: 192px;
+    height: 118px;
+    background-color:black;
+}
+.video3 ul li p{
+    height: 38px;
+    overflow: hidden;
+    width: 192px;
+    padding-top: 4px;
+    line-height: 21px;
+    font-size: 14px;
+}
+.video3 ul li p:hover{
+    color: #e8a626;
+}
+.video3 ul li a i.ico-play{
+    background: url("./chiji/zuixin/sp.png") no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    width: 57px;
+    height: 57px;
+    background-position: -319px -108px;
+}
+.video4{
+    padding: 0 0 0 80px;
+    overflow: hidden;
+    width: 1120px;
+    height: 596px;
+}
+.video4 ul{
+    min-height: 500px;
+}
+.video4 ul li{
+    position: relative;
+    float: left;
+    margin: 0 26px 50px 0;
+    width: 192px;
+    height: 160px;
+}
+.video4 ul li a{
+    width: 192px;
+    height: 118px;
+    display:block;
+    color: #000;
+}
+.video4 ul li a img{
+    width: 192px;
+    height: 118px;
+    background-color:black;
+}
+.video4 ul li p{
+    height: 38px;
+    overflow: hidden;
+    width: 192px;
+    padding-top: 4px;
+    line-height: 21px;
+    font-size: 14px;
+}
+.video4 ul li p:hover{
+    color: #e8a626;
+}
+.video4 ul li a i.ico-play{
+    background: url("./chiji/zuixin/sp.png") no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    width: 57px;
+    height: 57px;
+    background-position: -319px -108px;
+}
+.video5{
+    padding: 0 0 0 80px;
+    overflow: hidden;
+    width: 1120px;
+    height: 596px;
+}
+.video5 ul{
+    min-height: 500px;
+}
+.video5 ul li{
+    position: relative;
+    float: left;
+    margin: 0 26px 50px 0;
+    width: 192px;
+    height: 160px;
+}
+.video5 ul li a{
+    width: 192px;
+    height: 118px;
+    display:block;
+    color: #000;
+}
+.video5 ul li a img{
+    width: 192px;
+    height: 118px;
+    background-color:black;
+}
+.video5 ul li p{
+    height: 38px;
+    overflow: hidden;
+    width: 192px;
+    padding-top: 4px;
+    line-height: 21px;
+    font-size: 14px;
+}
+.video5 ul li p:hover{
+    color: #e8a626;
+}
+.video5 ul li a i.ico-play{
+    background: url("./chiji/zuixin/sp.png") no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    width: 57px;
+    height: 57px;
+    background-position: -319px -108px;
+}
+.video6{
+    padding: 0 0 0 80px;
+    overflow: hidden;
+    width: 1120px;
+    height: 596px;
+}
+.video6 ul{
+    min-height: 500px;
+}
+.video6 ul li{
+    position: relative;
+    float: left;
+    margin: 0 26px 50px 0;
+    width: 192px;
+    height: 160px;
+}
+.video6 ul li a{
+    width: 192px;
+    height: 118px;
+    display:block;
+    color: #000;
+}
+.video6 ul li a img{
+    width: 192px;
+    height: 118px;
+    background-color:black;
+}
+.video6 ul li p{
+    height: 38px;
+    overflow: hidden;
+    width: 192px;
+    padding-top: 4px;
+    line-height: 21px;
+    font-size: 14px;
+}
+.video6 ul li p:hover{
+    color: #e8a626;
+}
+.video6 ul li a i.ico-play{
+    background: url("./chiji/zuixin/sp.png") no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    width: 57px;
+    height: 57px;
+    background-position: -319px -108px;
+}
+.video7{
+    padding: 0 0 0 80px;
+    overflow: hidden;
+    width: 1120px;
+    height: 596px;
+}
+.video7 ul{
+    min-height: 500px;
+}
+.video7 ul li{
+    position: relative;
+    float: left;
+    margin: 0 26px 50px 0;
+    width: 192px;
+    height: 160px;
+}
+.video7 ul li a{
+    width: 192px;
+    height: 118px;
+    display:block;
+    color: #000;
+}
+.video7 ul li a img{
+    width: 192px;
+    height: 118px;
+    background-color:black;
+}
+.video7 ul li p{
+    height: 38px;
+    overflow: hidden;
+    width: 192px;
+    padding-top: 4px;
+    line-height: 21px;
+    font-size: 14px;
+}
+.video7 ul li p:hover{
+    color: #e8a626;
+}
+.video7 ul li a i.ico-play{
+    background: url("./chiji/zuixin/sp.png") no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    width: 57px;
+    height: 57px;
+    background-position: -319px -108px;
+}
+.video2{
+    display: none;
+}
+.video3{
+    display: none;
+}
+.video4{
+     display: none;
+ }
+.video5{
+      display: none;
+}
+.video6{
+    display: none;
+}
+.video7{
+    display: none;
+}
+.foot-botton {
+    width: 1349px;
+    height: 142px;
+    background-color: #000;
+    float: left;
+}
+
+.foot-title {
+    width: 1200px;
+    height: 144px;
+
+}
+.foot-title a {
+    display: inline-block;
+}
+
+.foot-logs {
+    width: 170px;
+    height: 35px;
+    background:url("./imags/foot-logo1.png")no-repeat ;
+    background-size: contain;
+    margin:54px 0 0 10px;
+    float: left;
+
+}
+
+.foot-title img {
+    float: left;
+    margin-left: 30px;
+
+    width: 127px;
+    height: 47px;
+    margin-top: 51px;
+}
+
+.foot-links {
+    display: inline;
+    float: right;
+    width: 769px;
+    margin-top: 9px;
+}
+
+.foot-links {
+    color: #fff;
+    font-size: 12px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;;
+}
+
+
+a {
+    text-decoration: none;
+    overflow: hidden;
+    color: #000;
+    margin-right: 5px;
+
+
+}
+.foot-links a {
+    color: #fff;
+}
+
+.foot-links a:hover{
+    color: #ffb400;
+}
+

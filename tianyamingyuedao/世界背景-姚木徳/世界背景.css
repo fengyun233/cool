@@ -1,0 +1,254 @@
+/* 初始化代码 */
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+input,
+img,
+i,
+strong,
+del,
+em,
+h1,
+h2,
+h3,
+h4 {
+   margin: 0;
+   padding: 0;
+   /* 清除元素默认的内外边距 */
+}
+
+a {
+   text-decoration: none;
+   color: #000;
+   /* 清除下划线 */
+}
+
+input {
+   border: 0 none;
+   outline: 0 none;
+   /* 清除外层边框 */
+   /* 清除外层高亮 */
+}
+
+img {
+   border: 0 none;
+   vertical-align: middle;
+   /* 清除边框，图片的对齐方式是  与中线对齐 */
+}
+
+li {
+   list-style: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-weight: normal;
+   /* 正常不加粗 */
+}
+
+i {
+   font-style: normal;
+   /* 清除倾斜效果 */
+}
+
+body {
+   font: 12px/100% "微软雅黑";
+   background-color: #f3f6f6;
+   /* 常规设置，颜色的那里可以去吸一吸 */
+}
+
+.w {
+   width: 1200px;
+   margin: 0 auto;
+   /* 这是版心，宽度需要改一改哦，  后面的是水平居中。 */
+}
+
+.clearfix::after {
+   content: ".";
+   clear: both;
+   display: block;
+   height: 0;
+   visibility: hidden;
+}
+
+.clearfix {
+   *zoom: 1;
+   /* 兼容低版本 */
+}
+
+
+
+/* 我是样式代码 */
+
+.top{
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+}
+
+.top .top1{
+    width: 40px;
+    height: 200px;
+    float: left;
+    margin-left: 200px;
+}
+.top .top2{
+    width: 240px;
+    height: 38px;
+    float: left;
+    margin-left: 200px;
+}
+.top .top3{
+    float: right;
+    margin-right: 150px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.top .top1 a{
+    width: 210px;
+    height: 35px;
+    background-image: url(ost-bg.png);
+    background-position-y: -40px;
+    display: block;
+    z-index: 10001;
+    position: absolute;
+}
+.top .top3 a{
+    margin-left: 30px;
+}
+.top .top3 a:hover{
+    color: red;
+}
+.top4{
+    position: absolute;
+    width: 970px;
+    height: 185px;
+    left: 50%;
+    margin-left: -485px;
+    top: 0;
+    z-index:999;
+    display: none;
+}
+
+/* 头部结束 */
+
+.mid{
+    position: relative;
+    background-image: url(bg.jpg);
+    height: 1080px;
+
+}
+
+.mid .logo a{
+    width: 177px;
+    height: 73px;
+    display: block;
+    cursor: pointer;
+}
+.mid .logo {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 177px;
+    height: 73px;
+    background-image: url(sjguan.png);
+}
+
+.mid .nav {
+    height: 300px;
+}
+
+.mid .nav1{
+    width: 370px;
+    height: 214px;
+    margin: 0 auto;
+    position: relative;
+}
+.mid .nav1 a{
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+.mid .nav1 .left{
+    position: relative;
+    color: #2fc3a3;
+    text-indent: -9999px;
+    background: url(sjguan.png) no-repeat; 
+    background-position:0px -320px;
+    float: left;
+}
+
+.mid .nav1 .right{
+    position: relative;
+    color: #2fc3a3;
+    text-indent: -9999px;
+    background: url(sjguan.png) no-repeat; 
+    background-position:-183px -320px;
+    float: left;
+}
+
+
+.mid .dvd{
+    width: 100%;
+    height: 450px;
+}
+.mid video{
+    width: 680px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.mid .ewm{
+    position: fixed;
+    right: 0px;
+    top: 50%;
+}
+.mid .ewm p{
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+
+}
+.mid .ewm img{
+    width: 125px;
+    height: 125px;
+}
+
+.mid .text{
+    color: #bebebe;
+    width: 612px;
+    margin: 20px auto;
+    
+    font-size: 16px;
+    line-height: 22px;
+    font-family: arial, KaiTi, KaiTi_GB2312, 宋体, 微软雅黑;
+}
+
+/* 中部结束 */
+
+.bottom{
+    height: 114px;
+    background-color: #000;
+}
+.bottom .box{
+    line-height: 18px;
+}
+.bottom .box p{
+    color:rgb(129, 129, 129);
+    text-align:center;
+}
+.bottom .box .hang1{
+    padding-top: 20px;
+}
+.bottom .box p a{
+    color:rgb(129, 129, 129);
+}

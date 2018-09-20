@@ -1,0 +1,99 @@
+/* 初始化代码 */
+body,
+div,
+span,
+p,
+input,
+img,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+i,
+em,
+strong {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    color: #f10215;
+}
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+i {
+    font-style: normal;
+}
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+body {
+    font: 12px/100% "微软雅黑";
+    background-color: #f6f6f6;
+
+}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*头部*/
+body{
+background-color: #cccccc;
+}
+#banner{
+    width: 100%;
+    height: 42px;
+    background-color: #fff;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+#banner ul{
+    position: relative;
+}
+#banner ul li{
+    width: 205px;
+    height: 20px;
+    position: absolute;
+    background-color: red;
+
+}
+
+#banner ul li .tx{
+    width: 205px;
+    height: 40px;
+    background: url("../Images/ost-bg.png") 0px -41px;
+}
+#main-top{
+    width: 100%;
+    height: 100%;
+   background-image: url("../Images/bg-1.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}

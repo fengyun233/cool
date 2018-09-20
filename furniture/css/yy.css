@@ -1,0 +1,155 @@
+#yy{
+  width: 218px;
+  height: 140px;
+  position: relative;
+  top: 300px;
+  left: 600px;
+}
+.zjf-img{
+  width: 218px;
+  height: 139px;
+  padding: 0px 1px 1px 1px;
+  position: relative;
+}
+.bottom{
+  width: 218px;
+  position: relative;
+  float: left;
+  margin: 10px 0 2px;
+}
+
+
+.bottom .bt-nav{
+  margin-top: 0;
+  float: left;
+  margin: 3px 10px 0 0;
+}
+.play{
+  background: url(../images/facebook/sprite.png) -1px -123px no-repeat;
+  height: 22px;
+  width: 22px;
+  float: left;
+  margin-right: 4px;
+  text-indent: -10000px;
+}
+.pause{
+  background: url(../images/facebook/sprite.png) -32px -123px no-repeat;
+  height: 22px;
+  width: 22px;
+  float: left;
+  margin-right: 4px;
+  text-indent: -10000px;
+}
+.arrow-previous{
+  background: url(../images/facebook/sprite.png) 0 -71px no-repeat;
+  height: 22px;
+  margin-top: 0;
+  width: 22px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  text-indent: -10000px;
+}
+.textHolder{
+  font-size: 12px;
+  padding: 0 3px 0 4px;
+  float: left;
+  margin: 2px 4px;
+  white-space: nowrap;
+}
+.arrow-next{
+  background: url(../images/facebook/sprite.png) -32px -71px no-repeat;
+  height: 22px;
+  margin-top: 0;
+  width: 22px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  text-indent: -10000px;
+  text-decoration: none;
+  font-weight: normal;
+}
+.right{
+  float: left;
+  margin: 0;
+}
+.twitter{
+  float: left;
+  margin-top: 6px;
+}
+.facebook{
+  float: left;
+  margin-left: 5px;
+  overflow: hidden;
+  width: 55px;
+}
+.close{
+  background: url(../images/facebook/sprite.png) -1px -1px no-repeat;
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  display: block;
+  line-height: 22px;
+  position: absolute;
+  right: 0;
+  text-indent: -10000px;
+  top: 0;
+}
+.yy-contentimg .business .image{
+position: relative;
+  display: block;
+}
+ .yy-contentimg .business .image .bigl {
+  position: absolute;
+   left: 0;
+   top: 50%;
+  margin-top: -11px;
+   height: 22px;
+   width: 22px;
+   background: url(../images/facebook/sprite.png) 0 -71px no-repeat;
+   opacity: 0.5;
+   display:none;
+ }
+.yy-contentimg .business .image .bigr{
+  position: absolute;
+right: 0;
+  top: 50%;
+  margin-top: -11px;
+  height: 22px;
+  width: 22px;
+  background: url(../images/facebook/sprite.png) -32px -71px no-repeat;
+  opacity: 0.5;
+  display:none;
+}
+.yy-contentimg li{
+  position: absolute;
+  display: none;
+  top:50%;
+  left: 50%;
+  margin-top: -115px;
+  margin-left: -50px;
+}
+#yy li:hover .bigl,
+#yy li:hover .bigr{
+  display: block;
+}
+.pp_overlay{
+opacity: 0.5;
+
+width: 100%;
+  background:black;
+  display:none;
+  left:0;
+  top:0;
+  z-index: 9500;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+

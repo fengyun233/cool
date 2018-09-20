@@ -1,0 +1,2782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/top.css">
+</head>
+
+<body style="padding-top: 42px">
+
+<div class="main">
+    <div class="top-nav">
+        <!--[if lt IE 8]><!--<p class="browser-tips">您的浏览器版本过低，请升级浏览器获得更好的体验<p>--><![endif]-->
+        <div class="container">
+            <div class="top-title">
+                <a href="//pg.qq.com/main.shtml" >
+                    <img src="./image/top-tag.png" alt="logo" class="tag" width="125" height="125">
+                </a>
+                <h1>绝地求生：刺激战场<span>正版战斗特训手游</span></h1>
+            </div>
+            <div class="navnav">
+                <a href="index.html" onclick="PTTSendClick('hdtopnav','navlink1','头部导航链接');" target="_blank">官网首页 <span>HOME</span> </a>
+                <a href="./赛事中心/赛事中心.html" target="_blank">赛事中心<span>MATCH</span> </a>
+                <!-- <a href="/gicp/news/101/2/1998/1.html"  onclick="PTTSendClick('hdtopnav','navlink2','头部导航链接');"  target="_blank">新闻中心<span>NEWS</span> </a> -->
+                <a href="Video%20center.html" onclick="PTTSendClick('hdtopnav','navlink3','头部导航链接');" target="_blank">视频中心<span>VIDEO</span> </a>
+                <a href="Live%20center.html" onclick="PTTSendClick('hdtopnav','navlink4','头部导航链接');" target="_blank">直播中心<span>LIVE</span> </a>
+                <a href="Strategy%20center.html" onclick="PTTSendClick('hdtopnav','navlink5','头部导航链接');" target="_blank">攻略中心<span>GAMETIPS</span> </a>
+                <div class="nav_yx">
+                    游戏资料
+                    <span>DATA</span>
+                    <ul class="subnav">
+                        <li>
+                            <a href="Game%20data.html" onclick="PTTSendClick('hdtopnav','navlink61','头部导航链接');">
+                                武器配件
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://pg.qq.com/zlkdatasys/a20180420verlistpc/ztsy.shtml" onclick="PTTSendClick('hdtopnav','navlink62','头部导航链接');">
+                                版本更新
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:" onclick="PTTSendClick('hdtopnav','navlink7','头部导航链接');" target="_blank" id="playerLink">社区互动 <span>COMMUNITY</span>
+                    <div class="tips-player" id="tipsPlayer" style="display: none;">
+                        <ul>
+                            <li class="on">手Q部落</li>
+                            <li class="">微信公众号</li>
+                            <li class="">微信圈子</li>
+                            <li class="">官方微博</li>
+                        </ul>
+                        <p class="tips-img1" style="display: block;">
+                            <img src="./image/qrcode_sq.jpg" alt="手Q部落">
+                            <i class="ips-arrow"></i>
+                        </p>
+                        <p class="tips-img2" style="display: none;">
+                            <img src="./image/qrcode_wxqz.jpg" alt="微信公众号">
+                            <i class="ips-arrow"></i>
+                        </p>
+                        <p class="tips-img3" style="display: none;">
+                            <img src="./image/qrcode_wx.jpg" alt="微信圈子">
+                            <i class="ips-arrow"></i>
+                        </p>
+                        <p class="tips-img4" style="display: none;">
+                            <img src="./image/qrcode_wb.jpg" alt="官方微博">
+                            <i class="ips-arrow"></i>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="ost_box ost_bg " id="ost_box" style="position:absolute">
+        <ul class="ost_inner ost_lsn ">
+            <li class="ost_logo ost_h40 ost_fl ost_bg">
+                <a href='' class="ost_blnk ost_hdn" title="腾讯游戏LOGO">腾讯游戏LOGO</a>
+            </li>
+            <li id="ost_g" class="ost_ad ost_h40 ost_fl">
+                <img class="ost_nb" id="ost_go" src="image/7257.jpg" alt="" style="display:block" />
+            </li>
+            <li class="ost_total ost_ml10 ost_fr">
+                <h3 class="ost_czsh ost_h40">
+                    <a href="https://jiazhang.qq.com/jz/home.html?ADTAG=gamepcbanner" target="_blank">成长守护平台</a>
+                </h3>
+                <h3 class="ost_title ost_h40" id="ost_t">
+                    腾讯游戏排行榜
+                    <i class="ost_icon_arrow ost_bg"></i>
+                    <sup class="ost_icon_reddot" id="ost_rank_v"></sup>
+                    <div class="ost_rank">
+                        <span class="before"></span>
+                        <span class="after"></span>
+                        <div class="ost_rank_col" id="rank_control1">
+                            <div class="col-head">
+                                <h2 class="rank-title">新游排行榜</h2>
+                                <a href="#" class="rank-more">更多<i class="icon-font">»</i></a>
+                            </div>
+                            <div class="col-body">
+                                <ul class="rank-list">
+                                    <li class="rank-head">
+                                        <span class="rank-order-hd">排名</span>
+                                        <span class="rank-name-hd">游戏</span>
+                                    </li>
+                                    <li class="rank-item current">
+                                        <span class="rank-order-color">1</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">NBA2K OL2</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/NBA2KOL2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-color">2</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">FIFA Online 4</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/FIFAOL4-KV194_82.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-color">3</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">灵山奇缘</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/lsqy.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">4</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >流放之路</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/lfzl-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">5</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >冒险岛2</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/mxd2-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">6</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >使命召唤OL</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src=" ./image/cod-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">7</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >极品飞车ONLINE</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/jpfcol-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">8</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >穿越火线</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/cf-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">9</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >QQ炫舞</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/x5-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">10</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >御龙在天</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/yl-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- hot game -->
+                        <div class="ost_rank_col" id="rank_control2">
+                            <div class="col-head">
+                                <h2 class="rank-title">热门排行榜</h2>
+                                <a href="#" class="rank-more">更多<i class="icon-font">»</i></a>
+                            </div>
+                            <div class="col-body">
+                                <ul class="rank-list">
+                                    <li class="rank-head">
+                                        <span class="rank-order-hd">排名</span>
+                                        <span class="rank-name-hd">游戏</span>
+                                    </li>
+                                    <li class="rank-item current">
+                                        <span class="rank-order-color">1</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">英雄联盟</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/lol-2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">2</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">穿越火线</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/cf-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">3</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">地下城与勇士</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/dnf-2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">4</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >逆战</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/nz-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">5</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >使命召唤OL</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/cod-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">6</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >QQ炫舞</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/x5-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">7</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >QQ飞车</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/speed-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">8</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >炫舞时代</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/5s-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">9</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >天涯明月刀</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/wuxia-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">10</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >FIFA Online3</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/fifa-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ost_rank_col" id="rank_control3">
+                            <div class="col-head">
+                                <h2 class="rank-title">新品手游排行榜</h2>
+                                <a href="#" target="_blank" class="rank-more">更多<i class="icon-font">»</i></a>
+                            </div>
+                            <div class="col-body">
+                                <ul class="rank-list">
+                                    <li class="rank-head"><span class="rank-order-hd">排名</span><span class="rank-name-hd">游戏</span></li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">1</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">我叫MT4</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/wjmt4.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">2</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">FIFA足球世界</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/FIFAMobile-KV194_82.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">3</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">拳皇命运手游</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/KV19482.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">4</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >火影忍者手游</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/hyrz-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta2">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home2"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-ios"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-android"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">5</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >梦幻诛仙</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/mhzx-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta2">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home2"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-ios"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-android"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-head2">
+                                <h2 class="rank-title">热门手游排行榜</h2>
+                                <a href="#" target="_blank" class="rank-more">更多<i class="icon-font">»</i></a>
+                            </div>
+                            <div class="col-body">
+                                <ul class="rank-list">
+                                    <li class="rank-item current">
+                                        <span class="rank-order-color">1</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">王者荣耀</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/sgame-22.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">2</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">穿越火线之枪战王者</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/cfsy-2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item ">
+                                        <span class="rank-order-color">3</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank">奇迹暖暖</a>
+                                            <div class="rank-game-cover cover-bottom" style="">
+                                                <img class="game-img" src="./image/qjnn-2.jpg" width="194" height="82"
+                                                     alt="">
+                                                <p class="game-meta">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home"></i>进入官网</a>
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-download"></i>下载游戏</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">4</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >天天爱消除</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/peng-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta2">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home2"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-ios"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-android"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rank-item">
+                                        <span class="rank-order-gray">5</span>
+                                        <div class="rank-name-game cover-tip">
+                                            <a class="ctip-text" href="#" target="_blank" >火影忍者手游</a>
+                                            <div class="rank-game-cover cover-top" style="">
+                                                <img class="game-img" src="./image/hyrz-2.jpg" width="194"
+                                                     height="82" alt="">
+                                                <p class="game-meta2">
+                                                    <a href="#" target="_blank" class="game-link">
+                                                        <i class="icon-home2"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-ios"></i></a>
+                                                    <a href="#" target="_blank" class="game-link" >
+                                                        <i class="icon-android"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </h3>
+            </li>
+        </ul>
+        <div id="ost_d" class="ost_big" style="display:none;">
+            <a href="https://www.baidu.com/" target="_blank">
+                <img class="ost_nb" src="./image/44181.jpg" width="970" height="185" alt=""></a>
+        </div>
+    </div>
+    <!-- 资料中心 -->
+    <ul class="topnav w">
+        <li>
+            <img src="./image/info-tit.png" alt="">
+        </li>
+        <li>
+            <span>您的位置:&nbsp;&nbsp; </span>
+            <a href="#">首页</a>
+            <a href="#">游戏资料</a>
+        </li>
+    </ul>
+
+    <!-- 页面主体部分 -->
+    <div class="content w">
+        <!-- 分类列表导航 -->
+        <ul class="nav-title">
+            <li class='item'>
+                <a>武器</a>
+            </li>
+            <li>
+                <a>配件</a>
+            </li>
+            <li>
+                <a>物质</a>
+            </li>
+            <li>
+                <a>载具</a>
+            </li>
+            <li>
+                <a>地图</a>
+            </li>
+            <!-- 可以移动黄色小边框 -->
+            <li class='movebor'></li>
+        </ul>
+        <!-- 分类商品 -->
+        <div class="block_list">
+
+            <!-- 武器    -->
+
+            <ul class="section-container section-container1">
+                <li class="section">
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">热门武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <span>经典狙击</span>
+                                    <img src="./image/1.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>Kar98k</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <span>高手最爱</span>
+                                    <img src="./image/2.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>AUG</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <span>经典步枪</span>
+                                    <img src="./image/3.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>Groza</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 最后一个变宽不一样 -->
+                        <li class='last'>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/look_detail.jpg" alt="">
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom info">
+                                    <span class='name'></span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 武器子导航 -->
+                </li>
+                <li>
+                    <ul class="lab clearfix">
+                        <li class='active'>
+                            <a href="#">步枪</a>
+                        </li>
+                        <li>
+                            <a href="#">冲锋枪</a>
+                        </li>
+                        <li>
+                            <a href="#">狙击枪</a>
+                        </li>
+                        <li>
+                            <a href="#">霰弹枪</a>
+                        </li>
+                        <li>
+                            <a href="#">机枪</a>
+                        </li>
+                        <li>
+                            <a href="#">手枪</a>
+                        </li>
+                        <li>
+                            <a href="#">近战武器</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="section" >
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">步枪</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/4.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>M16A4</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/5.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>M416</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/6.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>SCAR-L</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/7.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>QBZ</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/2.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>AUG</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/1.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>AKM</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/3.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>Groza</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </li>
+                <li class="section" id='qiang-1'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">冲锋枪</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/8.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>UZI</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/9.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>UMP9</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/10.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>汤姆逊冲锋枪</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/11.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>Vetcor</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="section" id='qiang-2'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">狙击枪</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/18.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>SKS</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/13.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>SLR射手步枪</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/19.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>Mini14</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/14.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>VSS</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/15.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>MK14</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/17.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>AWM</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/16.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>M24</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/1.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>Kar98k</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/12.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>Win94</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="section" id='qiang-3'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">霰弹枪</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/20.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>S1897</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/21.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>S686</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/22.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>S12K</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="section" id='qiang-4'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">机枪</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/afed6404b51cc049f6692ad96a3033b3.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>DP-28</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/f270d12f54b199ffa2f69e3d5e01d6c5.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>M249</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="section" id='qiang-5'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">手枪</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/0c3bca1eba898e2406c82c2dbf06dff7.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>P1911</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/1b7d8ac80db49095f4deaafdd2bfe790.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>P92</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/6ab1ea009ba1d0a6d29a7916b4acc069.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>R1895</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/159f69dec364b909187cd185a47542b1.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>R45</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/c4d3534fe75746927d82024fa5305dd1.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>短管散弹枪</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/ba19cdd3706256667fd09ed6078c3121.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>P18C</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="section" id='qiang-6'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">近战武器</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/8c2ab0cfde5db2d4e73836154cf6580d.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>撬棍</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/34e2458b2f366ecc63d298ef24ee3840.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>平底锅</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/140e02a12a51be5a6850a5552f174e3b.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>大砍刀</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/224da513c90c8daf885be2e3e2e101cc.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>镰刀</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <!-- 配件 -->
+            <ul class="section-container section-container2">
+                <li>
+                    <ul class="lab clearfix">
+                        <li class='active'>
+                            <a href="#qiang-0">握把</a>
+                        </li>
+                        <li>
+                            <a href="#qiang-1">枪口</a>
+                        </li>
+                        <li>
+                            <a href="#qiang-2">弹匣</a>
+                        </li>
+                        <li>
+                            <a href="#qiang-3">枪托</a>
+                        </li>
+                        <li>
+                            <a href="#qiang-4">瞄准镜</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="section" id='parts-0'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">握把</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/9be6cadf2fd3537ef33c880079a7ef12.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>直角握把</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/b506072b61402d12e8363b32dfc22c9d.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>垂直握把</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/c3771082aa63c52e1705b7ec66ab2e20.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>拇指握把</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/d6b45fe753178d87663c85c06b8a0543.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>轻型握把</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/f7d6242c3617eeabbe7ea65518a42ec7.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>半截握把</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="section" id='parts-1'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">枪口</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/1fe0c1697144458ffcaa9c1f962caf89.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>步枪(消音器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/9bf54291055cca098022c9003303e590.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>狙击枪(补偿器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/34e73d82310c1d6a971954ce431099a1.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>步枪(消焰器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/7901eba5ebbc2dabcdd5b0454dabb076.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>步枪(补偿器器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/c745bbc71dc26705399025d031542a9b.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>狙击枪(消焰器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/4534fa7f91990a12f850bd43a68148ad.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>狙击枪(消音器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/01078e28e96d129bb181bc5f8a0f7cc4.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>冲锋枪(消音器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/e34dd68fc6c8f624a419b9d59ddf4885.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>冲锋枪(消焰器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/f2c96d09c836401815b37b4eff522db5.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>冲锋枪(补偿器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/b78d22a3a2508c766c03648c45fe11e6.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>手枪(消音器)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="section" id='parts-2'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">弹匣</span>
+                        <span class="icon2"></span>
+                        <span class='sub_tit'>首选主武器</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/00abe5cb6e6965718db1c46a96cd731d.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>快速扩容弹夹(自动)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/1dd2bec362c5c872c77143211561c661.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>快速弹夹(冲锋)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/1dfdcaaf2e1b4c0e160bb6e5116037a4.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>扩容弹夹(狙击)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/6a7f645f50e5926b07a26ab8e0054376.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>快速弹夹(自动)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/839a7ce94d336b347b53024e6edd548f.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>扩容弹夹(自动)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/ba517aaf4b91f590c0dfd5d7d2ef8f6f.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>快速弹夹(狙击)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/345da0e9bc9a508c8dca6af46e836134.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>快速扩容弹夹(狙击)</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/61090d73b6925348ddbce88e615c21d4.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>快速扩容弹夹(冲锋)</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/67dd307d8d3fcdbd10bbe1ed544a87f9.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>扩容弹夹(冲锋)</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/b7df08ed8dc16ae250a47e0d2856e006.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>扩容弹夹(手枪)</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/dc5c07500ee9607adecdb30a8d691c07.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>快速扩容弹夹(手枪)</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/32093acef1140275b18f4c5f69f94e05.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>快速弹夹(手枪)</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/0b436d0f0e0c8cad550a6bef61f459c4.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>箭袋(十字弩)</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/0c78b99abdb0b866bf2bf643bdc08071.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>子弹袋(散弹枪)</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 武器图    -->
+                        <div class='img'>
+                            <!-- 左上角黄色框 -->
+                            <img src="./image/3254c9ed6c03911f6204d71b735574b2.png" alt="">
+                        </div>
+                        <!-- 武器昵称  跳转详情 -->
+                        <div class="buttom">
+                            <span class='name'>子弹袋</span>
+                            <span class="details">详情</span>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <li class="section" id='parts-3'>
+                <!-- 武器分类名称头 -->
+                <div class="section-title">
+                    <span class="icon"></span>
+                    <span class="big-tit">枪托</span>
+                    <span class="icon2"></span>
+                    <span class='sub_tit'>首选主武器</span>
+                </div>
+                <!-- 武器展示表    -->
+                <ul class="wrap clearfix">
+
+
+                    <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/097a823af587e7dfb1620bfd292e7053.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>枪托(Micro Uzi)</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/791d6774d870ce5d632602376c8391b4.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>战术枪托</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li> <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/eec4f6f2bf76305abf2b7af4e73f8124.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>托腮板(狙击步枪)</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="section" id='parts-4'>
+                <!-- 武器分类名称头 -->
+                <div class="section-title">
+                    <span class="icon"></span>
+                    <span class="big-tit">瞄准镜</span>
+                    <span class="icon2"></span>
+                    <span class='sub_tit'>首选主武器</span>
+                </div>
+                <!-- 武器展示表    -->
+                <ul class="wrap clearfix">
+                    <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/2c3dff8e4fb46c1ada1eaa08671e240c.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>8倍瞄准镜</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/4fb90f467b20a670192233154b402b36.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>全息瞄准镜</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/70a69da9e7e0f063dc3622b4318ce687.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>红点瞄准镜</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/279f1deb737156b7813efdec4be24a1c.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>3倍瞄准镜</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li> <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/b71b2eb9946ea092deea9aadf0c8bc07.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>6倍瞄准镜</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li> <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/f2bec4a420f5fb2b4acb1b4510c20eb6.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>2倍瞄准镜</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li> <li>
+                        <a href="#">
+                            <!-- 武器图    -->
+                            <div class='img'>
+                                <!-- 左上角黄色框 -->
+                                <img src="./image/f8472f5eff94737072adeecbd043f094.png" alt="">
+                            </div>
+                            <!-- 武器昵称  跳转详情 -->
+                            <div class="buttom">
+                                <span class='name'>4倍瞄准镜</span>
+                                <span class="details">详情</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+
+            </ul>
+
+            <!-- 物资 -->
+            <ul class="section-container section-container3">
+                <li>
+                    <ul class="lab clearfix">
+                        <li class='active'>
+                            <a href="#qiang-0">头盔</a>
+                        </li>
+                        <li>
+                            <a href="#qiang-1">防弹衣</a>
+                        </li>
+                        <li>
+                            <a href="#">药品</a>
+                        </li>
+                        <li>
+                            <a href="#">武器弹药</a>
+                        </li>
+                        <li>
+                            <a href="#">投掷物</a>
+                        </li>
+                        <li>
+                            <a href="#">背包</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="section" id='materials-0'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">头盔</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/15d8afc8dfb8936dff51982808be087a.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>军用头盔(沙漠迷彩)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/84e1037c7e90a7ebde236e0f74c7e6b9.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>军用头盔(丛林迷彩)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/70405db941dfa34401fa3db1c2465a1e.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>特种部队头盔</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/d1b5361f3ca3a4da256d089e99757719.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>摩托头盔(绿色)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/04a189702055f900dc3da1a3fa7ab3cd.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>摩托头盔(灰色)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="section" id='materials-1'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">防弹衣</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/68a50f3f37e46a4f723303937c7c0184.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>警用防弹衣(1级)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/a457450c544f5734a4b0f856309edcaf.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>警用防弹衣(2级)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/d7112b83fd0f74223000a1d4ef83b02e.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>军用防弹衣(3级)</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="section" id='materials-2'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">药品</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/4118e229ba7aeafae63b3d95b59da515.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>能量饮料</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/b3d5e1e01e8910e67aacaf9aa7987160.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>绷带</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/c5241159aa9f8d464ac2a66ee397c6a8.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>止痛药</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/dd5a8c0d2d2f4110edebd1bc83f17140.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>医疗箱</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li><li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/e444745bfa52d5e3a701f167a290ef63.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>急救包</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="section" id='materials-3'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">武器弹药</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/0e82d81bb61b7c55e2d15c941280b3de.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>.45毫米口径手枪子弹</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/8c6dcf27e6387b6be262a4ca95bd06dd.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>5.56毫米弹药</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/8f77383cf724a3db370e4e6bc9e81f8c.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>.300马格南</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/031f379ad84f227ed64e17b9c400a0c9.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>12毫口径弹药</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li> <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/73e2474eac05b6f94cc47b67132d0718.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>9豪弹药</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li> <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/919eb984e5ce5df2bce68e55507e3fa1.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>7.62弹药</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li> <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/3318c6b4b4a9e4ed3728a143e497be72.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>弩箭</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="section" id='materials-4'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">投掷物品</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/1c83f7156a0aea3118b6308e7695d191.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>烟雾弹</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/2f6267d195dc0462188409840b8630c1.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>燃烧瓶</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/b66419acbe028ead9a4956f9793bcc54.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>震爆弹</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/投掷武器/e53d70c8e3fb2ada223849d55724f7c0.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>破片手榴弹</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="section" id='materials-5'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">背包</span>
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/7ddd2d2fe5fea4528fb4b57941425e93.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>1级背包</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/36c69d93c483793832ea458058688ae8.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>2级背包</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/de6842ebeea7542cfec394153a4d5578.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>3级背包</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <!-- 载具 -->
+            <ul class="section-container">
+                <li class="section" id='qiang-0'>
+                    <!-- 武器分类名称头 -->
+                    <div class="section-title">
+                        <span class="icon"></span>
+                        <span class="big-tit">载具</span>
+
+                    </div>
+                    <!-- 武器展示表    -->
+                    <ul class="wrap clearfix">
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/1eed7de2558cc3392c3f8dbf48b65b5e.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>越野车</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/5b61ff81ff68c978935bbd477cf4d553.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>轿车</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/28d43094dfee8ed6f0baf7ad751fdeba.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>船</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/62c63e23c74438720bd75e436c036845.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>三轮摩托车</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/ac89ac127d34ae274097f2610af10eca.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>二轮摩托</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 武器图    -->
+                                <div class='img'>
+                                    <!-- 左上角黄色框 -->
+                                    <img src="./image/f9ea55c5dc23a7b8a7b03d2eccf4ec98.png" alt="">
+                                </div>
+                                <!-- 武器昵称  跳转详情 -->
+                                <div class="buttom">
+                                    <span class='name'>蹦蹦</span>
+                                    <span class="details">详情</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+            </ul>
+
+            <!-- 地图 -->
+            <ul class="section-container">
+                <li>
+                    <ul class="lab map clearfix">
+                        <li class='active'>
+                            <a href="#qiang-0">孤岛地图</a>
+                        </li>
+                        <li>
+                            <a href="#qiang-1">沙漠地图</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class='maps'>
+
+                    <!-- 孤岛地图 -->
+                    <div class="islet map-img">
+                        <div class="section-title">
+                            <span class="icon"></span>
+                            <span class="big-tit">孤岛地图</span>
+                        </div>
+                        <div class="map-box">
+                            <img src="./image/map1_img.jpg" alt="">
+
+                            <div class="map-icon map-icon1"></div>
+                            <div class="map-icon map-icon2"></div>
+                            <div class="map-icon map-icon3"></div>
+                            <div class="map-icon map-icon4"></div>
+                            <div class="map-grid"></div>
+                        </div>
+                    </div>
+
+                    <!-- 沙漠地图 -->
+                    <div class="desert map-img">
+                        <div class="section-title">
+                            <span class="icon"></span>
+                            <span class="big-tit">沙漠地图</span>
+                        </div>
+                        <div class="map-box">
+                            <img src="./image/map2_img.jpg" alt="">
+
+                            <div class="map-icon map-icon1"></div>
+                            <div class="map-icon map-icon2"></div>
+                            <div class="map-icon map-icon3"></div>
+                            <div class="map-icon map-icon4"></div>
+                            <div class="map-grid"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- 免责申明 -->
+                <li class='operate'>
+                    <p class='text'>*免责申明：所有数据来源于玩家自发收集整理，请一切以游戏内参数为准。</p>
+                    <ul class="icon-des">
+                        <li>
+                            <i></i>区域：高级物资
+                                <span>
+                                    <b></b>
+                                </span>
+                        </li>
+                        <li>
+                            <i></i>区域：中级物资
+                                <span>
+                                    <b></b>
+                                </span>
+                        </li>
+                        <li>
+                            <i></i>载具：生成几率极高
+                                <span>
+                                    <b></b>
+                                </span>
+                        </li>
+                        <li>
+                            <i></i>载具：有几率生成
+                                <span>
+                                    <b></b>
+                                </span>
+                        </li>
+                    </ul>
+                    <div class="btn-box">
+                        <a>隐藏全部</a>
+                        <a>隐藏网格</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script src='./js/jquery-1.12.4.js'></script>
+<script src='./js/top.js'></script>
+<script>
+    $(function(){
+        $('#ost_g').on('mouseenter',function(){
+            $('#ost_go').css({
+                'display':'none'
+            })
+            $('#ost_d').css({
+                'display':'block'
+            })
+        })
+        $('#ost_d').on('mouseleave',function(){
+            $(this).css({
+                'display':'none'
+            })
+            $('#ost_go').css({
+                'display':'block'
+            })
+        })
+        $('.navnav>a').on('mouseenter',function(){
+            $(this).css({
+                'color': '#ffb400',
+            })
+            $(this).children().css({
+                'color': '#ffb400',
+            })
+        })
+        $('.navnav>a').on('mouseleave',function(){
+            $(this).css({
+                'color': '#ffffff',
+            })
+            $(this).children().css({
+                'color': '#515151',
+            })
+        })
+        $('.nav_yx').on('mouseenter',function(){
+            $(this).css({
+                'color':'#ffb400'
+            })
+            $(this).children().css({
+                'color': '#ffb400',
+            })
+            $('.subnav').css({
+                'display': 'block',
+                'width':110
+            })
+        })
+        $('.nav_yx').on('mouseleave',function(){
+            $('.subnav').css({
+                'display': 'none',
+                'width':110
+            })
+            $(this).css({
+                'color':'#ffffff'
+            })
+            $(this).children().css({
+                'color': '#515151',
+            })
+        })
+        $('#playerLink').on('mouseenter',function(){
+            $('#tipsPlayer').css({
+                'display': 'block',
+                'width':100,
+            })
+        })
+        $('#playerLink').on('mouseleave',function(){
+            $('#tipsPlayer').css({
+                'display': 'none',
+                'width':100,
+            })
+        })
+        var $tipsPlayers = $('#tipsPlayer ul li')
+        var $tips = $('#tipsPlayer p')
+        $tipsPlayers.on('mouseenter', function () {
+            var index1 = $(this).index()
+            $(this).addClass("on").siblings("li").removeClass("on")
+            $($tips[index1]).show().siblings("p").hide()
+        })
+        $('#ost_t').on('mouseenter',function(){
+            $('.ost_rank').css({
+                'display':'block'
+            })
+        })
+        $('#ost_t').on('mouseleave',function(){
+            $('.ost_rank').css({
+                'display':'none'
+            })
+        })
+        $('li.rank-item').on('mouseenter',function(){
+            $(this).addClass('current').siblings('li').removeClass('current');
+        });
+        $('#rank_control3 li.rank-item').on('mouseenter',function(){
+            $(this).addClass('current').siblings('li').removeClass('current').parent().parent().siblings('.col-body').find('li').removeClass('current')
+        });
+    })
+</script>
+</body>
+
+</html>

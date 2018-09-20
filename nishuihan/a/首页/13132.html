@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <style></style>
+</head>
+<body>
+<video class="bgv togglevideo" muted autoplay>          <!--autoplay loop-->
+    <source src="video2/0.mp4" type="video/mp4">
+</video>
+<div id="box">hgafgao</div>
+<script>
+    var video=$('video');
+    $('#box').on('click',function(){
+        video.hide();
+        video.attr('src','video2/1.mp4').attr('autoplay','true');
+        video.show();
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+/*初始化代码*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: normal;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  background: #dedede;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearYxl {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+#mainYxl {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+}
+
+#maincontent {
+  width: 940px;
+  margin: 0 auto;
+  padding: 43px 0px;
+  background: #fff;
+}
+
+.leftpart {
+  width: 48%;
+  margin-right: 4%;
+  margin-left: 0;
+  position: relative;
+  float: left;
+}
+
+.tips {
+  margin-right: 0px !important;
+  clear: right;
+}
+
+.rightpart {
+  width: 48%;
+  margin-right: 4%;
+  margin-left: 0;
+  position: relative;
+  float: left;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a, a:visited, .colortext {
+  text-decoration: none;
+  font-weight: normal;
+  color: #ffa600
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffa600;
+}
+
+a img {
+  border: none;
+}
+
+.shadow-frame {
+  border: 1px solid #fff;
+  box-shadow: 0 10px 8px -8px #a9a9a9;
+}
+
+.slider {
+  width: 453px;
+  height: 321px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider li {
+  position: absolute;
+  display: none;
+}
+
+.slider li:first-child {
+  display: block;
+}
+
+.arrow {
+  display: none;
+}
+
+.slider:hover .arrow {
+  display: block;
+}
+
+.arrow-left,
+.arrow-right {
+  font-family: "SimSun", "宋体";
+  width: 30px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"],
+textarea {
+  font-size: 12px;
+  padding: 7px;
+  background: #fff;
+  border: 0;
+  color: #707070;
+  border: solid 1px #eee;
+  width: 90%;
+}
+
+.button, .button:visited, input[type="submit"] {
+  background: #ffa600;
+  color: #fff;
+  font-size: 13px;
+  display: inline-block;
+  padding: 6px 13px;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  border: 0px;
+}
+
+.button:hover, input[type="submit"]:hover {
+  background: #2c2c2c;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+span.required {
+  color: #888;
+}
+
+span.error {
+  color: red;
+  text-align: left;
+  font-size: 11px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+#contactform input.text-input {
+  margin-bottom: 15px;
+  vertical-align: middle;
+  width: 60%;
+  float: left;
+  font-style: italic;
+  padding: 8px;
+  color: #acacac;
+  font-size: 11px;
+
+}
+
+#contactform textarea {
+  width: 90%;
+  float: left;
+  font-style: italic;
+  color: #acacac;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#contactform .button {
+  cursor: pointer;
+  margin-top: 20px;
+  clear: both;
+  float: left;
+}
+
+.mask {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  display: none;
+  overflow: hidden;
+}
+#formAdd{
+  position: fixed;
+  top:50%;
+  left:50%;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  z-index: 99;
+  display: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 50px;
+}
+#gou{
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 36px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #ffa600;
+  margin: 0px auto 30px;
+}
+#finish{
+  position: absolute;
+  border-radius: 5px;
+  top: 85%;
+  left: 75%;
+}

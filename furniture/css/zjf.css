@@ -1,0 +1,123 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0px;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body{
+  background-color: #dedede;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.zjf img{
+  width: 100%;
+}
+.zjf{
+  width: 940px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 43px 30px;
+
+}
+.zjf-content{
+  width: 940px;
+}
+.zjf-nav{
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+
+}
+/*导航栏列表的样式*/
+.zjf-nav li{
+  float: left;
+  padding: 5px 10px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+}
+.zjf-nav li:nth-child(4){
+  border-right: 0px;
+}
+.zjf-nav li a{
+  font-size: 12px;
+  color: #6e6e6e;
+}
+.zjf-nav li a:hover,.zjf-nav li.selected a{
+  color: #ffa600;
+}
+
+
+/*图片内容的样式*/
+
+.zjf-contentimg{
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+
+.zjf-contentimg li.nomargin{
+  margin-right: 0px;
+}
+.zjf-contentimg li{
+  width: 220px;
+  margin: 0px 20px 20px 0px;
+  float: left;
+}
+
+.zjf-img{
+  width: 218px;
+  height: 139px;
+  padding: 1px;
+  overflow: hidden;
+  position: relative;
+}
+.zjf-img a.image{
+  width: 218px;
+  height: 139px;
+  display: block;
+  position: relative;
+}
+.zjf-img a.image .shade{
+  width: 218px;
+  height: 139px;
+  background-image: url("../images/hover-zoom.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*display: block;*/
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+.shadowimg{
+  background: url(../images/shadow-pf.png) no-repeat center bottom;
+  display: block;
+  height: 14px;
+}
+.zjf-text{
+  text-align: center;
+}
+.zjf-text h2{
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 4px
+}

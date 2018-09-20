@@ -1,0 +1,458 @@
+/*初始化代码*/
+body,
+div,
+p,
+ul,
+li,
+img,
+input,
+span,
+i,
+strong,
+em,
+del,
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: bottom;
+
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    height:2050px;
+}
+
+#bigBox {
+
+    background: url("images/bg.a5c81f4.jpg") no-repeat;
+    position: relative;
+
+    /*width:80%;*/
+    height: 2102px;
+    margin: 0 auto;
+
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/*container的css样式开始*/
+.container {
+
+    /*min-height: 100%;*/
+
+}
+
+.top {
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    width: 419px;
+    height: 186px;
+    padding-top: 100px;
+    margin: auto;
+
+}
+
+.banner_p {
+    width: 100%;
+    height: 100%;
+    top: 100px;
+}
+
+.bg_phone {
+    width: 243px;
+    height: 233px;
+    top: 40px;
+    left: -310px;
+}
+
+.bg_game {
+    width: 213px;
+    height: 209px;
+    top: 276px;
+    right: -380px;
+}
+
+.banner_p, .bg_phone, .bg_game {
+    display: inline-block;
+    position: absolute;
+}
+
+.slogan {
+
+    width: 428px;
+    height: 72px;
+    margin: 150px auto 93px;
+}
+
+.downloads {
+    /*text-align: center;*/
+    margin: 0 auto;
+}
+
+.downloads .qrcode {
+    position: relative;
+    /*margin-right: 7px;*/
+    display: inline-block;
+    vertical-align: top;
+    left: 680px;
+}
+
+.qrcode-bg {
+    position: relative;
+    border-radius: 6px;
+    width: 224px;
+    height: 224px;
+    z-index: 3;
+    left: -240px;
+
+}
+
+.bg_color2 {
+    position: absolute;
+    width: 238px;
+    height: 238px;
+    top: -6px;
+    left: -6px;
+    border-radius: 6px;
+}
+
+.qrcode-logo {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #000;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+
+}
+
+.airship {
+    position: absolute;
+    display: inline-block;
+    width: 650px;
+    height: 330px;
+    top: 0;
+    left: -680px;
+}
+
+.downloads {
+    position: relative;
+
+}
+
+.downloads .pics {
+    display: inline-block;
+    margin-top: -4px;
+    position: absolute;
+    left: 680px;
+}
+
+.downloads .pics .download_ios_p {
+    display: block;
+    margin-top: -16px;
+    margin-bottom: 17px;
+    width: 311px;
+    height: 124px;
+}
+
+.downloads .pics .download {
+    display: block;
+    width: 311px;
+    height: 124px;
+}
+
+.wrap {
+    position: relative;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    /*border: 1px solid red;*/
+}
+
+.slide {
+    position: relative;
+    height: 700px;
+}
+
+.slide li {
+    position: absolute;
+    width: 350px;
+    height: 700px;
+
+    left: auto;
+    top: auto;
+    z-index: 1;
+    text-align: center;
+
+}
+
+.slide img {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 11%;
+    top: 10%;
+}
+
+.slide li .word1 {
+    position: absolute;
+    left: 0;
+
+    bottom: 10px;
+    color: #fff;
+}
+
+.slide li .word2 {
+
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #fff;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.arrow a {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    width: 76px;
+    height: 200px;
+    margin-top: -56px;
+    background: url(images/pagination_prev.c92a7cd.png) 0 0 no-repeat;
+}
+
+.arrow .next {
+    right: 50px;
+    left: auto;
+    background-image: url(images/pagination_next.b6a2c25.png);
+}
+
+.downloads1 {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    top: 1800px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.downloads1 .pics {
+    position: absolute;
+    width: 800px;
+    height: 145px;
+    left: 320px;
+    top: 20px;
+
+}
+
+.downloads1 .code {
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    width: 86px;
+    height: 84px;
+    top: -115px;
+    left: 50px;
+}
+
+.downloads1 .code .code-bg {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    top: -8px;
+    left: -6px;
+    border-radius: 6px;
+}
+
+.downloads1 .code .code-small {
+    position: absolute;
+    width: 86px;
+    height: 84px;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+
+}
+
+.code-big {
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    width: 224px;
+    height: 224px;
+    z-index: 3;
+    left: -180px;
+    top:-216px;
+    visibility:hidden;
+}
+
+.code-big .bg_color2 {
+    position: absolute;
+    width: 238px;
+    height: 238px;
+    top: -6px;
+    left: -6px;
+    border-radius: 6px;
+}
+
+.code-big .qrcode-logo {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #000;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+
+}
+
+.downloads1 .pics .ios {
+    position: absolute;
+    display: inline-block;
+    width: 311px;
+    height: 124px;
+    left: 400px;
+    margin-left: 50px;
+
+}
+
+.downloads1 .pics .android {
+    position: absolute;
+    display: inline-block;
+    width: 311px;
+    height: 124px;
+
+    margin-left: -162px;
+}
+
+.fooder {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    top:-130px;
+    background-color: #000;
+
+
+}
+
+.fooder .logo {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: -70px;
+    left:34%;
+
+}
+
+.fooder .logo span {
+    margin-left: -15px;
+}
+
+.fooder .login {
+    position: absolute;
+    top: 70px;
+    left:34%;
+
+}
+
+.fooder .login li {
+
+    float: left;
+    font-size: 14px;
+}
+
+.fooder .login li a:hover {
+    color: red;
+
+}
+
+.fooder .login li span {
+    font-size: 16px;
+    color: #fff;
+    margin: 4px;
+
+}
+
+.fooder .word {
+    position: absolute;
+    left:34%;
+    top: 92px;
+
+}
+
+.fooder .word p {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
+
+.fooder .word a {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.fooder .word a:hover {
+    color: red;
+}

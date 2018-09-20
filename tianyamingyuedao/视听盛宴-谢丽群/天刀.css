@@ -1,0 +1,1226 @@
+/*初始化代码*/
+
+body,
+div,
+span,
+p,
+input,
+img,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+i,
+em,
+strong {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: #f10215;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+.w {
+    width: 1295px;
+    margin: 0 auto;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    background-color: #f6f6f6;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*头部*/
+
+
+.topnav {
+	height: 40px;
+	position: relative;
+}
+
+
+.topnav .onelogo {
+	width: 220px;
+	height: 40px;
+	left: 151px;
+	position: absolute;
+}
+
+
+.topnav .onelogo a {
+	width: 220px;
+	height: 40px;
+	display: block;
+	background-image: url('Images/ost-bg.png');
+	background-position: 0 -40px;
+}
+
+
+.topnav .basc {
+	position: absolute;
+	left: 151px;
+	z-index: 1;
+	display: none;
+}
+
+
+.topnav .basc a {
+	display: block;
+	width: 980px;
+	height: 185px;
+	background-image: url('Images/NBAD.jpg');
+}
+
+
+.topnav .twologo {
+	width: 230px;
+	height: 40px;
+	position: absolute;
+	background-image: url('Images/NBA.jpg');
+	left: 371px;
+}
+
+
+
+
+.topnav .three {
+	width: 220px;
+	height: 40px;
+	position: absolute;
+	left:911px;
+}
+
+
+.topnav .three .left {
+	float: left;
+	height: 40px;
+}
+
+
+.topnav .three a {
+	display: block;
+	color: #464646;
+	font-size: 12px;
+	float: left;
+	height: 40px;
+}
+
+
+.topnav .three .left a span:hover {
+	color: #ff4e00;
+}
+
+
+.topnav .three .right a:hover {
+	color: #ff4e00;
+}
+
+
+.topnav .three .left a span,
+.topnav .three .right a span {
+	line-height: 45px;
+}
+
+
+.topnav .three .left .img {
+	width: 18px;
+	height: 18px;
+	float: left;
+	background-image: url("Images/logo1.png");
+	margin-top: 13.5px;
+}
+
+
+.topnav .three .right {
+	float: right;
+	height: 40px;
+}
+
+
+.topnav .three .right .img {
+	width: 11px;
+	height: 11px;
+	background-image: url('Images/ost-bg.png');
+	background-position: -150px -134px;
+	float: right;
+	margin-top: 17px;
+	margin-left: 5px;
+}
+/* 腾讯 */
+.bigbox{
+    position: absolute;
+    top:40px;
+    right: 100px;
+    transform: translateX(-50%);
+    width: 704px;
+    height: 447px;
+    margin: 0 auto;
+    display: none;
+    z-index: 2;
+    /* background-color:pink; */
+} 
+.ost_rank{
+    float: right;
+    width: 704px;
+    height:447px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.ost_rank #rank_left,
+.ost_rank #rank_center,
+.ost_rank #rank_right{
+    width: 213px;
+    height: 422px;
+    float: left;
+    padding: 0 10px;
+    margin: 17px 0px 8px 1px;
+    /* border-left: 1px solid #ccc; */
+}
+.ost_rank div .col_head{
+    width: 207px;
+    height: 18px;
+    line-height: 18px;
+    /* position: relative; */
+    padding: 0px 5px 2px 0px;
+    border-bottom: 1px solid #ccc;
+    /* background-color: yellow; */
+}
+.ost_rank div .col_head h2{
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.ost_rank div .col_head a{
+    float: right;
+}
+.ost_rank div .col_head i{
+    float: right;
+}
+.ost_rank div .col_body{
+    width: 212px;
+    height: 376px;
+    font-size: 14px;
+}
+.ost_rank div .col_body ul{
+    width: 212px;
+    /* height: 376px; */
+    padding-top: 9px;
+    /* background-color: pink; */
+}
+.ost_rank div .col_body ul li.rank-head{
+    width: 212px;
+    height: 27px;
+    line-height: 27px;
+}
+.ost_rank div .col_body ul li.rank-head span.rank-order-hd{
+    width: 33px;
+    height: 18px;
+}
+.ost_rank div .col_body ul li.rank-head span.rank-name-hd{
+    width: 170px;
+    height: 18px;
+}
+.ost_rank div .col_body ul li.rank-item{
+    width: 212px;
+    /* height: 27px; */
+}
+.ost_rank div .col_body ul li div.rank-item-txt{
+    width: 212px;
+    height: 27px;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-gray,
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-color,
+.ost_rank div .col_body ul li.rank-item span.rank-order-color,
+.ost_rank div .col_body ul li.rank-item span.rank-order-gray{
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    color:#929191;
+    /* float: left; */
+    display: inline-block;
+    border: 1px solid #929191;
+    margin: 2px 15px 1px 4px;
+}
+/* .ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-gray, */
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-color,
+.ost_rank div .col_body ul li.rank-item span.rank-order-color{
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: #fff; 
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-color,
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-gray{
+    position: absolute;
+    top:-2px;
+    left: -4px;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-gray{
+    top:-3px;
+    left: -5px;
+}
+.ost_rank div .col_body ul li.rank-item  a{
+    /* width: 78px;  */
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    /* background-color: aqua; */
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game{
+    width: 194px;
+    height: 82px;
+    margin-top: -28px;
+    margin-left: 2px;
+    position: relative;
+    border: 1px solid #929191;
+    margin-bottom: 8px;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game p{
+    width: 194px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    opacity: 0.8;
+    background-color: black;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game p a.game-link{
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    /* margin-right: 10px; */
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game p i.icon-home{
+    /* background:  */
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game p i.icon-download{
+
+}
+.ost_rank #rank_left{
+    /* background-color: orange; */
+}
+ 
+.ost_rank #rank_center{
+    border-left: 1px solid #ccc;
+    /* background-color: green; */
+}
+
+.ost_rank #rank_right{
+    border-left: 1px solid #ccc;
+    /* background-color: skyblue; */
+}
+
+
+
+  
+.wrap {
+    width: 100%;
+    height: 4518px;
+    background-image: url('images/vsbg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-color: #e6ebea;
+    /* margin-top: 30px; */
+}
+
+.wrap .header {
+    position: relative;
+    /*background-color: red ;*/
+    height: 400px;
+}
+
+.wrap .header .logo {
+    position: absolute;
+    width: 191px;
+    height: 67px;
+    left: 0px;
+    top: 28px;
+    background: url("images/nav-copy.png") no-repeat;
+}
+
+.header .menu {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 280px;
+    height: 119px;
+    background: url("images/icon-stsy.png") no-repeat 50% 0;
+}
+
+.header .title {
+    width: 800px;
+    height: 208px;
+    position: absolute;
+    top: 46px;
+    right: 0;
+}
+
+.header .title ul {
+    float: left;
+}
+
+.header .title ul li {
+    font-size: 14px;
+    width: 100px;
+   
+    height: 22px;
+    line-height: 22px;
+}
+.header .title ul li a:hover{
+    color:#2fc3a2;
+}
+
+.header .title ul li:first-child {
+    padding-left: 0;
+    width: 92px;
+    height: 44px;
+    background: url("Images/nav-copy.png") no-repeat;
+}
+
+.header .title ul.one li:first-child {
+    background-position: 0 -168px;
+}
+
+.header .title ul.two li:first-child {
+    background-position: -115px -168px;
+}
+
+.header .title ul.three li:first-child {
+    background-position: -345px -168px;
+}
+
+.header .title ul.four li:first-child {
+    background-position: -460px -168px;
+}
+
+.header .title ul.five li:first-child {
+    background-position: -575px -168px;
+}
+
+.header .title ul.six li:first-child {
+    background-position: -690px -168px;
+}
+
+.header .title ul.seven li:first-child {
+    background-position: -805px -168px;
+}
+
+.header .title ul.eight li:first-child {
+    background-position: -920px -168px;
+}
+
+.header .nva {
+    position: absolute;
+    width: 596px;
+    height: 134px;
+    left: 5px;
+    bottom: 20px;
+    overflow: hidden;
+}
+
+.header .nva li a {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    width: 149px;
+    height: 134px;
+    background:#fff url("images/icon-stsy.png") no-repeat;
+}
+.header .nva li{
+    position: relative;
+    float: left;
+    width: 149px;
+    height: 134px;
+}
+
+.header .nva li a p{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* .nva .n:hover {
+    background-color: rgb(0, 128, 79);
+} */
+
+/* .nva .n {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*padding: 61% 0 0;*/
+    /* background-color: #fff;
+    background-color: rgba(255, 255, 255, .5);
+}  */
+
+.header .nva .na {
+    color: #000;
+    background:#fff url("images/icon-stsy.png")50% -243px;
+    /* background-position: 50% -243px; */
+}
+.header .nva li.cur .na{
+    color: #fff;
+    background:#2fc3a2 url("images/icon-stsy.png")50% -377px;
+    /* background-position: 50% -377px; */
+}
+
+.header .nva .nb {
+    color: #000;
+    background:#fff url("images/icon-stsy.png")50% -511px;
+}
+.header .nva li.cur .nb {
+    color: #fff;
+    background:#2fc3a2 url("images/icon-stsy.png")50% -645px;
+}
+.header .nva .nc {
+    color: #000;
+    background:#fff url("images/icon-stsy.png")50% -779px;
+    /* background-position: 50% -779px; */
+}
+.header .nva li.cur .nc {
+     color: #fff;
+    background:#2fc3a2 url("images/icon-stsy.png")50% -913px;
+    /* background-position: 50% -913px; */
+}
+
+.header .nva .nd {
+    color: #000;
+    background:#fff url("images/icon-stsy.png")50% -1047px;
+    /* background-position: 50% -1047px; */
+}
+.header .nva li.cur .nd {
+      color: #fff;
+    background:#2fc3a2 url("images/icon-stsy.png")50% -1181px;
+    /* background-position: 50% -1181px; */
+}
+/* 视频 */
+.wrap .hot{
+   
+    width: 1285px;
+    height: 723px;
+    background-color: #999;
+}
+.wrap .hot .hot-list{
+    /* position: relative; */
+    width: 1285px;
+    height: 723px;
+    /* background-color: aquamarine */
+} 
+.wrap .hot ul li{
+    position:relative;
+    float: left;
+    width:50%;
+    height: 50%;
+}
+.wrap .hot ul li .hotb{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* 音频 */
+.vid{
+    position: fixed;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #2fc3a2;
+    width: 800px;
+    height: 500px;
+    z-index: 1;
+}
+.vid i{
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right:-60px;
+    background:#2fc3a2 url('images/close_video.png');
+    top:0;
+
+}
+.vid video{
+    position: absolute;
+    left: 5px;
+    width: 790px;
+    height: 495px;
+
+}
+/* 原画 */
+.vida{
+    position: fixed;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #2fc3a2;
+    width: 400px;
+    height: 600px;
+    z-index: 1;
+}
+.vida img{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 390px;
+    height: 590px;
+}
+.vida i{
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right:-60px;
+    background:#2fc3a2 url('images/close_video.png');
+    top:0; 
+}
+/* 壁纸 */
+.vidb{
+    position: fixed;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #2fc3a2;
+    width: 800px;
+    height: 600px;
+    z-index: 1;
+}
+.vidb img{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 790px;
+    height: 590px;
+}
+.vidb i{
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right:-60px;
+    background:#2fc3a2 url('images/close_video.png');
+    top:0; 
+}
+/* .wrap .hot ul li video{
+     display: none; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+} */
+.wrap .hot-list .hota p.hotc i{
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    background-position: 50% -402px;
+    background-image: url('images/icon-video.png');
+}
+
+ .wrap .hot-list .hota p.in i{
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    background-position: 50% -268px;
+    background-image: url('images/icon-video.png'); 
+ }
+.wrap .hot .hot-list .hota p.hotc{
+    position: absolute;
+    width: 610.5px;
+    height: 47px;
+    line-height: 47px;
+    bottom: 0;
+    left: 0;
+    padding-left: 32px;
+    background-color:#000;
+    opacity:0.8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+   
+}
+/* 大图 */
+.wrap .hot-list .hota i.hotd{
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 118px;
+    height: 118px;
+    background-position: 50% 0;
+    background-image: url('images/icon-video.png')
+}
+.wrap .hot-list li.hota a.hote{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-indent: -9999px;
+}
+.wrap .them{
+    position: relative;
+    width: 1285px;
+    height: 45px;
+    border-bottom: 1px solid #d2d2d2;
+    clear: both;
+}
+.wrap .them a.th{
+    display: inline-block;
+    padding: 10px 0;
+    width: 11.2%;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+} 
+.wrap .them a.em{
+    color: #2fc3a2;
+    cursor: default;
+}
+.wrap .them em.line{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 11.2%;
+    height: 2px;
+    line-height: 0;
+    font-size: 0;
+    background: #2fc3a2;
+}
+.wrap .load{
+    height: 3230px;
+}
+.wrap .load ul{
+    position: relative;
+   width: 1295px;
+    height: 3230px;
+    margin: 10px auto;
+    /* background-color: aqua; */
+}
+
+.wrap .load ul li.hota{
+    position:relative;
+    float: left;
+    margin-left: 11px;
+    margin-bottom: 11px;
+    width:310px;
+    height: 175px;
+}
+.wrap .load ul li span{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.wrap .load ul li .hotb img{
+    display: block;
+    position: absolute;
+    height: 175px;
+    width: 310px;
+    top: 0;
+    left: 0;
+}
+.wrap .load .hota p.hotc{
+    position: absolute;
+    width: 310px;
+    height: 27px;
+    line-height: 27px;
+    /* background-color: #f10215; */
+    bottom: 0;
+    left: 0;
+    background-color:#000;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    overflow: hidden;
+}
+.wrap .load .hota i.hotd{
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    background-position: 50% -268px;
+    background-image: url('images/icon-video.png')
+}
+.wrap .load li.hota a.hote{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-indent: -9999px;
+}
+
+/* 大盒子 */
+ .big .one {
+    /* text-align: center; */
+    display: none;
+} 
+
+.big .one.see {
+    display: block;
+}
+/* 原画 */
+.wrap .koad{
+    position: relative;
+}
+.wrap .koad ul li.hota{
+    position: absolute;
+    float: left;
+    /* left: 0;
+    top: 15px; */
+   
+}
+.wrap .koad ul li.hota div{
+    
+   width: 100%;
+   height: 100%;
+    /* float: left;
+    left: 0;
+    top: 0px;
+    */
+}
+.wrap .koad ul li.hota div.inns span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.wrap .koad ul li.hota div p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display:none;
+    line-height: 34px;
+    color: #ccc;
+    background-color: #000;
+    opacity: 0.8;
+    height: 34px;
+    width: 310px;
+}
+.wrap .koad ul li.hota div p a{
+    position: absolute;
+    line-height: 34px;
+    color: black;
+    right: 2px;
+    bottom: 2px;
+    display: block;
+    background-color: #2fc3a2;
+    height: 30px;
+    width: 58px;
+}
+.wrap .koad ul li.hota div a.hote{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+/* 壁纸 */
+.wrap .hoad ul{
+    position: relative;
+   width: 1295px;
+    height: 3230px;
+    margin: 10px auto;
+    /* background-color: aqua; */
+}
+/* .wrap .hoad ul li.hota div p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display:none;
+    line-height: 34px;
+    color: #ccc;
+    background-color: #000;
+    opacity: 0.8;
+    height: 34px;
+    width: 310px;
+} */
+.wrap .hoad ul li.hota{
+    position:relative;
+    float: left;
+    margin-left: 11px;
+    margin-bottom: 11px;
+    width:310px;
+    height: 175px;
+}
+.wrap .hoad ul li span{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.wrap .hoad ul li .hotb img{
+    display: block;
+    position: absolute;
+    height: 175px;
+    width: 310px;
+    top: 0;
+    left: 0;
+}
+.wrap .hoad .hota p.hotc{
+    position: absolute;
+    width: 310px;
+    height: 27px;
+    display: none;
+    line-height: 27px;
+    /* background-color: #f10215; */
+    bottom: 0;
+    left: 0;
+    background-color:#000;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    overflow: hidden;
+}
+.wrap .hoad .hota i.hotd{
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    background-position: 50% -268px;
+    background-image: url('images/icon-video.png')
+}
+.wrap .hoad li.hota a.hote{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-indent: -9999px;
+}
+/* 音乐 */
+.player{
+    position: relative;
+    width: 1285px;
+    height: 310px;
+    /* background-color: #999; */
+}
+.player .music{
+    position: absolute;
+    left:310px;
+    background-color: #000;
+    opacity: 0.6;
+    top: 0;
+    width: 665px;
+    height: 310px;
+    /* background-color: #2fc3a2; */
+}
+.player .music .music-a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.player .music .music-b{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.player .music .music-b span.name{
+    position: absolute;
+    display: block;
+    left: 20px;
+    top: 236px;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color:#ccc;
+    /* background-color: #2fc3a2; */
+}
+.player .music .music-b span.time{
+    position: absolute;
+    display: block;
+    left: 30px;
+    top: 266px;
+    width: 580px;
+    height: 3px;
+    background-color:black;
+    /* opacity: 0.8; */
+    border-radius: 3px;
+    border: 1px solid #4c4c4c;
+
+}
+.player .music .music-b i{
+    position: absolute;
+    left: 614px;
+    top: 264px;
+    width: 20px;
+    height: 16px;
+    color: #ccc;
+    display: block;
+    font-size: 14px;
+    color:#ccc;
+}
+.player .music .music-a a.ms{
+    position: absolute;
+    text-indent: -9999px;
+}
+
+
+
+
+
+
+
+
+.player .music .music-a a.up{
+    top: 86px;
+    left: 150px;
+    width: 102px;
+    height: 102px;
+    display: block;
+    background: url("images/icon-music.png")-13px -1779px;
+}
+.player .music .music-a.cur a.up{
+    display: none;
+    background: url("images/icon-music.png")-13px -1271px;
+}
+
+.player .music .music-a a.play{
+    display: block;
+    top: 74px;
+    left: 50%;
+    width: 127px;
+    height: 127px;
+    margin: 0 0 0 -63px;
+    background:url("images/icon-music.png")0px 0px;
+}
+.player .music .music-a.cur a.play{
+    display: none;
+    background:url("images/icon-music.png")0px -510px;
+}
+.player .music .music-a a.sd{
+    top: 74px;
+    left: 50%;
+    width: 127px;
+    height: 127px;
+    display: none;
+    margin: 0 0 0 -63px;
+    background:url("images/icon-music.png")0px -254px;
+}
+.player .music .music-a.cur a.sd{
+    display: none;
+    background:url("images/icon-music.png")0px -764px;
+}
+.player .music .music-a a.next{
+    top: 86px;
+    right: 150px;
+    width: 102px;
+    height: 102px;
+    display: block;
+    background:url("images/icon-music.png")-13px -1525px;
+}
+.player .music .music-a.cur a.next{
+    display: none;
+    background:url("images/icon-music.png")-13px -1017px;
+}
+.player .music .music-a a.ld{
+    top: 20px;
+    right: 20px;
+    padding: 0 10px 0 30px;
+    text-indent: 0;
+    background-color: rgba(27,41,33,.2);
+    background:url("images/icon-music.png")-112px -2802px;;
+    line-height: 27px;
+    font-size: 14px;
+    color:#ccc;
+    border: 1px solid #4c4c4c;
+    border-radius: 5px;
+}
+.player span{
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    left: 0;
+    top: 0;
+}
+.player #mc-lists{
+    position: absolute;
+   background-color: #000;
+   opacity: 0.8;
+    /* background-color: yellow; */
+    width: 310px;
+    height: 310px;
+    right:0;
+    top: 0;
+}
+.player #mc-lists .mc-a{
+    position: absolute;
+   padding-left: 15px;
+   color: #ccc;
+   font-size: 16px;
+   left: 20px;
+    top: 0;
+    width: 260px;
+    height: 38px;
+    border-bottom: 1px solid #999;
+    line-height: 38px;
+
+}
+.player #mc-lists .mc-b{
+    position: absolute;
+    left: 20px;
+    top: 38px;
+    width: 260px;
+    height: 236px;
+}
+.player #mc-lists .mc-b .mc-c{
+   
+
+    width: 100%;
+    height: 100%;
+}
+.player #mc-lists .mc-b .mc-c .mc-ca{
+    padding-left: 15px;
+    font-size: 14px;
+    width: 260px;
+    height: 28px;
+    line-height: 28px;
+}
+.player #mc-lists .mc-b .mc-c .mc-ca .mc-cb{
+    float: left;
+}
+.player #mc-lists .mc-b .mc-c .mc-ca .mc-cd{
+    float: right;
+    padding-right: 10px;
+    color: #ccc;
+    font-size: 12px;
+}
+.player #mc-lists .mc-b .mc-c .mc-ca .mc-cb:hover{
+    color: #2fc3a2;
+}
+.goad{
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    width: 1285px;
+    height: 210px;
+    /* background-color:yellowgreen; */
+}
+.goad li.hota{
+    position:relative;
+    float: left;
+    margin-top: 5px;
+    margin-left: 18px;
+    width:15%;
+    height: 195px;
+}
+.goad li.hota i.hotd{
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 118px;
+    height: 118px;
+    background-position: 50% 0;
+    background-image: url('images/icon-video.png')
+}
+.goad li.hota b{
+    position: absolute;
+    display: none;
+    width: 90px;
+    height: 16px;
+    bottom: 15px;
+    font-size: 14px;
+    left: 65px;
+   color:#ccc;
+
+}
+.goad li.hota a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.goad li.hota img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

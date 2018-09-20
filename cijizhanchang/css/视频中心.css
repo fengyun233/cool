@@ -1,0 +1,150 @@
+/* ³õÊ¼»¯´úÂë */
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+input,
+img,
+i,
+strong,
+del,
+em,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font: 12px/100% "Î¢ÈíÑÅºÚ";
+    background-color:#f0f0f0;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+.foot-botton {
+    width: 1300px;
+    height: 210px;
+    background-color: #000;
+    float: left;
+}
+
+.foot-title {
+    width: 1200px;
+    height: 210px;
+
+}
+.foot-title a {
+    display: inline-block;
+}
+
+.foot-logs {
+    width: 170px;
+    height: 35px;
+    background:url("../imags/foot-logo1.png")no-repeat ;
+    background-size: contain;
+    margin-top: 20px;
+    float: left;
+
+}
+
+.foot-title img {
+    float: left;
+    margin-left: 30px;
+
+    width: 127px;
+    height: 47px;
+    margin-top: 25px;
+}
+
+.foot-links {
+    display: inline;
+    float: right;
+    width: 570px;
+    margin-top: 15px;
+
+}
+
+.foot-links {
+    color: #fff;
+    font-size: 12px;
+    margin-right: 115px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;;
+}
+
+
+a {
+    text-decoration: none;
+    overflow: hidden;
+    color: #000;
+    margin-right: 5px;
+
+
+}
+.foot-links a {
+    color: #fff;
+}
+
+.foot-links a:hover{
+    color: #ffb400;
+}

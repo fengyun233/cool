@@ -1,0 +1,800 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>《逆水寒官网》-会呼吸的江湖-</title>
+    <script src="jquery-1.12.4.js" type="text/javascript"></script>
+    <style>
+        @keyframes rotate{from{transform: rotate(0deg)}
+            to{transform: rotate(359deg)}
+        }
+        @keyframes videoA {
+            0%{
+                transform: scale(0.8);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(0.8);
+            }
+        }
+        @keyframes scaleDrawA {
+            0%{
+                transform: scale(0.6);
+            }
+            75%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1.3);
+            }
+        }
+        @keyframes scaleDrawB {
+            0%{
+                transform: scale(0.6);
+            }
+            75%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1.2);
+            }
+        }
+        body,.bgv,video,source,p,span,div,a,img,input,ul,li{margin:0;padding:0;}
+        ul,li{list-style: none;}
+        body>div{
+            width:1400px;
+        }
+        body{
+            background:url("ps/back.png");
+        }
+        input::-webkit-input-placeholder{
+            color:white;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:white;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color:white;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+            color:white;
+        }
+        .video1{
+            position:relative;
+        }
+        .video1>p{
+            font-size: 24px;
+            position:absolute;
+            width:100px;
+            text-align: center;
+            top:60%;
+            left:49%;
+        }
+        .video2>.loop-video{
+            display:none;
+        }
+        .hide_group{
+            display:none;
+        }
+        .imga1{
+            position:absolute;
+            left:150px;
+            top:0;
+            width:170px;
+            height:42px;
+            z-index: 9;
+            background: url("ps/5.png") 395px 505px;
+            transition: all 0.3s;
+        }
+        .imga1:hover{transform: scale(1.1) }
+        .imga2{
+            position:absolute;
+            left:1000px;
+            top:15px;
+            width:130px;
+            height:197px;
+            background: url("ps/5.png") -705px -200px no-repeat;
+        }
+        .imga3{
+            position:absolute;
+            left:1000px;
+            top:212px;
+            width:90px;
+            height:101px;
+            background: url("ps/5.png") -788px -578px no-repeat;
+        }
+        .imga4{
+            position:absolute;
+            top:550px;
+            left:130px;
+            width:1132px;
+            height:386px;
+            background: url("ps/6.png") no-repeat;
+        }
+        .imga4_left{
+            float:left;
+            margin-left: 30px;
+            margin-top: 100px;
+            width:267px;
+            height:203px;
+        }
+        .imga4_left>input{
+            color:white;
+            width:95%;
+            height:30px;
+            margin-bottom: 20px;
+            padding-left:10px;
+            border: 1px solid white;
+            background: darkgray;
+        }
+        .imga4_left>a{
+            width:99%;
+        }
+        .imga4_left_light{
+            width:267px;
+            height:50px;
+            z-index: 3;
+            position:absolute;
+            top:203px;
+            background: white;
+            opacity: 0;
+        }
+        .imga4_left>a>img{
+            width:100%;
+        }
+        .imga4_left>span{
+            font-size:10px;
+            margin-top:-20px;
+        }
+        .imga4_center{
+            position:relative;
+            float:left;
+            margin-left:95px;
+            margin-top: 100px;
+            width:267px;
+            height:270px;
+        }
+        /*.imga4_center>img{
+            position:absolute;
+            left:80px;
+            top:40px;
+        }*/
+        .imga4_center>img:nth-child(3){
+            position:absolute;
+            left:80px;
+            top:40px;
+            /* opacity: 0;*/
+        }
+        .imga4_center>img:nth-child(1),.imga4_center>img:nth-child(2){
+            position:absolute;
+            left:80px;
+            top:40px;
+            width:100px;
+            height:100px;
+        }
+        .imga4_center>img:nth-child(1){animation: scaleDrawA 5s ease-in-out infinite;}
+        .imga4_center>img:nth-child(2){animation: scaleDrawB 5s ease-in-out infinite;}
+        .imga4_center>a{
+            width:267px;
+            height:49px;
+            position:absolute;
+            left:0;
+            top:200px;
+            background: url("ps/5.png") no-repeat -300px -870px;
+        }
+        .imga4_center_light{
+            width:267px;
+            height:50px;
+            z-index: 3;
+            position:absolute;
+            top:200px;
+            background: white;
+            opacity: 0;
+        }
+        .imga4_right{
+            width:267px;
+            height:49px;
+            float:right;
+            margin-top:300px;
+            margin-right:70px;
+            background: url("ps/5.png") no-repeat -567px -870px;
+        }
+        .imga4_right_light{
+            width:267px;
+            height:50px;
+            z-index: 3;
+            position:absolute;
+            top:300px;
+            left:795px;
+            background: white;
+            opacity: 0;
+        }
+        #center{
+            margin-top:240px;
+            clear:both;
+            height:602px;
+            position:relative;
+        }
+        #center>.center_nav{
+            position:absolute;
+            left:1000px;
+            top:-50px;
+            width:264px;
+            height:534px;
+            background: url("ps/10.png") no-repeat;
+            z-index: 3;
+        }
+        #center>.center_nav>li{
+            margin-top:155px;
+            float:left;
+            font-size:18px;
+            margin-right: 25px;
+            width:30px;
+            height:180px;
+            text-align: center;
+            line-height: 24px;
+            cursor: pointer;
+            /*background: url("ps/11.png") no-repeat 0 -8px ;*/
+        }
+        #center>.center_nav>li:nth-child(1){
+            margin-left: 36px;
+            background: url("ps/11.png") no-repeat 0 -8px ;
+        }
+        #center>.center_imggroup,#center>.center_imggroup>li,#center>.center_imggroup>li>img{
+            width:100%;
+        }
+        #center>.center_imggroup{
+            position:relative;
+        }
+        #center>.center_imggroup>li{
+            position:absolute;
+            top:0;
+            left:0;
+            z-index: 2;
+            display:none;
+        }
+        #center>.center_imggroup>li>img{
+            height:600px;
+        }
+        #center>.center_imggroup>li:nth-child(1){
+            display:block;
+        }
+        #xiu{
+            width:1400px;
+            height:569px;
+            background: url("ps/16.png") no-repeat 145px 310px ;
+            position:relative;
+        }
+        #xiu>video{background: black;}
+        #xiu>video{
+            width:710px;
+            height:312px;
+            margin-top:100px;
+        }
+        #xiu>ul{
+            position:absolute;
+            top:90px;
+            right:150px;
+            z-index: 5;
+        }
+        #xiu>ul>li{
+            width:104px;
+            height:24px;
+            margin-bottom: 13px;
+            background: aqua;
+            cursor: pointer;
+        }
+        #xiu>ul>li:nth-child(1){
+            background: url("ps/11.png") no-repeat -110px -600px;    /*动画只需要更改left+105*/
+        }
+        #xiu>ul>li:nth-child(2){
+            background: url("ps/11.png") no-repeat -5px -635px;
+        }
+        #xiu>ul>li:nth-child(3){
+            background: url("ps/11.png") no-repeat -5px -670px;
+        }
+        #xiu>ul>li:nth-child(4){
+            background: url("ps/11.png") no-repeat -5px -705px;
+        }
+        #xiu>ul>li:nth-child(5){
+            background: url("ps/11.png") no-repeat -5px -742px;
+        }
+        #xiu>ul>li:nth-child(6){
+            background: url("ps/11.png") no-repeat -5px -777px;
+        }
+        #xiu>.xiu_test{
+            position:absolute;
+            width:150px;
+            height:250px;
+            top:100px;
+            right:300px;
+            z-index: 4;
+            overflow: hidden;
+        }
+        #xiu>.xiu_test>img{
+            width:100%;
+        }
+        #xiu>.xiu_img{
+            position:absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+            z-index: 2;
+        }
+        #xiu>.xiu_img>img{
+            width:1400px;
+        }
+        #xiu>.xiu_img2{
+            position:absolute;
+            left:145px;
+            top:50px;
+            z-index:1;
+            width:200px;
+            height:362px;
+            background: url("ps/30white.png") repeat-x;
+            overflow: hidden;
+        }
+        #xiu>.xiu_img2>img{
+            width:100%;
+            height:100%;
+        }
+        .xiu_img2_a{width:100px;position:absolute;left:50px;top:0;}
+        .xiu_img2_a>img:nth-child(1){width:100%}
+        .xiu_img2_a>img:nth-child(2){width:20px;position:absolute;left:45px;top:5px;animation: videoA 2s linear infinite;}
+        .xiu_img2_b{width:100px;position:absolute;left:50px;top:170px;}
+        .xiu_img2_b>img{width:100%;}
+        .xiu_img2_c{width:100px;position:absolute;left:50px;top:80px;}
+        .xiu_img2_c>img{width:100%;}
+        #foot{
+            width:1400px;
+            height:530px;
+            margin-top: 100px;
+            position:relative;
+        }
+        #foot>ul>li{
+            position:absolute;
+            opacity:0;
+        }
+        #foot>ul>li:nth-child(1){
+            opacity:1;
+        }
+        #foot>ul>li,#foot>ul>li>img{width:100%;}
+        .foot_a{
+            position:absolute;
+            left:700px;
+            top:150px;
+            width:150px;
+            height:150px;
+            z-index: 2;
+        }
+        .foot_a>img{
+            width:100%;
+            height:100%;
+        }
+        .foot_b{
+            position:absolute;
+            left:1000px;
+            top:-50px;
+            width:200px;
+            font-size: 16px;
+            text-align: center;
+            z-index: 2;
+        }
+        .foot_b>img{
+            width:100%;
+        }
+        .foot_b>ul{
+            position: absolute;
+            width:100%;
+            height:100%;
+            left:0;
+            top:0;
+        }
+        .foot_b>ul>li{
+            float:left;
+            width:20px;
+            height:130px;
+            margin-top: 120px;
+            margin-left:21px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        .foot_b>ul>li:nth-child(1){
+            margin-left: 30px;
+            background: url("ps/copy.png");
+        }
+        #footer{
+            margin-top:50px;
+            width:1400px;
+            height:100px;
+        }
+        #footer>.footer_a{
+            width:200px;
+            margin:0 auto 20px;
+        }
+        .foot_a>img{
+            width:100%;
+            height:100%;
+        }
+        .foot_a>img:nth-child(2){
+            position: absolute;
+            left:30px;
+            top:30px;
+            width:90px;
+            height:90px;
+            animation: rotate 2s ease-in-out infinite;
+        }
+        #footer>.footer_a>li{
+            cursor: pointer;
+            float:left;
+            width:22px;
+            height:22px;
+        }
+        #footer>.footer_a>li:nth-child(1){width:60px;}
+        #footer>.footer_a>li:nth-child(2){background: url("ps/29.png") 0 0 ;}
+        #footer>.footer_a>li:nth-child(3){background: url("ps/29.png") 0 -24px ;}
+        #footer>.footer_a>li:nth-child(4){background: url("ps/29.png") 0 -350px ;}
+        #footer>.footer_a>li:nth-child(5){background: url("ps/29.png") 0 -475px ;}
+        #footer>.footer_b{clear:both;width:860px;height:50px;margin:0 auto;}
+        #footer>.footer_b>li{
+            cursor: pointer;
+            margin-top:20px;
+            font-size:14px;
+            float:left;
+            margin-right: 3px;
+        }
+        #footer>.footer_b>.b:hover{
+            border-radius: 5px;
+            color:white;
+            background: black;
+        }
+        #scroll{
+            position:fixed;
+            left:20px;
+            top:160px;
+            width:25px;
+            opacity:0;
+        }
+        #scroll>ul{
+            position:absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+        }
+        #scroll>ul>li{position: absolute;width:25px;left:0;opacity:0;}
+        #scroll>ul>li:nth-child(1){top:55px;}
+        #scroll>ul>li:nth-child(2){top:120px;left:2px;}
+        #scroll>ul>li:nth-child(3){top:185px;}
+        #scroll>ul>li:nth-child(4){top:245px;}
+        #scroll>ul>li:nth-child(5){top:312px;left:-2px}
+    </style>
+</head>
+<body>
+<div class="video1">
+    <video class="bgv load-video" width="1400px"  muted autoplay loop>
+        <source src="video/1a.webm" type="video/webm">
+        <source src="video/1b.mp4" type="video/mp4">
+    </video>
+    <p><span>0</span>%</p>
+</div>
+<div class="video2">
+    <video class="bgv enter-video" width="1400px" muted autoplay>
+        <source src="video/2a.webm" type="video/webm">
+        <source src="video/2b.mp4" type="video/mp4">
+    </video>
+    <video class="bgv loop-video" width="1400px" muted autoplay loop>
+        <source src="video/3a.webm" type="video/webm">
+        <source src="video/3b.mp4" type="video/mp4">
+    </video>
+    <a href="#" class="imga1 hide_group"></a>
+    <a href="#" class="imga2 hide_group"></a>
+    <div class="imga3 hide_group"></div>
+    <div class="imga4 hide_group">
+        <div class="imga4_left">
+            <input type="text" placeholder="邮箱账号">
+            <input type="text" placeholder="6-16位密码，区分大小写">
+            <a href="#"><img src="ps/50.png"></a>
+            <div class="imga4_left_light"></div>
+            <span><input type="checkbox">我同意<a href="#">《服务条款》</a>和<a href="#">《隐私保护和个人隐私信息政策》</a></span>
+        </div>
+        <div class="imga4_center">
+            <img src="ps/7.png"/>
+            <img src="ps/8.png"/>
+            <img src="ps/9.png"/>
+            <a href="#"></a>
+            <div class="imga4_center_light"></div>
+        </div>
+        <a  href="#" class="imga4_right"></a>
+        <div class="imga4_right_light"></div>
+    </div>
+</div>
+<div id="center">
+    <ul class="center_nav">
+        <li>会呼吸的江湖</li>
+        <li>旷世奇缘</li>
+        <li>N<br/>P<br/>C<br/>情缘</li>
+        <li>开放式世界</li>
+    </ul>
+    <ul class="center_imggroup">
+        <li><img src="ps/12.png"></li>
+        <li><img src="ps/13.png"></li>
+        <li><img src="ps/14.png"></li>
+        <li><img src="ps/15.png"></li>
+    </ul>
+</div>
+<div id="xiu">
+    <video class="bgv togglevideo" muted autoplay>
+        <source src="video2/0.mp4" type="video/mp4">
+    </video>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="xiu_test"><img src="ps/psnew/a0.png"></div>
+    <div class="xiu_img"><img src="ps/psnew/0.png"></div>
+    <div class="xiu_img2">
+        <img src="ps/17.png">
+        <div class="xiu_img2_a">
+            <img src="ps/psnew/c0.png">
+            <img src="ps/psnew/f.png">
+        </div>
+        <div class="xiu_img2_b"><img src="ps/psnew/b0.png"> </div>
+        <div class="xiu_img2_c"><img src="ps/psnew/d0.png"> </div>
+    </div>
+</div>
+<div id="foot">
+    <ul>
+        <li><img src="ps/24.png"></li>
+        <li><img src="ps/25.png"></li>
+        <li><img src="ps/26.png"></li>
+        <li><img src="ps/27.png"></li>
+    </ul>
+    <div class="foot_a"><img src="ps/55.png"><img src="ps/8.png"></div>
+    <div class="foot_b">
+        <img src="ps/10.png">
+        <ul>
+            <li>仙居原</li>
+            <li>风雪仗剑行</li>
+            <li>旗亭酒肆</li>
+            <li>灵动青丝</li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+    <ul class="footer_a">
+        <li>分享到:</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="footer_b">
+        <li>本项目由:</li>
+        <li class="b">鲍芳</li>
+        <li class="b">欧阳冬萍</li>
+        <li class="b">宋秀菲</li>
+        <li class="b">郑茂如</li>
+        <li class="b">罗国平</li>
+        <li class="b">曾俊君</li>
+        <li class="b">刘天福</li>
+        <li class="b">肖坛中</li>
+        <li class="b">张维</li>
+        <li class="b">甘文强</li>
+        <li>联合出品，23届黑马前端班级版权所有<b>©</b>2018-nidaoban</li>
+    </ul>
+</div>
+<div id="scroll">
+    <img src="ps/psnew/z0.png">
+    <ul>
+        <li><img src="ps/psnew/x0.png"></li>
+        <li><img src="ps/psnew/x1.png"></li>
+        <li><img src="ps/psnew/x2.png"></li>
+        <li><img src="ps/psnew/x3.png"></li>
+        <li><img src="ps/psnew/x4.png"></li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        //跳转页面
+        $('.imga1').on('click',function(){
+           location.href='../官网/nishuihan.html'
+        })
+
+
+        $('.video1').siblings('div').css('display','none');
+        var a=0;
+        var time=setInterval(function(){
+            a+=10;
+            $('.video1>p>span').html(a);
+            if(a==100){
+                clearInterval(time);
+                var time1=setTimeout(function(){
+                        $('.video1').css('display','none').siblings('div').css('display','block');
+                        clearTimeout(time1)
+                },2000)
+            }
+        },100);
+
+        var time2=setTimeout(function(){
+            $('.video2>.enter-video').css('display','none').next().css('display','block');
+            $('.hide_group').fadeIn(500);
+            $('#scroll').css('opacity','1');
+            clearTimeout(time2)
+        },6500);
+       /* $('.video1').css('display','none');                                                   //这三句测试
+        $('.video2>.enter-video').css('display','none').next().css('display','block');
+        $('.hide_group').fadeIn(500);*/
+
+        //登录移入显示盖布移出隐藏
+        $('.imga4_left_light').on('mouseenter',function(){
+            $(this).stop(true,false).animate({opacity:0.2},100)
+        });
+        $('.imga4_left_light').on('mouseleave',function(){
+            $(this).stop(true,false).animate({opacity:0},100)
+        });
+        //中间框按钮移入变亮
+        $('.imga4_center_light').on('mouseenter',function(){
+            $(this).stop(true,false).animate({opacity:0.2},100)
+        });
+        $('.imga4_center_light').on('mouseleave',function(){
+            $(this).stop(true,false).animate({opacity:0},100)
+        });
+        //右边按钮移入变亮
+        $('.imga4_right_light').on('mouseenter',function(){
+            $(this).stop(true,false).animate({opacity:0.2},100)
+        });
+        $('.imga4_right_light').on('mouseleave',function(){
+            $(this).stop(true,false).animate({opacity:0},100)
+        });
+
+
+        //渐变大图轮播图
+        var $navli=$('.center_nav>li');            //能点击的li标签
+        var $imggroup=$('.center_imggroup>li');           //轮播图的li
+        var navindex=0;
+        var navtime;               //设置定时器
+        //轮播图鼠标移入事件
+        $navli.mouseenter(function(){
+            navindex=$(this).index();
+            $(this).css({'backgroundImage':'url("ps/11.png")'},{'backgroundPosition':'0 -8px'},{'backgroundRepeat':'no-repeat'}).siblings().css({'background':'none'});
+            $imggroup.eq(navindex).fadeIn(1000).siblings().fadeOut(800);
+            clearInterval(navtime);
+        });
+        //鼠标移出事件
+        $navli.mouseenter(function(){
+            box()
+        });
+        //轮播
+        box();
+       function box(){
+           navtime=setInterval(function(){
+               if(navindex>=$navli.length){
+                   navindex=0;
+               }
+               $navli.eq(navindex).css({'backgroundImage':'url("ps/11.png")'},{'backgroundPosition':'0 -8px'},{'backgroundRepeat':'no-repeat'}).siblings().css({'background':'none'});
+               $imggroup.eq(navindex).fadeIn(1000).siblings().fadeOut(800);
+               navindex++;
+           },3000)
+       }
+    });
+    //video播放
+    /*<video class="bgv togglevideo" muted>
+    <source src="video2/0.mp4" type="video/mp4">
+        </video>*/
+    //人物和字体图片轮播
+    var xiutime=0;                   //计数器
+    var xiutimerA;                   //计时器
+    xiuA();
+    $('#xiu>ul>li').on('mouseleave',function(){
+        xiuA();
+    });
+    $('#xiu>ul>li').on('mouseenter',function(){
+        clearInterval(xiutimerA);            //清除定时器
+        //设置点击切换背景图片
+        xiutime=$(this).index();             //获取点击列表事件的li的index,把值传给一个全局变量 计数器
+        /*xiuA();                              //这个方法下面*/
+        xiuABC()
+    });
+    function xiuA(){
+        xiutimerA=setInterval(function(){
+            xiutime++;
+            if(xiutime>=6){
+                xiutime=0;
+            }
+            xiuABC()
+        },6000)
+    }
+    function xiuABC(){
+        $('#xiu>ul>li').eq(xiutime).css({'backgroundPosition':'-110px '+(-600-xiutime*35)+'px'});    //通过计数器来更换li的背景图片，因为要改定位所以麻烦点
+        for(var i=0;i<6;i++){                            //这里是除了计数器数值外的其他li标签也就是除了点击那个li 其余的 都更换背景
+            if(i!=xiutime){
+                $('#xiu>ul>li').eq(i).css({'backgroundPosition':'-5px '+(-600-i*35)+'px'}); //background-position-110px -600px
+            }
+        }
+        //视频切换
+        $('.togglevideo').hide();
+        $('.togglevideo').attr('src','video2/'+xiutime+'.mp4').attr('autoplay','true');
+        $('.togglevideo').show();
+        //设置点击切换大图   <div class="xiu_img"><img src="ps/psnew/0.png"></div>
+        $('.xiu_img>img').hide();
+        $('.xiu_img>img')[0].src='ps/psnew/'+xiutime+'.png';
+        $('.xiu_img>img').show(1000);
+        //设置字体图片的动画  <div class="xiu_test"><img src="ps/psnew/a0.png"></div>width:200px;top:50px;right:200px;
+        $('.xiu_test>img')[0].src='ps/psnew/a'+xiutime+'.png';
+        $('.xiu_test').css({width:'200px',top:'50px',right:'200px',opacity:0});/*.animate({width:'150px',top:'100px',right:'300px',opacity:1},400);*/
+        //设置左侧框中三个图片
+        $('.xiu_img2_a>img:nth-child(1)')[0].src='ps/psnew/c'+xiutime+'.png';
+        $('.xiu_img2_b>img')[0].src='ps/psnew/b'+xiutime+'.png';
+        $('.xiu_img2_c>img')[0].src='ps/psnew/d'+xiutime+'.png';
+        $('.xiu_img2_b').css({top:'400px'});
+        $('.xiu_img2_c').css({left:'300px'});
+        $('.xiu_img2_a').css({top:'-70px'}).stop(true,false).animate({top:'0px'},250,function(){
+            $('.xiu_img2_b').stop(true,false).animate({top:'170px'},250,function(){
+                $('.xiu_img2_c').stop(true,false).animate({left:'50px'},250,function(){
+                    $('.xiu_test').stop(true,false).animate({width:'150px',top:'100px',right:'300px',opacity:1},200);
+                });
+            });
+        });
+    }
+
+     //底层轮播图
+    var foottime=0;
+    var footnum;
+    aaaa();
+    $('.foot_b>ul>li').on('mouseenter',function(){
+        foottime=$(this).index();
+        $(this).css({backgroundImage:'url("ps/copy.png")',backgroundRepeat:'no-repeat'}).siblings().css({backgroundImage:'none'});
+        $('#foot>ul>li').eq(foottime).stop(true,false).animate({opacity:1,zIndex:2}).siblings().animate({opacity:0,zIndex:1});
+        clearInterval(footnum)
+    });
+    $('.foot_b>ul>li').on('mouseleave',function(){
+        aaaa()
+    });
+    function aaaa(){
+        footnum=setInterval(function(){
+            if(foottime>=4){
+                foottime=0
+            }
+            $('.foot_b>ul>li').eq(foottime).css({backgroundImage:'url("ps/copy.png")',backgroundRepeat:'no-repeat'}).siblings().css({backgroundImage:'none'});
+            $('#foot>ul>li').eq(foottime).stop(true,false).animate({opacity:1,zIndex:2}).siblings().animate({opacity:0,zIndex:1});
+            foottime++;
+        },3000);
+    }
+
+    //左侧事件监听   //<div id="center"><div id="xiu"><div id="foot"><div id="footer">
+    var winH=$(window).height();      //获取window窗口高度
+    var centertop=$('#center').offset().top;  //
+    var xiutop=$('#xiu').offset().top;
+    var foottop=$('#foot').offset().top;
+    /*console.log(winH);
+    console.log(centertop);
+    console.log(xiutop);
+    console.log(foottop);
+    console.log(footertop);*/
+    $(window).on('scroll',function(){
+        if($(this).scrollTop()>=2320){
+            $('#scroll>ul>li:nth-child(5)').stop(true,false).animate({opacity:'1'},200);
+        }else if($(this).scrollTop()>=foottop-winH*1.6){
+            $('#scroll>ul>li:nth-child(4)').stop(true,false).animate({opacity:'1'},200).siblings().animate({opacity:'0'},200);
+        }else if($(this).scrollTop()+winH*1.6>=xiutop){
+            $('#scroll>ul>li:nth-child(3)').stop(true,false).animate({opacity:'1'},200).siblings().animate({opacity:'0'},200);
+        }else if($(this).scrollTop()+winH*1.6>=centertop){
+            $('#scroll>ul>li:nth-child(2)').stop(true,false).animate({opacity:'1'},200).siblings().animate({opacity:'0'},200);
+        }else if($(this).scrollTop()==0){
+            $('#scroll').css('display','none');
+        }else{
+            $('#scroll').css('display','block');
+            $('#scroll>ul>li:nth-child(1)').stop(true,false).animate({opacity:'1'},200).siblings().animate({opacity:'0'},200);
+        }
+    })
+</script>
+</body>
+</html>

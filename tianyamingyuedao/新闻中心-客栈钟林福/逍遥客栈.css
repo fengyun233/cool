@@ -1,0 +1,938 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal
+}
+ol, ul {
+    list-style: none
+}
+caption, th {
+    text-align: left
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+a {
+    color: #666767;
+    text-decoration: none;
+}
+body {
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    background: url(imgs客栈/bg_2.jpg) no-repeat center bottom #f1f1f1;
+    padding-top: 42px;
+
+}
+.wrapper {
+    background: url(imgs客栈/bg.jpg) no-repeat center top  ;
+    margin: 42px;
+}
+.conntainer {
+    width: 1215px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    height: 383px;
+    overflow: hidden;
+}
+.header h1 {
+    margin-top: 16px;
+    float: left;
+}
+.ti {
+    text-indent: -9999px;
+}
+.header>a {
+    float: right;
+    background: url("./imgs客栈/img_1.png");
+    width: 86px;
+    height: 37px;
+
+}
+.conntainer .nav {
+    float: left;
+    width: 200px;
+    padding-right: 15px;
+
+}
+.conntainer .nav .download {
+    display: block;
+    height: 102px;
+    background: url("./imgs客栈/img_2.jpg");
+}
+.conntainer .nav .list1 {
+    background: url("./imgs客栈/img_7.jpg") no-repeat;
+    overflow: hidden;
+}
+ .conntainer .nav .list1 li {
+    float: left;
+    height: 70px;
+    width:99px;
+     font-size: 14px;
+     text-align: center;
+     line-height: 70px;
+}
+.conntainer .nav .list1 .height {
+    height: 80px;
+}
+.conntainer .nav .list1 a {
+    display: block;
+    width: 100%;
+    background: url("./imgs客栈/img_7.png");
+}
+.conntainer .nav a.nl1 {
+     background-position: 0 -1px;
+ }
+.conntainer .nav a.nl2 {
+    background-position: -100px -1px;
+}
+.conntainer .nav a.nl3 {
+    background-position: 0 -82px;
+}
+
+.conntainer .nav a.nl4 {
+    background-position: -100px -82px;
+}
+
+.conntainer .nav a.nl5 {
+    background-position: 0 -153px;
+}
+
+.conntainer .nav a.nl6 {
+    background-position: -100px -153px;
+}
+
+.conntainer .nav a.nl7 {
+    background-position: 0 -224px;
+}
+
+.conntainer .nav a.nl8 {
+    background-position: -100px -224px;
+}
+
+.conntainer .nav a.nl9 {
+    background-position: 0 -295px;
+}
+
+.conntainer .nav a.nl10 {
+    background-position: -100px -295px;
+}
+
+.conntainer .nav a.nl11 {
+    background-position: 0 -366px;
+}
+.conntainer .nav .list2 {
+    height: 350px;
+    background: url(./imgs客栈/img_8.jpg);
+    overflow: hidden;
+}
+.conntainer .nav .list2 li {
+    float: left;
+
+
+}
+.conntainer .nav .list2 li a {
+    display: block;
+    width: 99px;
+    height:116px;
+    text-align: center;
+    margin: 0 1px 1px 0;
+    color: #fff;
+    line-height: 166px;
+    font-size: 15px;
+}
+.conntainer .nav .navfoot {
+    padding-top: 11px;
+}
+.conntainer .nav .navfoot a {
+    display: block;
+    margin-bottom: 7px;
+}
+.wrapper .content {
+    float: right;
+    width: 1000px;
+
+}
+.wrapper .content .person {
+    position: relative;
+    float: left;
+    width: 587px;
+    height: 361px;
+}
+.wrapper .content .person a{
+    position: absolute;
+}
+.wrapper .content .person_a2 {
+    left: 265px;
+}
+.wrapper .content .person_a3 {
+    top: 163px;
+    left: 265px;
+}
+.wrapper .content .person_a4 {
+    top: 163px;
+    left: 433px;
+}
+.wrapper .content .newsbox {
+    float: left;
+    margin-left: 14px;
+    background: #fff;
+    width: 399px;
+    height: 361px;
+}
+.wrapper .content .newsbox .pm  {
+    padding:17px 20px 0;
+}
+.wrapper .content .newsbox .pm .toptitle {
+    position: relative;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #45c7ac;
+    font-weight: bold;
+}
+.wrapper .content .newsbox .pm samp {
+    width: 35px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 8px;
+    height: 10px;
+    overflow: hidden;
+    display: inline-block;
+    background: url("./imgs客栈/img_12.png") ;
+}
+.wrapper .content .newsbox .pm .toptitle a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #45c7ac;
+}
+.wrapper .content .newsbox .pm .on {
+    position: absolute;
+    left: 175px;
+    bottom: 0px;
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    line-height: 1.5;
+}
+.wrapper .content .newsbox .pm .conlist li {
+    height: 30px;
+    overflow: hidden;
+}
+.wrapper .content .newsbox .pm .conlist li em:hover {
+    color: #45c7ac;
+}
+.wrapper .content .newsbox .pm .conlist li a {
+    color: #939393;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    margin: 7px 0;
+    display: block;
+    position: relative;
+
+}
+.listshow {
+    display: block;
+}
+li em:hover {
+    color: #45c7ac;
+}
+.wrapper .content .newsbox .pm .conlist li em {
+    width: 250px;
+    overflow: hidden;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+}
+.wrapper .content .newsbox .pm .conlist li span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wrapper .content .box_bj {
+    padding: 15px 15px 15px 0;
+    float: left;
+    width:586px;
+    /*overflow: hidden;*/
+    /*clear: both;*/
+    margin-top: 0px;
+
+}
+.wrapper .content .box_bj .raiders {
+    background: #fff;
+    width:586px;
+    height: 180px;
+}
+.wrapper .content .box_bj .raiders .pm{
+    padding: 17px 20px 0;
+
+}
+.wrapper .content .box_bj .raiders .pm .topt {
+    position: relative;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #45c7ac;
+    font-weight: bold;
+}
+.wrapper .content .box_bj .raiders .pm samp {
+    position: absolute;
+    bottom: 0;
+    margin-left: 8px;
+    width: 100px;
+    height: 10px;
+    background: url("./imgs客栈/img_12.png") 0 -10px no-repeat;
+}
+.wrapper .content .box_bj .raiders .pm .topt a {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #45c7ac;
+}
+.wrapper .content .box_bj .raiders .pm .rai_a {
+    padding-top: 12px;
+    margin-bottom: 15px;
+}
+.wrapper .content .box_bj .raiders .pm .rai_a a {
+    padding-right: 25px;
+    line-height: 36px;
+}
+.wrapper .content .box_bj .fiction {
+    height: 255px;
+    margin-top: 15px;
+    background: #fff;
+}
+.wrapper .content .box_bj .fiction .pm {
+    padding: 17px 20px 0;
+}
+.wrapper .content .box_bj .fiction .pm h2 {
+    position: relative;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #45c7ac;
+    font-weight: bold;
+}
+.wrapper .content .box_bj .fiction .pm h2 samp{
+    position: absolute;
+    bottom: 0;
+    margin-left: 8px;
+    width: 100px;
+    height: 10px;
+    background: url("./imgs客栈/img_12.png") 0 -29px no-repeat;
+}
+.wrapper .content .box_bj .fiction .pm  h2 a {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #45c7ac;
+}
+.wrapper .content .box_bj .fiction .pm .conlist {
+    width:350px;
+    padding-top: 11px;
+    float: left;
+}
+.wrapper .content .box_bj .fiction .pm .conlist li {
+    height: 30px;
+    overflow: hidden;
+}
+.wrapper .content .box_bj .fiction .pm .conlist li a {
+    color: #939393;
+    font-size: 12px;
+    margin: 7px 0;
+    position: relative;
+    display: block;
+}
+.wrapper .content .box_bj .fiction .pm .conlist li em {
+    position: absolute;
+    margin-left: 10px;
+    width: 270px;
+}
+.wrapper .content .box_bj .fiction .pm .conlist li span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.wrapper .content .box_bj .fiction .pm .fic_right {
+    float: right;
+
+}
+.wrapper .content .box_bj .fiction .pm .fic_right a {
+    margin-top: 20px;
+    display: block;
+
+}
+.wrapper .content .features{
+    float: left;
+    background: #fff;
+    width: 399px;
+    height:450px;
+    margin: 15px 0;
+}
+.wrapper .content .features .toptitle {
+
+    margin: 20px 17px;
+    position: relative;
+    font-size: 30px;
+    line-height: 30px;
+    color: #45c7ac;
+    font-weight: bold;
+}
+.wrapper .content .features .toptitle .entitle3{
+    position: absolute;
+    bottom: 0px;
+    margin-left: 8px;
+    width: 100px;
+    height: 10px;
+    background: url("./imgs客栈/img_12.png") 0 -19px no-repeat;
+
+}
+.wrapper .content .features .toptitle a  {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #45c7ac;
+    font-weight: normal;
+}
+.wrapper .content .features .fea_list li {
+    float: left;
+
+
+}
+.wrapper .content .features .fea_list li a {
+    display: block;
+    margin: 5px 7px 12px 8px;
+}
+.wrapper .content .features .fea_list li a img {
+    display: block;
+    margin-bottom: 4px;
+}
+.wrapper .content .guide {
+    height: 559px;
+    margin-bottom: 15px;
+    background: #fff url("imgs客栈/img_15.jpg") no-repeat right bottom;
+    clear: both;
+    padding: 17px 20px 0;
+    overflow: hidden;
+}
+.wrapper .content .guide .toptitle {
+
+    position: relative;
+    font-size: 30px;
+    line-height: 30px;
+    color: #45c7ac;
+    font-weight: bold;
+}
+.wrapper .content .guide .toptitle .entitle3 {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 8px;
+    width: 100px;
+    height: 10px;
+    background: url("./imgs客栈/img_12.png") 0 -39px no-repeat;
+
+}
+.wrapper .content .guide .hd {
+    float: left;
+    margin-top: 28px;
+    width: 48px;
+    height: 475px;
+    background: url("imgs客栈/img_161104.jpg") no-repeat;
+}
+.wrapper .content .guide .hd li{
+    padding: 6px 0;
+}
+.wrapper .content .guide .hd  a {
+    display: block;
+    height: 48px;
+    width: 48px;
+    /*background: rgba(0,0,0,1.0);*/
+}
+.wrapper .content .guide .hd  .on .ona1 {
+    background: url("imgs客栈/img_161104.jpg") right 0;
+}
+.wrapper .content .guide .hd  .on .ona2 {
+    background: url("imgs客栈/img_161104.jpg") right -60px;
+}
+.wrapper .content .guide .hd  .on .ona3 {
+    background: url("imgs客栈/img_161104.jpg") right -120px;
+}
+.wrapper .content .guide .hd  .on .ona4 {
+    background: url("imgs客栈/img_161104.jpg") right -180px;
+}
+.wrapper .content .guide .hd  .on .ona5 {
+    background: url("imgs客栈/img_161104.jpg") right -240px;
+}
+.wrapper .content .guide .hd  .on .ona6 {
+    background: url("imgs客栈/img_161104.jpg") right -300px;
+}
+.wrapper .content .guide .hd  .on .ona7 {
+    background: url("imgs客栈/img_161104.jpg") right -360px;
+}
+.wrapper .content .guide .hd  .on .ona8 {
+    background: url("imgs客栈/img_161104.jpg") right -420px;
+}
+
+
+
+.wrapper .content .guide .bd {
+    margin-top: 34px;
+    float: left;
+    width: 446px;
+    padding-left: 55px;
+    height: 486px;
+}
+.wrapper .content .guide .bd .tab-panel {
+    width:877px;
+    height: 484px;
+    position: relative;
+}
+.wrapper .content .guide .bd .tab-panel .right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.wrapper .content .guide .bd .tab-panel h3 {
+    color: #2fc3a2;
+    font-size: 52px;
+    font-family: "宋体";
+    line-height: 52px;
+}
+.wrapper .content .guide .bd .tab-panel .int {
+    margin: 8px 0 16px;
+    line-height: 20px;
+    width: 446px;
+}
+.wrapper .content .guide .bd .tab-panel p a {
+    display: inline-block;
+    width: 32px;
+    height: 14px;
+    text-align: center;
+    background: #ff8f17;
+    color: #fff;
+    line-height: 13px;
+}
+.wrapper .content .guide .bd .tab-panel .operation {
+    height: 110px;
+}
+.wrapper .content .guide .bd .tab-panel .operation .text {
+    font-size: 16px;
+    float: left;
+}
+.wrapper .content .guide .bd .tab-panel .operation .text h4 {
+    font-size: 100%;
+}
+.wrapper .content .guide .bd .tab-panel .operation .text .diffcult {
+    width: 150px;
+    height: 18px;
+    margin: 5px 0 12px;
+    position: relative;
+}
+.wrapper .content .guide .bd .tab-panel .operation .text .diffcult span {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background: url("imgs客栈/img_18.png");
+}
+.wrapper .content .guide .bd .tab-panel .operation .text .width4 {
+    width: 112px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.wrapper .content .guide .bd .tab-panel .operation .text p {
+    display: block;
+    line-height: 20PX;
+}
+.wrapper .content .guide .bd .tab-panel .operation a {
+    float: left;
+    margin-left: 128px;
+}
+.wrapper .content .guide .bd .tab-panel .conlist {
+
+    width: 446px;
+}
+.wrapper .content .guide .bd .tab-panel .conlist h4 {
+    font-size: 16px;
+    padding: 18px 0 10px;
+    position: relative;
+}
+.wrapper .content .guide .bd .tab-panel .conlist h4 a {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    width: 40px;
+    height: 22px;
+    background: url("./imgs客栈/img_19.png");
+    text-align: center;
+    transition: all 0.6s ease;
+}
+.wrapper .content .guide .bd .tab-panel .conlist li {
+    height: 30px;
+}
+.wrapper .content .guide .bd .tab-panel .conlist li a{
+    height: 30px;
+    position: relative;
+    display: block;
+    line-height: 30px;
+}
+.wrapper .content .guide .bd .tab-panel .conlist li a em {
+    position: absolute;
+    top: 0;
+    margin-left: 10px;
+    width: 270px;
+}
+.wrapper .content .guide .bd .tab-panel .conlist li a span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.wrapper .content .play {
+    background: #fff;
+    width: 980px;
+    height: 395px;
+    overflow: hidden;
+    margin-bottom: 70px;
+    padding:17px 0 0 20px;
+}
+.wrapper .content .play h2 {
+    position: relative;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #45c7ac;
+    font-weight: bold;
+}
+.wrapper .content .play h2 .entitle6 {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 8px;
+    /*display: inline-block;*/
+    width: 100px;
+    height: 10px;
+    line-height: 10px;
+    background: url("imgs客栈/img_12.png") no-repeat 0 -48px;
+}
+.wrapper .content .play .accordion {
+    width: 1000px;
+}
+.wrapper .content .play .accordion .tu {
+    float: left;
+    height: 317px;
+    margin-right: 1px;
+    margin-top: 30px;
+}
+.wrapper .content .play .accordion .tu a {
+    display: block;
+    width: 58px;
+    height: 317px;
+    background: url("./imgs客栈/img_20.jpg") -413px 0 no-repeat;
+}
+.wrapper .content .play .accordion .acc {
+    position: relative;
+    float: left;
+    width: 428px;
+    height: 317px;
+    margin-top: 30px;
+
+}
+/*.wrapper .content .play .accordion .acc:nth-child(1) {*/
+    /*background: url("./imgs客栈/img_20.jpg") -59px 0 no-repeat;*/
+/*}*/
+/*.wrapper .content .play .accordion .acc:nth-child(2) {*/
+    /*background: url("./imgs客栈/img_20.jpg") -118px 0 no-repeat;*/
+/*}*/
+.wrapper .content .play .accordion .acc .acc_panel {
+    position: relative;
+    padding-left: 130px;
+    width: 282px;
+}
+.wrapper .content .play .accordion .acc .acc_panel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrapper .content .play .accordion .acc .acc_panel>a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 317px;
+    background: url("./imgs客栈/img_20.jpg") no-repeat;
+}
+.wrapper .content .play .accordion .acc .acc_panel .a1 {
+    display: none;
+    background-position:0 0 ;
+}
+.wrapper .content .play .accordion .acc .acc_panel .a2 {
+    background-position:-59px 0 ;
+}
+.wrapper .content .play .accordion .acc .acc_panel .a3 {
+    background-position:-118px 0 ;
+}
+.wrapper .content .play .accordion .acc .acc_panel .a4 {
+    background-position:-177px 0 ;
+}
+.wrapper .content .play .accordion .acc .acc_panel .a5 {
+    background-position:-236px 0 ;
+}
+.wrapper .content .play .accordion .acc .acc_panel .a6 {
+    background-position:-295px 0 ;
+}
+.wrapper .content .play .accordion .acc .acc_panel .a7 {
+    background-position:-354px 0 ;
+}
+
+.wrapper .content .play .accordion .acc .acc_panel .inner {
+    padding-top: 23px;
+    /*z-index: 10;*/
+}
+.wrapper .content .play .accordion .acc .acc_panel .inner h3 {
+    font-size: 28px;
+    width: 30px;
+    font-family:"宋体";
+    /*float: left;*/
+    margin-right: 12px;
+    line-height: 32px;
+    z-index: 10;
+    position: absolute;
+}
+.wrapper .content .play .accordion .acc .acc_panel .inner p {
+    width: 240px;
+    float: right;
+    line-height: 20px;
+    color: #828282
+}
+.wrapper .content .play .accordion .acc .acc_panel .inner p a {
+    display: inline-block;
+    width: 32px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    background: #ff8f17;
+    color: #fff;
+}
+.wrapper .content .play .accordion .acc .acc_panel .conlist {
+    /*height: 20px;*/
+    z-index: 10;
+}
+.wrapper .content .play .accordion .acc .acc_panel .conlist .moretitle {
+    padding: 20px 0 5px;
+    font-size: 16px;
+    clear: both;
+    z-index: 100;
+
+}
+.wrapper .content .play .accordion .acc .acc_panel .conlist .moretitle a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 22px;
+    background: url("imgs客栈/img_19.png") no-repeat;
+}
+.wrapper .content .play .accordion .acc .acc_panel .conlist li {
+    height: 30px;
+    overflow: hidden;
+}
+.wrapper .content .play .accordion .acc .acc_panel .conlist li a {
+    position: relative;
+    display: block;
+    color: #939393;
+    line-height: 16px;
+    height: 16px;
+    margin: 7px 0;
+}
+.wrapper .content .play .accordion .acc .acc_panel .conlist li a em {
+    position: absolute;
+    top: 0px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+.wrapper .content .play .accordion .acc .acc_panel .conlist li a span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.wrapper .footer {
+    background: url("./imgs客栈/img_21.jpg");
+    font-family: "宋体";
+}
+.wrapper .footer .one {
+    padding: 8px 3%;
+    text-align: center;
+    color: #4f5f5f;
+}
+.wrapper .footer  .footer_ied {
+    margin: 0 auto;
+    padding: 35px 0 45px;
+    width: 780px;
+    line-height: 1.5px;
+    position: relative;
+    overflow: hidden;
+    /*z-index: 2;*/
+}
+.wrapper .footer  .footer_ied .logo {
+    float: left;
+    width: 231px;
+    height: 40px;
+    background: url(imgs客栈/footerlogo.png) no-repeat;
+
+}
+.wrapper .footer  .footer_ied .logo a {
+    float: left;
+    width: 110px;
+    height: 30px;
+    margin-top: 10px;
+}
+.wrapper .footer  .footer_ied .wrap_ied {
+    font-size: 10px;
+    line-height: 18px;
+    float: left;
+    padding: 2px 0 2px 11px;
+    width: 535px;
+    border-left: 1px solid #596963;
+}
+.wrapper .footer  .footer_ied .wrap_ied .ftce {
+    float: left;
+    color: #4f5f5f;
+}
+.wrapper .footer  .footer_ied .wrap_ied .right {
+    float: right;
+}
+.wrapper .footer  .footer_ied .wrap_ied .flks a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px;
+}
+.wrapper .footer  .footer_ied .wrap_ied .flks i {
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    width: 1px;
+    height: 6px;
+    /*color: #666767;*/
+    background-color: #666767;
+
+
+}
+.wrapper .footer  .footer_ied .wrap_ied .ftcc {
+    float: left;
+    margin-top: 2px;
+    padding-left: 4px;
+    font-size: 10px;
+}
+.wrapper .footer  .footer_ied .wrap_ied .right {
+    float: right;
+    padding-right: 6px;
+}
+.head {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url("imgs客栈/ost-bg.png") repeat-x;
+    background-color: #fff;
+    /*z-index: 3;*/
+    border: 1px solid #c9c9c9;
+    border-width: 1px 0;
+}
+
+/*头部开始*/
+.head ul {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.head li {
+    float: left;
+
+}
+.head .logo {
+    margin-right: 15px;
+    z-index: 10;
+    position: relative;
+}
+
+.head  .logo a {
+    display: block;
+    width: 205px;
+    height: 40px;
+    background: url("imgs客栈/ost-bg.png") 0 -40px;
+
+}
+.head .nba {
+    width:230px;
+    height: 40px;
+}
+.head .game {
+    width: 220px;
+    line-height: 40px;
+    float: right;
+}
+.head .game .chengzhang {
+    float: left;
+    line-height: 40px;
+    width:118px;
+    cursor: pointer;
+    text-indent: 20px;
+
+}
+.head .game .paihang {
+    float: left;
+}
+.head .game .paihang i {
+    /*display: inline-block;*/
+    /*margin-left: 5px;*/
+    width: 11px;
+    height: 11px;
+    background: url("imgs客栈/ost-bg.png" ) -150px -134px;
+}
+.head .big {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -485px;
+    /*margin: 0 auto;*/
+}
+
+
+
+
+
+
+

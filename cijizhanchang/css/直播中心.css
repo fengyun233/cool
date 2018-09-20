@@ -1,0 +1,105 @@
+/* ³õÊ¼»¯´úÂë */
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+input,
+img,
+i,
+strong,
+del,
+em,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font: 12px/100% "Î¢ÈíÑÅºÚ";
+    background-color:#f0f0f0;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+#footer_ied {
+    text-align: center;
+    font-size: 12px;
+    line-height: 19px;
+    color: #a4a4a4;
+}
+
+#footer_ied {
+    clear: both;
+
+    margin: 0 auto;
+    padding: 10px 18px 10px 20px;
+    background-color: #000;
+
+}
+
+.wrap_ied {
+    padding-top: 16px;
+
+}
+
+#footer_ied p.e {
+    margin-top: -4px;
+    font-size: 10px;
+}
+#footer_ied a {
+    color: #a4a4a4;
+}
+#footer_ied a:hover {
+    color: #cccccc;
+}

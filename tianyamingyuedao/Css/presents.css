@@ -1,0 +1,461 @@
+/*初始化代码*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+b,
+h1,
+h3 {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.w {
+    width: 1295px;
+    margin: 0 auto;
+}
+
+body {
+    font: 13px/100% "微软雅黑";
+    background-color: #e6ebea;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*四重新手好礼结构代码开始 */
+.present {
+    width: 786px;
+    height: 543px;
+    position: fixed;
+    display: block;
+    visibility: visible;
+    z-index: 99;
+    left: 50%;
+    top: 45px;
+    margin-left: -393px;
+    margin-bottom: 100px;
+    margin-top: 0;
+
+}
+
+.present .present-top {
+    width: 786px;
+    height: 53px;
+}
+
+.present .present-top .taba:first-child {
+    width: 198px;
+}
+
+div>div>a {
+    display: block;
+    width: 196px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    font-weight: bold;
+    color: #a0a0a0;
+    font-size: 16px;
+    background: #000;
+    float: left;
+    position: relative;
+}
+
+.moren {
+    background-color:#2fc3a3;
+    color: #fff;
+}
+
+.present .present-top .wr {
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #2fc3a3 transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*中间礼包模块开始 */
+.present .present-content {
+    width: 786px;
+    height: 399px;
+    padding-top: 17px;
+    background-color: #ffffff;
+}
+
+.present .present-content ul {
+    width: 747px;
+    height: 370px;
+    margin: 0 auto ;
+    display: none;
+}
+
+.present .present-content ul:first-child {
+    display: block;
+    background: url("../Images/ly-1.jpg") center center;
+}
+
+.present .present-content ul .gif-ls {
+    width: 243px;
+    height: 118px;
+    float: left;
+    margin:0 9px 8px 0 ;
+    position: relative;
+}
+
+.present .present-content ul .gif-ls:nth-child(3n) {
+    width: 243px;
+    height: 118px;
+    float: left;
+    margin-right:0 ;
+}
+
+.present .present-content .gif-ls .jieshao {
+    display: none;
+    box-shadow: 0 -3px 5px rgba(0,0,0,.3);
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin: 0 0 0 -137px;
+    padding: 10px;
+    width: 255px;
+    background: rgba(255,255,255,.9);
+}
+
+.present .present-content .gif-ls .jieshao td {
+    width: 128px;
+}
+
+.present .gif-ls .jieshao .qe {
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(255,255,255,.9) transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*天涯明月礼部分*/
+.present-content .gif-ul  .gif-guide {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2fc3a3;
+    text-align: center;
+    line-height: 33px;
+    padding: 0 0 5px;
+}
+
+.present-content .gif-ul .gif-award {
+    width: 100%;
+    height: 33px;
+    background-color: #f8f2e6;
+    margin: 3px 0;
+    line-height: 33px;
+}
+
+.present-content .gif-ul .gif-award b {
+    display: inline-block;
+    width: 90px;
+    background-color: #ff8f17;
+    text-align: center;
+}
+
+.present-content .gif-ul .gif-award i {
+    display: inline-block;
+    width: 125px;
+    height: 33px;
+    text-align: center;
+}
+
+.present-content .gif-ul .gif-award i.money {
+    width: 88px;
+}
+
+.present-content .gif-ul .rewod {
+height: 342px;
+    width: 100%;
+}
+
+.present-content .gif-ul  p.power {
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2fc3a3;
+    text-align: center;
+    line-height: 20px;
+    padding: 2px 0 0;
+}
+
+.present-content .gif-ul>.rewod .goal {
+    width: 746px;
+    height: 340px;
+}
+
+.present-content .gif-ul>.rewod .table-left {
+    width: 45%;
+    height: 340px;
+    background-color: #f8f2e6;
+    float: left;
+    text-align: center;
+    border-collapse:collapse;
+}
+
+.rewod table thead tr {
+    border-bottom:0;
+    background-color: #ff8f17;
+    height: 30px;
+}
+
+.present-content .gif-ul>.rewod table tr {
+    border-bottom:1px solid #ddd;
+}
+
+.present-content .gif-ul>.rewod .table-right{
+    width: 55%;
+    height: 340px;
+    background-color: #f8f2e6;
+    float: right;
+    text-align: center;
+    border-collapse:collapse;
+}
+
+/*关闭按钮*/
+.present .present-close {
+    font-size: 60px;
+    color:#a0a0a0;
+    position: absolute;
+    right: -50px;
+    top: 50px;
+    cursor: pointer;
+}
+
+    /*底部链接模块*/
+.present .present-links {
+    width: 786px;
+    height: 91px;
+    background-color: rgb(208, 178, 111);
+    text-align: center;
+    font-size: 30px;
+    line-height:70px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.present .present-links .give {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #2b1c1c;
+    line-height: 16px;
+    margin: -10px 0 0;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*特色玩法模块*/
+.feature{
+    width: 786px;
+    height: 543px;
+    position: fixed;
+    /*display: block;*/
+    visibility: visible;
+    z-index: 99;
+    left: 50%;
+    top: 45px;
+    margin-left: -393px;
+    margin-bottom: 100px;
+    margin-top: 0;
+    display: none;
+}
+
+.feature .feature-top {
+    width: 786px;
+    height: 53px;
+}
+
+div>div>.help{
+    width: 393px;
+}
+
+.flower {
+    background-color:#2fc3a3;
+    color: #fff;
+}
+
+
+.feature .feature-top .wr {
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #2fc3a3 transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*中间点击部分*/
+.feature .feature-content {
+    width: 786px;
+    height: 399px;
+    background-color: #ffffff;
+}
+
+.feature .feature-content .feature-one {
+    display: block;
+    background: url("../Images/news20171219.jpg") center center;
+    width: 786px;
+    height: 399px;
+    margin: 0 auto ;
+}
+
+.feature .feature-content li  {
+    float: left;
+    width: 196px;
+    height: 399px;
+}
+
+.feature .feature-content li  a {
+    display: block;
+    width: 196px;
+    height: 399px;
+}
+
+.feature .feature-content .mobia {
+    display: none;
+    background: url("../Images/ly-3.jpg") center center;
+    width: 786px;
+    height: 399px;
+    margin: 0 auto ;
+}
+
+.feature .feature-content .feature-one ul.twoo {
+    width: 786px;
+    height: 238px;
+    padding: 50px 0 0 90px;
+}
+
+.feature  .feature-one ul li.refer {
+    width: 174px;
+    height: 74px;
+    float: left;
+    background: url("../Images/spr-ly.png")no-repeat;
+    background-position: 0 -28px;
+    text-align: center;
+    margin: 20px 40px 0 0;
+    position: relative;
+}
+.feature-one .refer .new{
+     display: block;
+     width: 26px;
+     height: 28px;
+     left: -8px;
+    background: url("../Images/spr-ly.png ") no-repeat;
+    position: absolute;
+    top: -10px;
+ }
+
+
+.feature  .feature-one ul.twoo .maste {
+    margin-top: 10px;
+    width: 174px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 35px;
+
+}
+
+/*底部广告语模块*/
+.feature .feature-links {
+    width: 786px;
+    height: 91px;
+    background-color: rgb(208, 178, 111);
+    text-align: center;
+    font-size: 30px;
+    line-height:70px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.feature .feature-links .enroll {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #2b1c1c;
+    line-height: 16px;
+    margin: -10px 0 0;
+    font-weight: bold;
+}
+
+.feature .feature-top .wr {
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #2fc3a3 transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*关闭按钮*/
+.feature .feature-close {
+    font-size: 60px;
+    color: #a0a0a0;
+    position: absolute;
+    right: -50px;
+    top: 50px;
+    cursor: pointer;
+}

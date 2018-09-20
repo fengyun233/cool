@@ -1,0 +1,651 @@
+/* 初始化代码开始 */
+body,
+a,
+input,
+img,
+div,
+span,
+i,
+em,
+b,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+del {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    color:#f10125;
+}
+input {
+    outline:  none;
+    border:0 none;
+}
+img {
+    border:0;
+    vertical-align: middle;
+}
+h1,h2,h3,h4 {
+    font-weight: normal;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    background-color: #f9f9f9;
+    height: 2000px;
+}
+li {
+    list-style: none;
+}
+i,em {
+    font-style: normal;
+}
+.w {
+    width: 1500px;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 初始化代码完成 */
+
+/*导航开始*/
+.nav{
+    height: 90px;
+    background-color: #222;
+}
+
+.nav .nav-l{
+    height: 90px;
+    position: relative;
+    margin-bottom:20px ;
+}
+
+.nav .nav-l .logo{
+    width: 199px;
+    height: 58px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+.nav .nav-l .logo a{
+    display: block;
+    width: 199px;
+    height: 58px;
+}
+
+.nav-l .word{
+    font-size: 22px;
+    line-height: 90px;
+    position: absolute;
+    left: 250px;
+}
+
+.nav-l .word ul li{
+    float: left;
+    margin-left: 70px;
+}
+.nav-l .word ul li a{
+    color: #fff;
+}
+.nav-l .word ul li a:hover{
+    color: #FF5359;
+}
+.nav-l .login{
+    position: absolute;
+    right: 120px;
+}
+.nav-l .login a {
+    color: #fff;
+    line-height: 90px;
+    font-size: 22px;
+    margin-left:30px ;
+}
+.nav-l .tougao {
+    border: 1px solid #ccc;
+    width: 82px;
+    height: 36px;
+    border-radius: 18px;
+    position: absolute;
+    right: 0;
+    top:27px;
+    text-align: center;
+}
+.nav-l .tougao:hover{
+    background-color: #ccc;
+}
+.nav-l .tougao a {
+    font-size: 22px;
+    line-height: 36px;
+    color: #fff;
+    display: block;
+    width: 82px;
+    height: 36px;
+}
+
+/*头部内容开始*/
+.header{
+    height: 500px;
+    position: relative;
+    margin-top:20px;
+}
+.header-left {
+    width: 960px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*增加超出隐藏效果 js要用*/
+    overflow: hidden;
+}
+.header-left a {
+    display: block;
+    width: 960px;
+    height: 500px;
+}
+.header-left a #xiyou,
+.header-left a #lieren{
+    height: 500px;
+    width: 960px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header-left span{
+    display: block;
+    width: 50px;
+    height: 20px;
+    position: absolute;
+}
+.header-left .one{
+    background-color: yellow;
+    top: 30px;
+    right: 30px;
+}
+.header-left .tow{
+    background-color: #ccc;
+    top: 30px;
+    right: 100px;
+}
+.header-left span a{
+    display: block;
+    width: 50px;
+    height: 10px;
+}
+
+.header-left .dahua{
+    display: block;
+}
+.header-left .lieren{
+    display: none;
+}
+
+.search{
+    width: 528px;
+    height: 36px;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+}
+.search input{
+    font-size: 20px;
+    width: 474px;
+    height: 36px;
+    padding-left: 54px;
+}
+.aiwan{
+    width: 530px;
+    height: 119px;
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+.attention{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.attention a {
+    display: block;
+    width: 260px;
+    height: 335px;
+    float: right;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.attention a img {
+    width: 260px;
+    height: 335px;
+}
+
+/*爱玩评测*/
+.evaluating {
+    height: 377px;
+    margin-top:20px ;
+}
+
+.evaluating .word {
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    margin-bottom: 30px;
+}
+.evaluating .word span{
+    font-size: 36px;
+    line-height: 36px;
+    display: inline-block;
+    height: 45px;
+    width: 144px;
+    border-bottom: 5px solid #000000;
+}
+.evaluating .word a {
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    color: #999;
+    line-height: 50px;
+}
+
+.youxi {
+    height: 296px;
+    width: 1505px;
+    overflow: hidden;
+    position: relative;
+}
+
+.youxi ul {
+    display: block;
+    height: 296px;
+    width: 1505px;
+}
+.youxi li {
+    float: left;
+    width: 222px;
+    height: 296px;
+    margin-right: 12px;
+    overflow: hidden;
+    position: relative;
+    /*transition: all 1s;*/
+}
+.youxi li:last-child{
+    margin-right: 0;
+}
+
+.youxi .lione{
+     width: 562px;
+ }
+
+.youxi li .aa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.youxi li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.youxi li a img {
+    transition: all 0.4s;
+}
+/*鼠标移入进行图片放大*/
+.youxi li a img:hover {
+    transform: scale(1.2);
+}
+
+li .s{
+    background: #fff;
+    position:absolute;
+    width:339px;
+    height:294px;
+    left:222px;
+    top:0;
+    border: 1px solid #ddd;
+    border-left:0 ;
+}
+.youxi li .s p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    text-align: center;
+}
+
+.youxi li .s .c{
+    width: 240px;
+    height: 200px;
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.youxi li .s .c .bb{
+    width: 240px;
+    height: 120px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom:1px solid #ccc ;
+}
+.youxi li .s .c .dd {
+    margin-top: 20px;
+    width: 240px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BDBDBD;
+}
+
+/*大话西游标题*/
+.tubiao {
+    height: 150px;
+    margin-top: 20px;
+}
+
+/*游戏推荐*/
+.recommend {
+    height: 1200px;
+    margin-top: 20px;
+    position: relative;
+}
+/*左上*/
+.recommend-left{
+    width: 920px;
+    height: 688px;
+    float: left;
+}
+.recommend-left .word,
+.recommend-bottom .word{
+    width: 920px;
+    height: 50px;
+    border-bottom: 1px solid red;
+}
+.recommend-left .word span,
+.recommend-bottom .word span{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    display: inline-block;
+    height: 30px;
+    padding-bottom: 14px;
+    border-bottom: 6px solid #000;
+}
+.recommend-left .word a,
+.recommend-bottom .word a{
+    float: right;
+    line-height: 50px;
+    font-size: 16px;
+}
+.recommend-left .one{
+    width: 920px;
+    height: 296px;
+    margin-top: 30px;
+}
+
+.recommend-left .one li{
+    float: left;
+    margin-right: 10px;
+    width: 222px;
+    height: 296px;
+}
+.recommend-left .one li a {
+    display: block;
+    width: 222px;
+    height: 296px;
+    overflow: hidden;
+}
+.recommend-left .one li a img{
+    width: 100%;
+    height: 100%;
+}
+
+.recommend-left .one li a img{
+    transition: all 0.5s;
+}
+
+.recommend-left .one li a img:hover {
+    transform: scale(1.3);
+}
+
+.recommend-left .one li:last-child{
+    margin-right: 0;
+}
+
+.recommend-left .tow{
+    width: 920px;
+    height: 296px;
+    margin-top: 15px;
+}
+
+.recommend-left .tow .aa{
+    width: 455px;
+    height: 296px;
+    float: left;
+}
+.recommend-left .tow .bb {
+    margin-right: 10px;
+}
+
+.recommend-left .tow .aa a{
+    display: block;
+    width: 455px;
+    height: 296px;
+
+    overflow: hidden;
+}
+.recommend-left .tow .aa a img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.recommend-left .tow .aa a img:hover{
+    transform: scale(1.3);
+}
+
+
+/*左下*/
+.recommend-bottom{
+    width: 920px;
+    height: 389px;
+    float: left;
+    margin-top: 80px;
+}
+
+.recommend-bottom .appreciate{
+    width: 920px;
+    height: 308px;
+    margin-top: 30px;
+}
+
+.appreciate .one{
+    width: 455px;
+    height: 308px;
+    float: left;
+    position: relative;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+}
+
+.appreciate .one .tu1,
+.appreciate .tow .tu1{
+    width: 222px;
+    height: 296px;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.appreciate .one .tu1 a,
+.appreciate .tow .tu1 a{
+    display: block;
+    width: 222px;
+    height: 296px;
+    overflow: hidden;
+}
+.appreciate .one .tu1 a img,
+.appreciate .tow .tu1 a img{
+    transition: all 0.5s;
+}
+
+.appreciate .one .tu1 a img:hover,
+.appreciate .tow .tu1 a img:hover{
+    transform: scale(1.3);
+}
+.appreciate .tow{
+    width: 455px;
+    height: 308px;
+    float: right;
+    position: relative;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+}
+.appreciate .player{
+    width: 170px;
+    height: 285px;
+    position: absolute;
+    left: 242px;
+    top:10px ;
+}
+
+.appreciate .player .touxiang{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.appreciate .player .wenzi {
+    width: 170px;
+    height: 224px;
+    margin-top: 15px;
+    border-top: 1px solid red;
+}
+.appreciate .player .wenzi span{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.appreciate .player .touxiang img {
+    width: 40px;
+    height: 40px;
+}
+
+/*右侧*/
+.recommend-right {
+    width: 520px;
+    height: 939px;
+    float: right;
+}
+
+.recommend-right .about{
+    width: 520px;
+    height: 50px;
+    border-bottom: 1px solid red;
+}
+
+.recommend-right .about span{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    display: inline-block;
+    height: 30px;
+    padding-bottom: 14px;
+    border-bottom: 6px solid #000;
+}
+.recommend-right .about a{
+    float: right;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+
+.recommend-right ul {
+    padding: 15px;
+    height: 828px;
+    margin-top: 30px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+}
+.recommend-right ul li {
+    display: block;
+    width: 490px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    height: 66px;
+    overflow: hidden;
+}
+
+.recommend-right ul li:last-child{
+    border-bottom: 0;
+}
+.recommend-right ul li:first-child{
+    padding-top: 0;
+}
+
+.recommend-right .exchange{
+    height: 132px;
+}
+
+.recommend-right .cover {
+    width: 490px;
+    height: 132px;
+    position: relative;
+}
+
+.recommend-right img{
+    width: 100px;
+    height: 132px;
+}
+
+.recommend-right .kuang{
+    width: 370px;
+    height: 132px;
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+
+.recommend-right .kuang span {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+
+/*右下*/
+.right-bottom {
+    width: 520px;
+    height: 206px;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    background-image: url("imge网易爱玩/缘起逆水寒.jpg");
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+/*css初始化代码*/
+/* 初始化代码 */
+
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+input,
+img,
+i,
+strong,
+del,
+em,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    /* 清除元素默认的内外边距 */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    /* 清除下划线 */
+}
+
+a:hover {
+    color: #9a1B1E;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+    /* 清除外层边框 */
+    /* 清除外层高亮 */
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+    /* 清除边框，图片的对齐方式是  与中线对齐 */
+}
+
+li {
+    list-style: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    /* 正常不加粗 */
+}
+
+i {
+    font-style: normal;
+    /* 清除倾斜效果 */
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    background-color: #f3f6f6;
+    /* 常规设置，颜色的那里可以去吸一吸 */
+}
+
+.w {
+    width: 1960px;
+    margin: 0 auto;
+    /* 这是版心，宽度需要改一改哦，  后面的是水平居中。 */
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* 兼容低版本 */
+}
+
+/* 我是样式代码 */
+.top {
+    height: 50px;
+    width: 1960px;
+    background-color: skyblue;
+}
+
+.top div{
+    width: 120px;
+    height: 50px;
+    float: left;
+    margin-left: 250px;
+    background-image:url("../逆水寒-首页/logo_b5525b7.png");
+    background-repeat: no-repeat;
+    background-size: auto 38px;
+}
+
+.top ul{
+    float: right;
+    margin-right: 250px;
+    line-height: 50px;
+}
+
+.top ul li {
+float: left;
+    margin-left: 20px;
+}
+
+.centre {
+    width: 1960px;
+    height: 2670px;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    background-image: url("../逆水寒-首页/1.jpg");
+    background-repeat: no-repeat;
+}
+.centre .login h1 {
+    width: 231px;
+    height: 91px;
+    background-image: url("../逆水寒-首页/header_z_13d70c9.png");
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+.centre .role {
+    width: 1541px;
+    height: 1960px;
+    background-image:url("../逆水寒-首页/xw.png");
+    position: absolute;
+    left:0px;
+}
+.centre .role .anm {
+    width: 400px;
+    height: 450px;
+    background-image: url("../逆水寒-首页/xw.1.png");
+    /*background-color: #9a1B1E;*/
+    position: absolute;
+    top: 70px;
+    left: 800px;
+}
+
+.centre .role .person-m {
+    width: 94px;
+    height: 147px;
+    background-image: url("../逆水寒-首页/index_z_a2fe691.png");
+    position: absolute;
+    top: 140px;
+    left: 370px;
+    background-position-x: -405px;
+    background-position-y: -149px;
+}

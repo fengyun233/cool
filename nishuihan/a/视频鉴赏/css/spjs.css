@@ -1,0 +1,477 @@
+/* 初始化代码的开始 */
+body,
+div,
+span,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+i,
+img,
+input,
+em,
+ul,
+li,
+strong {
+    margin: 0px;
+    padding: 0px;
+}
+/*html { overflow-x: hidden; overflow-y: auto; }*/
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+input {
+    border: none;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+i {
+    font-style: normal;
+}
+img {
+    border:  0px;
+    vertical-align: middle;
+}
+.w {
+    width: 1400px;
+    margin: 0 auto;
+}
+body {
+    font: 12px/100% "微软雅黑" ;
+    background-color: #203250;
+}
+.clearfix::after {
+    content: "." ;
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 初始化代码的结束 */
+
+/*主体css的开始*/
+.main {
+    width: 1020px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    background-color: #203250;
+}
+/*左边图片内容*/
+#lefttp {
+    height: 700px;
+    padding-top: 80px;
+    /*z-index: 2;*/
+}
+#yxsp {
+    height: 49px;
+    margin-left: 20px;
+    background: url(../img-sp/43.png) no-repeat;
+    display: block;
+    position: relative;
+}
+#yxsp img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#lefttp .leftnav {
+    height: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#lefttp .leftnav a {
+    color: #baf2fb;
+    padding-bottom: 5px;
+}
+#lefttp .leftnav div {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.borderbottom {
+    border-bottom: 2px solid orange;
+}
+#lefttp .leftnav a:hover {
+    border-bottom: 2px solid orange;
+}
+#righttp .rightnav a:hover {
+    border-bottom: 2px solid orange;
+}
+#lefttp .leftnav a:nth-child(1) {
+    margin-left: 700px;
+}
+#lefttp .left-list {
+    width: 980px;
+    height: 600px;
+    overflow: hidden;
+}
+#lefttp .left-list ul {
+    width: 1020px;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#lefttp .left-list li {
+    width: 300px;
+    height: 190px;
+    float: left;
+    margin-left: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+#lefttp .left-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+#lefttp .left-list li div {
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#lefttp .left-list li a div img {
+    width: 300px;
+    height: 150px;
+    float: left;
+}
+#lefttp .left-list li a p {
+    display: block;
+    margin-top: 18px;
+}
+/*移入视频图片遮罩层开始*/
+#lefttp .left-list li a i {
+    position: absolute;
+    left: 75px;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    background: url("../img-sp/2.png") 0 -1080px;
+    display: none;
+}
+#lefttp .left-list li span{
+    position: absolute;
+    left: 75px;
+    top: 0px;
+    width:150px;
+    height: 150px;
+    display: none;
+}
+
+/*移入视频图片遮罩层结束*/
+
+#lefttp .left-list li a p {
+    margin-top: 8px;
+}
+#lefttp .tushanglogo {
+    position: absolute;
+    left:1020px;
+    top: 0px;
+    width: 298px;
+    height: 100%;
+    background: url("../img-sp/2.png") -632px 0 no-repeat;
+    cursor: pointer;
+}
+/*右边内容*/
+#righttp {
+    height: 700px;
+    padding-top: 80px;
+}
+#yxts {
+    height: 49px;
+    margin-left: 20px;
+    position: relative;
+}
+#yxts img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#righttp .rightnav {
+    height: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    position: relative;
+}
+#righttp .rightnav div{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+#righttp .rightnav a:nth-child(1) {
+    margin-left: 700px;
+}
+#righttp .rightnav a {
+    position: relative;
+    padding-bottom: 5px;
+    color: #eba285;
+}
+#righttp .right-list {
+    width: 980px;
+    height: 600px;
+    overflow: hidden;
+}
+#righttp .right-list ul {
+    width: 1020px;
+    height: 600px;
+    overflow-y: scroll;
+    padding-left: 30px;
+}
+#righttp .right-list ul a span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    display: none;
+}
+
+#righttp .right-list li {
+    width: 300px;
+    height: 155px;
+    float: left;
+    margin-right : 20px;
+    margin-bottom: 20px;
+}
+#righttp .right-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+#righttp .right-list li a>i {
+    position: absolute;
+    width: 75px;
+    height: 73px;
+    left: 50%;
+    top: 50%;
+    display: none;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    background: url("../img-sp/2.png") -1238px -344px no-repeat;
+}
+#righttp .right-list li a div {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height: 100%;
+    z-index: 3;
+}
+.a {
+    height: 2px;
+    width: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+}
+.b {
+    width: 2px;
+    height: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+}
+.c {
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+}
+.d {
+    width: 2px;
+    height: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+}
+#righttp .right-list li a img {
+    width: 300px;
+    height: 150px;
+}
+#righttp .shipinlogo {
+    position: absolute;
+    left:-298px;
+    top: 0px;
+    width: 298px;
+    height: 100%;
+    background: url("../img-sp/2.png") 0 0 no-repeat;
+    cursor: pointer;
+}
+/*主体逆水寒logo*/
+.main .nshlogo {
+    position: absolute;
+    left: 1050px;
+    top: 0px;
+    width: 104px;
+    height: 350px;
+}
+.main .nshlogo>a:nth-child(1){
+    display: block;
+    width: 104px;
+    height: 213px;
+    background: url("../img-sp/1.png");
+}
+.main .nshlogo>a:nth-child(2){
+    display: block;
+    background: url("../img-sp/2.png") -1269px -650px;
+    margin-left:35px;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+.main .nshlogo>a:nth-child(2):hover {
+    background: url("../img-sp/2.png") -1268px -696px;
+}
+.main .nshlogo span {
+    display: block;
+    height: 135px;
+}
+.main .nshlogo span a:nth-child(1) {
+     display: block;
+     margin-left:35px;
+     background: url("../img-sp/2.png") -1198px -742px;
+    width: 35px;
+    height: 35px;
+}
+.main .nshlogo span a:nth-child(1):hover {
+    background: url("../img-sp/2.png") -1233px -742px;
+}
+.main .nshlogo  span a:nth-child(2){
+    margin-left:42px;
+    background: url("../img-sp/3.png");
+    margin-top: 5px;
+    width: 20px;
+    height: 98px;
+    display: none;
+}
+.main .nshlogo  span a:nth-child(2):hover {
+    background: url("../img-sp/3.png") -149px 0;
+}
+ .footbg{
+     height: 73px;
+     background-color:black ;
+ }
+ .foot {
+     height: 100%;
+     width: 890px;
+     margin: 0 auto;
+     background-color: #fff;
+     background: url("../img-sp/底部.png");
+ }
+
+
+ /*两个视频盒子的css代码*/
+#youbiansp {
+    width: 1616px;
+    height: 900px;
+    position: absolute;
+    left: -298px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#youbiansp video {
+    width: 1616px;
+    height: 900px;
+    object-fit: contain;
+}
+#zuobiansp {
+    position: absolute;
+    height: 900px;
+    width: 808px;
+    left: -298px;
+    overflow: hidden;
+    cursor: pointer;
+}
+*#zuobiansp video {
+    width: 1616px;
+    height: 900px;
+    object-fit: contain;
+}
+.logo-sp,.logo-ts {
+    height: 173px;
+    width: 121px;
+    position: absolute;
+    cursor: pointer;
+}
+.logo-sp {
+    left:359px ;
+    top: 200px;
+    background: url("../img-sp/2.png") -1198px 0px;
+}
+.logo-ts {
+    top: 200px;
+    left: 540px;
+    background: url("../img-sp/2.png") -1198px -173px;
+}
+.logo-sp i {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    display: block;
+    width: 20px;
+    height: 95px;
+    background: url("../img-sp/2.png") -1199px -344px;
+}.logo-ts i {
+     position: absolute;
+     left: 48px;
+     top: 30px;
+     display: block;
+     width: 20px;
+     height: 95px;
+    background: url("../img-sp/2.png") -1218px -344px;
+}
+ /*背景图片*/
+.bg1{
+    width: 1584px;
+    height: 900px;
+    position: absolute;
+    left: -298px;
+    background: url("../img-sp/4.png") ;
+    background-size: cover;
+    display: none;
+    opacity: 0.6;
+}
+.bg2{
+    width: 1584px;
+    height: 900px;
+    position: absolute;
+    left: -298px;
+    background: url("../img-sp/5.png");
+    display: none;
+    opacity: 0.6;
+}

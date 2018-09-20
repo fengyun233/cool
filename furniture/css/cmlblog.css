@@ -1,0 +1,389 @@
+
+/*css样式开始*/
+.bodymain{
+    background-color: #fff;
+    /*height:2600px;*/
+}
+/*头部开始*/
+.topmain{
+    height:149px;
+    background-color: red;
+}
+/*头部结束*/
+/*导航栏css样式开始*/
+.navmain{
+    height:106px;
+    background-color: #fbfbfb;
+}
+.navmain .intro-l{
+    position: relative;
+    width:550px;
+    float:left;
+    padding-left:30px;
+    height:106px;
+    border-bottom:1px solid #e6e6e6;
+}
+.navmain .intro-l h1{
+     /*margin-top:30px;*/
+    font-weight: 400;
+
+ }
+.navmain .intro-l .pagedesc{
+    position:absolute;
+    top:50px;
+    left:116px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+.navmain .intro-r{
+    width:390px;
+    float:left;
+    background: url(images/sparator-bfcontent.gif)  no-repeat  #ffa600 ;
+    padding: 28px 30px 0px 0px;
+    height:79px;
+    text-align:right;
+    color:#fff;
+}
+.navmain .intro-r h2{
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    line-height: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #111;
+}
+/*导航栏css样式结束*/
+
+/*main主体部分css样式开始*/
+.bodymain .mainBlog{
+    height:1881px;
+    background-color: #fff;
+
+}
+.bodymain .mainBlog .maincontent{
+    width:940px;
+    height:100%;
+    margin:0 auto;
+}
+.bodymain .mainBlog .zimain{
+    width: 940px;
+    height:1881px;
+    padding:43px 0 ;
+    margin:0 auto;
+}
+
+    /*main主体左边开始*/
+.bodymain .mainBlog .maincontent .content{
+    width:645px;
+    height: 1838px;
+    float:left;
+}
+.bodymain .mainBlog .maincontent .content .content1{
+    position: relative;
+    width:100%;
+    height:548px;
+    background: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    z-index: 10;
+}
+.bodymain .mainBlog .maincontent .content .content1:nth-child(2){
+    margin-top:35px;
+}
+.bodymain .mainBlog .maincontent .content .content1:nth-child(3){
+    margin-top:35px;
+}
+.bodymain .maincontent .content .entry-utility a{
+    color: #666;
+}
+.bodymain .maincontent .content .entry-utility a:hover{
+    text-decoration: underline;
+    color: #ffa600;
+}
+.bodymain .maincontent .content .entry-utility{
+    float: left;
+    font-size: 11px;
+    overflow: hidden;
+    text-align: center;
+    margin: 23px 30px 0 0;
+    width: 67px;
+    color: #999;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    line-height: 18px;
+}
+.bodymain .maincontent .content .entry-text h2{
+    margin-bottom: 20px;
+}
+.bodymain .maincontent .content .posttime{
+    padding: 10px 15px;
+    line-height: 20px;
+    font-size: 14px;
+    /*改变文字:转换成大写*/
+    text-transform: uppercase;
+    background: #2c2c2c;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    line-height: 23px;
+}
+
+.bodymain .maincontent .content .postyear{
+    background-color: #fcbe44;
+    width:67px;
+    height:20px;
+    color:black;
+
+}
+.bodymain .maincontent .content .entry-text{
+    overflow: hidden;
+}
+
+.bodymain .maincontent .content .posttitle a{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #2d2d2d;
+    line-height: 28px;
+    text-decoration: none;
+}
+.bodymain .maincontent .content .posttitle a:hover{
+    color:#ffa700;
+}
+
+.bodymain .maincontent .content .entry-content{
+    /*margin-top:57px;*/
+    margin: 0;
+    padding: 12px 0 5px 0
+}
+
+.bodymain .maincontent .content .entry-content p{
+    color: #666;
+}
+
+.bodymain .maincontent .content .entry-content p a{
+    color: #ffa700;
+}
+
+.bodymain .maincontent .content .entry-content p a:hover{
+    color: black;
+
+}
+
+.bodymain .maincontent .content .entry-content p{
+    color: #666;
+    line-height: 20px;
+}
+
+.bodymain .maincontent .content .more {
+
+    font-style: italic;
+    font-size: 11px;
+}
+.bodymain .maincontent .content .postimg{
+
+}
+.bodymain .maincontent .content .postimg img{
+    width:538px;
+    height:306px;
+    border:5px solid #d3d2d2;
+}
+.bodymain .maincontent .content .more:hover{
+    text-decoration: underline;
+
+}
+
+.bodymain .maincontent .content .content1:before {
+    /*在这之后设置*/
+    bottom: 2px;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+/*点下一页开始*/
+
+.pagenavi{
+    float:left;
+    width: 274px;
+    height:32px;
+    margin: 33px 0;
+    background-color: #fafafa;
+    border-bottom:1px solid #eeeeee;
+}
+
+.pagenavi span,
+.pagenavi a{
+    display: inline-block;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+.pagenavi .postslink{
+    width: 98px;
+}
+.pagenavi .current{
+    color:#ffbc3d;
+}
+.pagenavi .current,
+.pagenavi .page{
+    width: 27px;
+}
+.pagenavi .postslinkend{
+    width: 77px;
+}
+.pagenavi .current,
+.page,
+.postslinkend
+{
+    border-left:1px solid #eeeeee;
+}
+
+/*点下一页结束*/
+/*main主体左边结束*/
+
+/*main主体右边开始*/
+.mainBlog .maincontent .contentright{
+    width:260px;
+    height: 1838px;
+    float:right;
+    background-color: #fff;
+}
+.mainBlog .maincontent .contentright ul{
+    width:225px;
+    height:100%;
+    float: right;
+    background: #fff;
+}
+/*右边第一个li开始*/
+.mainBlog .maincontent .contentright .search{
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    height: 116px;
+    width: 100%;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+.mainBlog .maincontent .contentright .searchtext{
+    position: relative;
+    width:186px;
+    margin: 10px auto;
+    font-weight: 600;
+    line-height: 38px;
+    border-bottom:1px solid #eeeeee;
+    padding: auto 0;
+}
+.mainBlog .maincontent .contentright .searchtext:before{
+    bottom: 2px;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    border-bottom: 1px solid #ededed;
+}
+.mainBlog .maincontent .contentright .form {
+    width:186px;
+    heigth:32px;
+    margin:0 auto;
+    background-color: #ededed;
+    border:1px solid red;
+}
+
+.mainBlog .maincontent .contentright .form input{
+    width:186px;
+    height:32px;
+    background-color: #ededed;
+}
+/*右边第一个li结束*/
+
+/*右边第二个li开始*/
+.mainBlog .maincontent .contentright .widget-container{
+    margin-top:30px;
+    height:271px;
+    width:100%;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ededed;
+}
+
+.mainBlog .maincontent .contentright .widget-title{
+    position: relative;
+    width:186px;
+    margin: 10px auto;
+    font-weight: 600;
+    line-height: 38px;
+    border-bottom:1px solid #eeeeee;
+    padding: auto 0;
+}
+.mainBlog .maincontent .contentright .widget-title:before{
+    bottom: 2px;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    border-bottom: 1px solid #ededed;
+}
+.mainBlog .maincontent .contentright .widget-container p{
+    width:186px;
+    margin:0 auto;
+    height:33px;
+    border-bottom:1px solid #efefef;
+}
+.mainBlog .maincontent .contentright .widget-container p:nth-child(7) {
+    border:0px;
+}
+.mainBlog .maincontent .contentright .widget-container p a{
+    line-height: 33px;
+}
+
+
+/*右边第二个li结束*/
+
+/*右边第三个li开始*/
+.mainBlog .maincontent .contentright .text-widget{
+    border-bottom: 1px solid #ededed;
+    height:225px;
+    background-color: #fafafa;
+    margin-top:30px;
+}
+.mainBlog .maincontent .contentright  .textwidget{
+    width:186px;
+    margin: 0 auto;
+    line-height:24px;
+}
+/*右边第三个li结束*/
+
+/*右边第四个li开始*/
+.mainBlog .maincontent .contentright .archives{
+    border-bottom: 1px solid #ededed;
+    height:238px;
+    background-color: #fafafa;
+    margin-top:30px;
+}
+.mainBlog .maincontent .contentright .archives p{
+    width:186px;
+    margin:0 auto;
+    height:33px;
+    border-bottom:1px solid #efefef;
+}
+.mainBlog .maincontent .contentright .archives p:nth-child(6) {
+    border:0px;
+}
+.mainBlog .maincontent .contentright .archives p a{
+    line-height: 33px;
+}
+/*右边第四个li结束*/
+/*main主体右边结束*/
+/*main主体部分css样式结束*/
+/*css样式结束*/

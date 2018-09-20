@@ -1,0 +1,134 @@
+/*初始化代码*/
+
+/*版心1000px*/
+.w {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/*文字字体固定*/
+body {
+    font-size: 12px;
+    background-color: #dedede;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* heading */
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: normal;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+/*!*links*!*/
+/*a, a:visited, .colortext {*/
+    /*text-decoration: none;*/
+    /*font-weight: normal;*/
+/*}*/
+
+
+
+a,
+img {
+    border: none
+}
+
+/* 初始化代码 */
+div,
+span,
+p,
+i,
+a,
+strong,
+em,
+input,
+img,
+ul,
+li,
+del,
+s,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+br,
+hr,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+a:hover {
+    z-index: 11;
+    text-decoration: none;
+    color:#ffa700;
+
+}

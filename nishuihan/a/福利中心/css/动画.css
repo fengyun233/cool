@@ -1,0 +1,182 @@
+/*css初始化代码*/
+/* 初始化代码 */
+
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+input,
+img,
+i,
+strong,
+del,
+em,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    /* 清除元素默认的内外边距 */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    /* 清除下划线 */
+}
+
+a:hover {
+    color: #9a1B1E;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+    /* 清除外层边框 */
+    /* 清除外层高亮 */
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+    /* 清除边框，图片的对齐方式是  与中线对齐 */
+}
+
+li {
+    list-style: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    /* 正常不加粗 */
+}
+
+i {
+    font-style: normal;
+    /* 清除倾斜效果 */
+}
+
+body {
+    font: 14px/100% "微软雅黑";
+    /* 常规设置，颜色的那里可以去吸一吸 */
+}
+
+.w {
+    width: 1960px;
+    margin: 0 auto;
+    /* 这是版心，宽度需要改一改哦，  后面的是水平居中。 */
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* 兼容低版本 */
+}
+/*animateMotion开始*/
+.anm {
+    height: 1500px;
+    overflow: hidden;
+    position: relative;
+    background: gray;
+    margin: 0 auto;
+}
+.anm .tabs div{
+    width: 771px;
+    height: 984px;
+}
+.anm div img{
+    display: block;
+    width: 771px;
+    height: 984px;
+}
+
+.anm .ty{
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 50px;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    margin: 50px auto;
+}
+.anm .tabs div  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.anm .sm{
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.anm .xh{
+    position: absolute;
+    top: 50px;
+    left: 70%;
+    transform: translateX(-50%);
+}
+.anm .jl {
+    position: absolute;
+    top: 150px;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.anm .sw{
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+.anm .sx{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.anm .button{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+.anm .button .left {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+
+    background-color: green;
+    background: url("../动画images/button-left.png") no-repeat -40px -5px;
+}
+
+.anm .button .right {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    background-color: green;
+    background: url("../动画images/button-right.png") no-repeat -40px -5px;
+}

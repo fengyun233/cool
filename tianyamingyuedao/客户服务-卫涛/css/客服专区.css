@@ -1,0 +1,385 @@
+/*初始化代码*/
+
+body,
+div,
+span,
+p,
+input,
+img,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+i,
+em,
+strong {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #525252;
+}
+
+a:hover {
+    color: #00ace9;
+}
+
+button {
+    border: none;
+}
+
+input {
+    /*border: 0 none;*/
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+.w {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+body {
+    font: 14px/100% Tahoma,simsun;
+    background-color: #f5f5f5;
+    font-family: helvetica neue,arial,hiragino sans gb,microsoft yahei,sans-serif;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*初始化代码的结束*/
+
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.header .nav {
+    height: 75px;
+    position: relative;
+}
+
+.header .nav .logo {
+    width: 230px;
+    height: 50px;
+    background: url("../images/logo_2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+
+.header .nav .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav .login {
+    width: 370px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header .nav .login .vidol {
+    /*height: 100%;*/
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    margin-top: -10px;
+    line-height: 20px;
+}
+
+.header .nav .login .vidol .naba {
+    /*display: inline-block;*/
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background: url("../images/vidol.png");
+}
+
+.header .nav .login .vidol a {
+    padding-left: 18px;
+}
+
+.header .nav .login .in {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -15px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.header .nav .login .in button {
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*right: -7px;*/
+    /*margin-top: -15px;*/
+    display: block;
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #00ace9;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    cursor:pointer;
+}
+
+
+.main {
+    height: 750px;
+    padding: 16px 0;
+    /*position: relative;*/
+    margin-top: 75px;
+}
+
+.main .left {
+    width: 230px;
+    height: 459px;
+    background-color: #fff;
+    float: left;
+}
+
+.main .left .t1 {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.main .left .t2 {
+    text-indent: 48px;
+}
+
+.main .left .t2 li {
+    line-height: 40px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.main .left .t2 li:hover {
+    color: #00ace9;
+}
+
+.main .left .t2 .blue {
+    background-color: #00ace9;
+    /*color: #ffffff;*/
+}
+
+.main .left .t2 .blue a {
+    color: #ffffff;
+}
+
+.main .right {
+    float: right;
+    width: 845px;
+    height: 308px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.main .right .hi {
+    width: 845px;
+    height: 100px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.main .right .t1 {
+    width: 757px;
+    height: 40px;
+    padding: 30px 44px;
+}
+
+.main .right .t1 input {
+    width: 600px;
+    height: 36px;
+    padding-left: 15px;
+    float: left;
+}
+
+.main .right .t1 button {
+    width: 45px;
+    height: 40px;
+    background-color: dodgerblue;
+    background: url("../images/btn.png");
+    float: left;
+}
+
+.main .right .need {
+    width: 755px;
+    height: 144px;
+    padding: 18px 45px;
+    /*background-color: red;*/
+}
+
+.main .right .need .box {
+    width: 755px;
+    height: 100px;
+    margin: 10px 0 34px 0;
+}
+
+.main .right .need .box .tes {
+    display: none;
+}
+
+.main .right .need .box .xianshi {
+    display: block;
+}
+
+.main .right .need .box li {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.foot {
+    width: 100%;
+    height: 107px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    padding: 34px 0 18px 0;
+    color: #666666;
+}
+
+.foot .foot_m {
+    width: 100%;
+    height: 107px;
+}
+
+.foot .foot_m .foot_t {
+    height: 45px;
+    margin-bottom: 22px;
+}
+
+.foot .foot_m .foot_t li {
+    height: 40px;
+    margin: 0 22px;
+    float: left;
+}
+
+.foot .foot_m .foot_t li i {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url("../images/icon-service.png");
+}
+
+.foot .foot_m .foot_t li .flo {
+    float: left;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.foot .foot_m .foot_t li .flo h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.foot .foot_m .foot_t li .flo .last {
+    font-size: 14px;
+}
+
+.foot .foot_m .foot_t li:nth-child(2) i {
+    background: url("../images/icon-money.png");
+}
+
+.foot .foot_m .foot_t li:nth-child(3) i {
+    background: url("../images/icon-weipay.png");
+}
+
+.foot .foot_m .foot_t li:nth-child(4) i {
+    background: url("../images/icon-teenager.png");
+}
+
+.foot .foot_m .foot_t li:nth-child(5) i {
+    background: url("../images/icon-consult.png");
+}
+
+.foot .foot_m .foot_t li:nth-child(5) {
+    margin-right: 0px;
+}
+
+.foot .foot_l {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.foot .foot_l a {
+    color: #666;
+}
+
+.foot .foot_l p {
+    line-height: 20px;
+}
+
+.ufo {
+    width: 120px;
+    height: 176px;
+    position: fixed;
+    right: 70px;
+    top: 50%;
+    margin-top: -88px;
+    z-index: 10;
+}
+
+.ufo .con {
+    padding: 15px 10px;
+    background-color: #fff;
+    box-shadow: 0 0 8px #ccc;
+}
+
+.ufo .con .erwei {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url("../images/code.jpg");
+}
+
+.ufo .con p {
+    margin-top: 10px;
+    line-height: 20px;
+    color: #666666;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易游戏官网_游戏热爱者</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top-bar w">
+            <h1><a href="javascript:void(0)" class="Logo"></a></h1>
+            <div class="topList">
+                <a href="javascript:void(0)" target="_blank" >奇遇俱乐部</a>
+                <a href="javascript:void(0)" target="_blank" >关于网易游戏</a>
+                <a href="../网易爱玩/网易爱玩.html" target="_blank" >爱玩网</a>
+                <a href="../游戏热爱者/游戏热爱者.html" target="_blank" >游戏热爱者</a>
+                <a href="../网易大神/网易大神.html" target="_blank" >网易大神</a>
+                <a class="openSel" href="javascript:void(0)" target="_blank" >人才招聘</a>
+                <a href="javascript:void(0)" target="_blank" >客服中心</a>
+            </div>
+            <div class="gameList">
+                <a href="#hotGame" target="_self" >
+                    <i></i>
+                    <span>游戏列表</span>
+                </a>
+            </div>
+        </div>
+        <div class="top-bg">
+            <ul class="topBg">
+                <li>
+                    <a href="javascript:void(0)">
+                        <div>
+                            <h2>决战！平安京</h2>
+                            <h3>全新式神面灵气降临</h3>
+                            <p>七情七面，幻相心生。全新人气式神面灵气降临《决战！平安京》！逐月照君，妖狐新装上架。全球无符文对称MOBA，5V5公平竞技手游！不容错过！</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <div>
+                            <h2>大话西游嘉年华盛大开启</h2>
+                            <h3>国风盛典 海量福利！</h3>
+                            <p>兄弟相聚，狂欢来袭！8月11-12日，2018大话西游国风嘉年华盛大开启！长安盛世游园会，coser助阵贺周年；盛唐匠心活动同步开启，传递国风文化精粹，体验国风江湖，更有海量嘉年华福利等你来拿！</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <div>
+                            <h2>《大唐无双》长安变开启</h2>
+                            <h3>盛世江湖 自新而始</h3>
+                            <p>网易第一战斗网游《大唐无双》，全新版本“长安变”今日公测！全新次世 代引擎带来绝美新江湖、唯美新主角和酣畅新战技，多重周年庆典福利登陆即领</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <div>
+                            <h2>《猎魂觉醒》</h2>
+                            <h3>落银之王登场 一触即发</h3>
+                            <p>网易超真实3D动作狩猎手游，落银城的大门已经打开，快来登上属于自己的城主之位。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <div>
+                            <h2>《轩辕剑龙舞云山》</h2>
+                            <h3>一花一剑 一世情缘</h3>
+                            <p>以匠心重炼经典，以赤诚再塑国风！不限号删档测试8月9日正式开启。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="left">
+                <a href="javascript:void(0)"><i></i></a>
+                <div class="left-more">
+                    <a href="javascript:void(0)">
+                        <div><img src="images/bg1.jpg" alt=""></div>
+                        <h2>《大唐无双》</h2>
+                        <p>盛世江湖 自新而始</p>
+                    </a>
+                </div>
+                <!--鼠标悬停显示,待补充-->
+            </div>
+            <div class="right">
+                <a href="javascript:void(0)"><i></i></a>
+                <div class="right-more">
+                    <a href="javascript:void(0)">
+                        <div><img src="images/bg2.jpg" alt=""></div>
+                        <h2>《全新版本！落银城！》</h2>
+                        <p>《猎魂觉醒》新玩法开启</p>
+                    </a>
+                </div>
+                <!--鼠标悬停显示,待补充-->
+            </div>
+            <div class="circle">
+                <a href="javascript:void(0)" id="circle-current"></a>
+                <a href="javascript:void(0)"></a>
+                <a href="javascript:void(0)"></a>
+                <a href="javascript:void(0)"></a>
+                <a href="javascript:void(0)"></a>
+            </div>
+            <div class="content-box w">
+                <div class="box-left">
+                    <!--点击切换图片事件待添加-->
+                    <div class="list">
+                        <a href="javascript:;" class="pic-news-item f-cb  cur ">
+                            <img src="images/icon1.png" width="40" height="40" alt="">
+                            <em><span>决战！平安京</span><i>全新式神面灵气降临</i></em>
+                            <i class="i-triangle"></i>
+                        </a>
+                        <a href="javascript:;" class="pic-news-item f-cb ">
+                            <img src="images/icon2.png" width="40" height="40" alt="">
+                            <em><span>大话西游嘉年华开启</span><i>国风盛典 海量福利</i></em>
+                            <i class="i-triangle"></i>
+                        </a>
+                        <a href="javascript:;" class="pic-news-item f-cb ">
+                            <img src="images/icon3.png" width="40" height="40" alt="">
+                            <em><span>盛世江湖 自新而始</span><i>《大唐无双》“长安变”开启</i></em>
+                            <i class="i-triangle"></i>
+                        </a>
+                        <a href="javascript:;" class="pic-news-item f-cb ">
+                            <img src="images/icon4.png" width="40" height="40" alt="">
+                            <em><span>落银之王登临</span><i>《猎魂觉醒》全新玩法开启</i></em>
+                            <i class="i-triangle"></i>
+                        </a>
+                        <a href="javascript:;" class="pic-news-item f-cb ">
+                            <img src="images/icon5.png" width="40" height="40" alt="">
+                            <em><span>轩辕剑龙舞云山</span><i>不限号删档测试8.9开启</i></em>
+                            <i class="i-triangle"></i>
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="javascript:void(0)"></a>
+                        <a href="javascript:void(0)"></a>
+                        <a href="javascript:void(0)"></a>
+                        <a href="javascript:void(0)"></a>
+                        <a href="javascript:void(0)"></a>
+                    </div>
+                </div>
+                <div class="box-right">
+                    <a href="javascript:void(0)" class="title">七情七面幻相心生 《决战！平安京》全新式神面灵气即将登场</a>
+                    <ul class="content">
+                        <li><a href="javascript:void(0)" title="共赏国风盛宴，大话西游嘉年华盛大开启" target="_blank">共赏国风盛宴，大话西游嘉年华盛大开启</a><span>08-10</span></li>
+                        <li><a href="javascript:void(0)" title="全新版本“长安变”今日开测   《大唐无双》盛世江湖从新开始" target="_blank">全新版本“长安变”今日开测   《大唐无双》盛世江湖从新开始</a><span>08-10</span></li>
+                        <li><a href="javascript:void(0)" title="《反斗海战》二测开启，清凉海战乐翻天！" target="_blank">《反斗海战》二测开启，清凉海战乐翻天！</a><span>08-07</span></li>
+                        <li><a href="javascript:void(0)" title="缘起《逆水寒》！七夕结缘甜蜜开启" target="_blank">缘起《逆水寒》！七夕结缘甜蜜开启</a><span>08-07</span></li>
+                        <li><a href="javascript:void(0)" title="《荒野行动》合作综艺《勇敢的世界》首期开播" target="_blank">《荒野行动》合作综艺《勇敢的世界》首期开播</a><span>08-03</span></li>
+                        <li><a href="javascript:void(0)" title="玩心造梦！网易游戏ChinaJoy邀你来玩！" target="_blank">玩心造梦！网易游戏ChinaJoy邀你来玩！</a><span>08-02</span></li>
+                        <li><a href="javascript:void(0)" title="网易游戏将在CJ办泳池趴？在福利的海洋中畅泳吧！" target="_blank">网易游戏将在CJ办泳池趴？在福利的海洋中畅泳吧！</a><span>08-02</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="nav-list w">
+            <li><a href="javascript:void(0)">
+                <img src="images/nav1.jpg" alt="">
+                <i></i>
+            </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="images/nav2.jpg" alt="">
+                <i></i>
+            </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="images/nav3.jpg" alt="">
+                <i></i>
+            </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="images/nav4.jpg" alt="">
+                <i></i>
+            </a></li>
+        </div>
+        <div class="hot-list w" id="hotGame">
+            <div class="hot-title">
+                <p >热门游戏
+                    <a id="change" href="javascript:void(0);">换一批<i ></i></a>
+                </p>
+            </div>
+            <ul class="hot-box">
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="images/bg1.jpg" alt="">
+                    <img src="images/datang.jpg" alt="" class="shade">
+                     </a>
+                    <p class="box-title">《大唐无双》</p>
+                    <p class="hot-txt">《大唐无双》全新版本“长安变”开启盛世江湖，全新次世代引擎带来绝美新江湖、唯美新主角和酣畅新战技</p>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="images/bg2.jpg" alt="">
+                    <img src="images/liehun.jpg" alt="" class="shade">
+                    </a>
+                    <p class="box-title">《猎魂觉醒》</p>
+                    <p class="hot-txt">网易超真实3D动作狩猎手游，落银城的大门已经打开，快来登上属于自己的城主之位。</p>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="images/bg3.jpg" alt="">
+                    <img src="images/yinyangshi.jpg" alt="" class="shade">
+                    </a>
+                     <p class="box-title">《决战！平安京》</p>
+                        <p class="hot-txt">七情七面，幻相心生。全新人气式神面灵气降临《决战！平安京》。</p>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="images/bg4.jpg" alt="">
+                    <img src="images/dahua.png" alt="" class="shade">
+                    </a>
+                     <p class="box-title">《大话西游》</p>
+                        <p class="hot-txt">2018大话西游国风嘉年华盛大开幕！盛唐匠心活动同步开启，海量福利等你来拿！</p>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="images/bg5.jpg" alt="">
+                    <img src="images/xuanyuan.png" alt="" class="shade">
+                    </a>
+                     <p class="box-title">《轩辕剑龙舞云山》</p>
+                        <p class="hot-txt">以匠心重炼经典，以赤诚再塑国风！不限号删档测试8月9日正式开启。</p>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="images/bg6.jpg" alt="">
+                    <img src="images/hua.jpg" alt="" class="shade">
+                    </a>
+                     <p class="box-title">《花与剑》</p>
+                        <p class="hot-txt">阁下，可愿暂歇江湖纷扰？携手共赴那一花・一剑・一世・一缘！</p>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="images/bg1.jpg" alt="">
+                    <img src="images/datang.jpg" alt="" class="shade">
+                    </a>
+                     <p class="box-title">《大唐无双》</p>
+                        <p class="hot-txt">《大唐无双》全新版本“长安变”开启盛世江湖，全新次世代引擎带来绝美新江湖、唯美新主角和酣畅新战技</p>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="images/bg2.jpg" alt="">
+                    <img src="images/liehun.jpg" alt="" class="shade">
+                    </a>
+                     <p class="box-title">《猎魂觉醒》</p>
+                        <p class="hot-txt">网易超真实3D动作狩猎手游，落银城的大门已经打开，快来登上属于自己的城主之位。</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot-con">
+            <div class="foot-lg">
+                <span></span>
+                <span></span>
+                <div class="link">
+                    <span>公司简介 - 客户服务 - 相关法律 - 网易游戏 - 联系我们 - 商务合作 - 加入我们</span><br>
+                    <span>网易公司版权所有 ©1997-2018 中国网络游戏版权保护联盟举报中心</span>
+                </div>
+            </div>
+            <div class="copyRight">
+                <span>《网络文化经营许可证》 粤网文[2014]0636-236号</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

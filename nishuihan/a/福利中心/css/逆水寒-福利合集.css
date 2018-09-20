@@ -1,0 +1,607 @@
+/*css初始化代码*/
+/* 初始化代码 */
+
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+input,
+img,
+i,
+strong,
+del,
+em,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    /* 清除元素默认的内外边距 */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    /* 清除下划线 */
+}
+
+a:hover {
+    color: #9a1B1E;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+    /* 清除外层边框 */
+    /* 清除外层高亮 */
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+    /* 清除边框，图片的对齐方式是  与中线对齐 */
+}
+
+li {
+    list-style: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    /* 正常不加粗 */
+}
+
+i {
+    font-style: normal;
+    /* 清除倾斜效果 */
+}
+
+body {
+    font: 14px/100% "微软雅黑";
+    /* 常规设置，颜色的那里可以去吸一吸 */
+}
+
+.w {
+    width: 1960px;
+    margin: 0 auto;
+    /* 这是版心，宽度需要改一改哦，  后面的是水平居中。 */
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* 兼容低版本 */
+}
+
+/*top 栏开始*/
+
+.zj-top {
+    width: 1960px;
+    height: 75px;
+    background-image: url("../逆水寒-福利合集/0.png");
+    position: relative;
+}
+
+.zj-top .zj-login {
+    width: 210px;
+    height: 75px;
+}
+
+.zj-top .zj-login h1 a {
+    width: 210px;
+    height: 75px;
+    background-image: url("../逆水寒-福利合集/1.png");
+    /*background-size: 210px 70px;*/
+    background-position: -25px -10px;
+    position: absolute;
+    left:375px;
+}
+
+.zj-top ul {
+    height: 25px;
+    position: absolute;
+    left: 620px;
+    top: 25px;
+
+}
+
+.zj-top ul li{
+    background-image: url("../逆水寒-福利合集/1.png");
+    width: 120px;
+    height: 25px;
+    margin:0 20px;
+    float: left;
+    background-position-y: -105px;
+}
+.zj-top ul li a{
+    display: block;
+    width: 120px;
+    height: 25px;
+}
+
+.zj-top ul li:hover{
+    background-position-y:-145px;
+}
+.zj-top ul li:nth-child(3){
+    width: 1px;
+    margin-right: 20px;
+}
+
+.zj-top ul li:nth-child(6){
+    width: 1px;
+    margin-right: 20px;
+}
+
+.zj-top ul li:nth-child(1){
+    background-position-x: 0;
+}
+
+.zj-top ul li:nth-child(2){
+    background-position-x: -120px;
+}
+
+.zj-top ul li:nth-child(4){
+    background-position-x: -240px;
+}
+
+.zj-top ul li:nth-child(5){
+    background-position-x: -360px;
+}
+.zj-top .gg{
+    height: 20px;
+    position: absolute;
+    left: 1335px;
+    top: 25px;
+}
+
+.zj-top .Social {
+    height: 20px;
+    position: absolute;
+    left: 1385px;
+    top: 25px;
+}
+
+
+.zj-top .Social a {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 3px;
+    background-image: url("../逆水寒-福利合集/2.png");
+}
+
+.zj-top .Social a:hover{
+    background-position-x: -150px;
+}
+
+.zj-top .Social a:nth-child(1){
+     background-position-y: -350px;
+ }
+.zj-top .Social a:nth-child(2){
+    background-position-y: -25px;
+}
+.zj-top .Social a:nth-child(3){
+    background-position-y: -50px;
+}
+.zj-top .Social a:nth-child(4){
+    background-position-y: -75px;
+}
+
+.zj-top .Social a:nth-child(5){
+    background-position-y: -0px;
+}
+
+/*tap结束*/
+/*中心开始*/
+
+.zj-center {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    background-image: url("../逆水寒-福利合集/4.png");
+}
+
+.zj-center .ct-top {
+    width: 920px;
+    height: 79px;
+    background-image: url("../逆水寒-福利合集/5.png");
+    position: absolute;
+    right: 0px;
+}
+.zj-center .ct-top .shadow {
+    width: 212px;
+    height: 85px;
+    background-image: url("../逆水寒-福利合集/6.png");
+}
+
+
+.zj-center .ct-top .shadow.a {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    display: block;
+}
+
+.zj-center .ct-top .shadow.b {
+    position: absolute;
+    left: 212px;
+    top: 0;
+    /*display: none;*/
+}
+
+.zj-center .ct-top .shadow.c {
+    position: absolute;
+    left: 424px;
+    top: 0;
+    /*display: none;*/
+}
+
+.zj-center .ct-top .options {
+    width: 920px;
+    height: 79px;
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*top: 0;*/
+    position: relative;
+}
+
+.zj-center .ct-top .options a {
+    width: 210px;
+    height: 79px;
+    background-image: url("../逆水寒-福利合集/9.png");
+}
+
+.zj-center .ct-top .options .on{
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     /*background-position: -250px -87px;*/
+    background-position: 0px -220px;
+ }
+
+.zj-center .ct-top .options .on:hover{
+    background-position: 0px -220px;
+}
+
+.zj-center .ct-top .options .tw{
+     position: absolute;
+     left: 212px;
+     top: 0px;
+    background-position: 0px  -135px;
+ }
+
+.zj-center .ct-top .options .tw:hover{
+
+    background-position: -253px  0px;
+
+}
+
+.zj-center .ct-top .options .th{
+    position: absolute;
+    left: 424px;
+    top: 0px;
+    background-position: -45px 0px;
+}
+
+.zj-center .ct-top .options .th:hover{
+    background-position: -215px  -220px;
+}
+.ct-bot {
+    position: absolute;
+    top: 100px;
+    right:50px;
+}
+.ct-bot .bot-top{
+    width: 836px;
+    height: 149px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../逆水寒-福利合集/7.png");
+}
+.tabs1 {
+    /*display: none;*/
+}
+
+
+.conceal {
+    width: 800px;
+    height: 800px;
+    background-color: rgba(0,0,0,.1);
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    overflow: hidden;
+}
+
+.rollFl {
+    width: 900px;
+    height: 800px;
+    background-color: rgba(0,0,0,.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden scroll;
+}
+
+.rollFl .zero-one div:nth-child(1) {
+    width: 360px;
+    height: 50px;
+    margin:30px 0 0 30px;
+    background: url("../逆水寒-福利合集/10.png") no-repeat;
+}
+
+.rollFl .zero-one div:nth-child(2) {
+    width: 650px;
+    height: 276px;
+    margin:30px 0 0 10px;
+    background: url("../逆水寒-福利合集/11.png") no-repeat;
+}
+
+.rollFl .zero-one div:nth-child(2) a {
+    float: left;
+    width: 300px;
+    height: 55px;
+    margin:70px 0 0 310px;
+    background: url("../逆水寒-福利合集/9.png") no-repeat 0 -311px;
+}
+
+.rollFl .zero-one div:nth-child(3) {
+    width: 170px;
+    height: 30px;
+    margin:  0 auto;
+    background: url("../逆水寒-福利合集/9.png") no-repeat;
+    background-position: -720px  0px;
+}
+
+.rollFl .zero-two .upgrade {
+    width: 360px;
+    height: 50px;
+    margin:30px 0 0 30px;
+    background: url("../逆水寒-福利合集/10.1.png") no-repeat;
+}
+
+.rollFl .zero-two .Bg-grey{
+    width: 100%;
+    height: 119px;
+    margin:10px 0;
+    background: url("../逆水寒-福利合集/13.png") no-repeat;
+}
+
+.rollFl .Bg-grey .grade {
+    width: 90px;
+    height: 35px;
+    float: left;
+    margin: 40px  30px 0  20px;
+    background: url("../逆水寒-福利合集/9.png") no-repeat -42px -88px;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+.rollFl .Bg-grey .goods {
+    float: left;
+    width: 64px;
+    height: 64px;
+    border: 1px solid ghostwhite;
+    margin:  25px  30px  0 0 ;
+    background-color: rgba(1,1,3,.1);
+    text-align: center;
+}
+
+.rollFl .Bg-grey .goods img{
+    margin-bottom: 5px;
+}
+.rollFl .Bg-grey .goods:hover {
+    border: 1px solid  rgba( 0,0,0,.1);
+}
+
+.rollFl .Bg-grey .goods img:hover{
+    /*width: 100px;*/
+    /*height: 100px;*/
+    transform: scale(2);
+}
+
+/*中心结束*/
+/*foot开始*/
+.zj-center .foot {
+    width: 1920px;
+    height: 179px;
+    position: absolute;
+    top: 1000px;
+    background-image: url("../逆水寒-福利合集/50.png");
+}
+.zj-center .foot div {
+    width: 1331px;
+    height: 111px;
+    background: url("../逆水寒-福利合集/58.png") no-repeat;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*<!--...........................................................tabs2.............................................................-->*/
+.tabs2 {
+    width: 1920px;
+    height: 1080px;
+    display: none;
+    background-image: url("../逆水寒-福利合集/68.png");
+
+}
+
+.tabs2 .time-card {
+    width: 980px;
+    height: 278px;
+    transform: scale(1.5);
+    background: url("../逆水寒-福利合集/70.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top: 130px;
+}
+.tabs2 .time-card .card-ft {
+    width: 836px;
+    height: 149px;
+    background-image: url("../逆水寒-福利合集/69.png");
+    position: absolute;
+    transform: scale(0.7);
+    right: 0;
+    top: 35px;
+}
+.tabs2 .L-gift {
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 400px;
+    right: 100px;
+
+}
+.tabs2 .L-gift div {
+    background: url("../逆水寒-福利合集/71.png")
+}
+
+.tabs2 .L-gift .dianWo {
+    width: 230px;
+    height: 58px;
+    background-repeat:  no-repeat ;
+    background-position: -320px -448px;;
+    position: absolute;
+    top: -18px;
+    right: 250px;
+    }
+.tabs2 .L-gift .duiH {
+    width: 422px;
+    height: 68px;
+    background-repeat:  no-repeat ;
+    background-position:  0px -315px;;
+    position: absolute;
+    top: 125px;
+    right: 150px;
+}
+
+.tabs2 .L-gift .xGame {
+    width: 320px;
+    height: 60px;
+    background-repeat:  no-repeat ;
+    background-position:  0px -448px;;
+    position: absolute;
+    top: 280px;
+    right: 205px;
+}
+
+.tabs2 .L-gift span {
+    width: 694px;
+    height: 244px;
+    background: url("../逆水寒-福利合集/72.png");
+    position: absolute;
+    top: 375px;
+    right: 165px;
+    border:5px solid ghostwhite;
+}
+
+.tabs2 .L-gift .butterfly1 {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+.tabs2 .L-gift .butterfly2 {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+
+.tabs2 .L-gift .butterfly3 {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+.tabs2 .L-gift p a {
+    font-size: 30px;
+    color: ghostwhite;
+}
+.tabs2 .L-gift p a:hover {
+
+    color: #f10215;
+}
+
+.tabs2 .L-gift div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.tabs2 .L-gift span a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.tabs3 {
+    width: 1920px;
+    height: 1080px;
+    display: none;
+    background-image: url("../逆水寒-福利合集/73.png");
+}
+
+.tabs3 .backgroundH{
+    width: 918px;
+    height: 1080px;
+    background-color: rgba(1,1,3,.4);
+    position: absolute;
+    right: 0;
+    top: 79px;
+}
+.tabs3 .backgroundH .Closed-beta{
+    width: 667px;
+    height: 87px;
+    margin-top: 40px;
+    background: url("../逆水寒-福利合集/74.png");
+}
+
+.tabs3 .backgroundH .Cb-gift {
+    width: 614px;
+    height: 255px;
+    margin: 100px 0 0 150px;
+    background: url("../逆水寒-福利合集/75.png");
+}
+.tabs3 .backgroundH .Cb-gift:hover {
+    transform: scale(1.3);
+}
+
+.tabs3 .backgroundH .zsFl {
+    width: 321px;
+    height: 60px;
+    margin: 50px 0 0 300px;
+    background: url("../逆水寒-福利合集/71.png");
+    background-position: 0px -448px;
+}
+
+.tabs3 .backgroundH .lqLc {
+    width: 711px;
+    height: 196px;
+    margin: 50px 0 0 100px;
+    border: 5px solid ghostwhite;
+    background: url("../逆水寒-福利合集/76.png");
+}
+.tabs3 .backgroundH div a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}

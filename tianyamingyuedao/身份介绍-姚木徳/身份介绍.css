@@ -1,0 +1,539 @@
+
+/* 初始化代码 */
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+input,
+img,
+i,
+strong,
+del,
+em,
+h1,
+h2,
+h3,
+ol,
+h4 {
+   margin: 0;
+   padding: 0;
+   /* 清除元素默认的内外边距 */
+}
+
+em{
+    font-style: normal;
+}
+a {
+   text-decoration: none;
+   color: #000;
+   /* 清除下划线 */
+}
+
+input {
+   border: 0 none;
+   outline: 0 none;
+   /* 清除外层边框 */
+   /* 清除外层高亮 */
+}
+
+img {
+   border: 0 none;
+   vertical-align: middle;
+   /* 清除边框，图片的对齐方式是  与中线对齐 */
+}
+
+li {
+   list-style: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-weight: normal;
+   /* 正常不加粗 */
+}
+
+i {
+   font-style: normal;
+   /* 清除倾斜效果 */
+}
+
+body {
+   font: 12px/100% "微软雅黑";
+   background-color: #f3f6f6;
+   /* 常规设置，颜色的那里可以去吸一吸 */
+}
+
+.w {
+   width: 1200px;
+   margin: 0 auto;
+   /* 这是版心，宽度需要改一改哦，  后面的是水平居中。 */
+}
+
+.clearfix::after {
+   content: ".";
+   clear: both;
+   display: block;
+   height: 0;
+   visibility: hidden;
+}
+
+.clearfix {
+   *zoom: 1;
+   /* 兼容低版本 */
+}
+
+
+
+/* 我是样式代码 */
+/* 头部开始 */
+.top{
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+}
+
+.top .top1{
+    width: 40px;
+    height: 200px;
+    float: left;
+    margin-left: 200px;
+}
+.top .top2{
+    width: 240px;
+    height: 38px;
+    float: left;
+    margin-left: 200px;
+}
+.top .top3{
+    float: right;
+    margin-right: 150px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.top .top1 a{
+    width: 210px;
+    height: 35px;
+    background-image: url(Images/ost-bg.png);
+    background-position-y: -40px;
+    display: block;
+    z-index: 10001;
+    position: absolute;
+}
+.top .top3 a{
+    margin-left: 30px;
+}
+.top .top3 a:hover{
+    color: red;
+}
+.top4{
+    position: absolute;
+    width: 970px;
+    height: 185px;
+    left: 50%;
+    margin-left: -485px;
+    top: 0;
+    z-index:999;
+    display: none;
+}
+.top .quanquan{
+    width: 18px;
+    height: 18px;
+    background: url(Images/quanquan.png);
+    position: absolute;
+    right: 375px;
+    top: 10px;
+}
+/* 头部结束 */
+
+
+
+
+
+/* 中部开始 */
+.global {
+    /* width: 1349px; */
+   height: 100%;
+   background: url(Images/bg-yueling.jpg) no-repeat;
+}
+
+.global .leftside {
+   width: 95px;
+   height: 1579px;
+   position: absolute;
+   top: 40px;
+   left: 0;
+   /* float: left; */
+    /* position: relative; */
+    background-color: #282e3c;
+    /* 不要在这设置内外边距 */
+}
+
+.global  .nav {
+    width: 1254px;
+    height: 100%;
+    /* float: left; */
+}
+
+/* .global  .nav {
+    width: 95px;
+    height: 53px;
+} */
+.global  .leftside .liA{
+    display: block;
+    width: 53px;
+    height: 53px;
+    margin: 10px auto;
+    text-indent: -9999px;
+    background-image: url(Images/spr-all.png);
+    background-repeat: no-repeat;
+    background-position: 0 -53px;
+}
+.global .leftside  #li2{
+    background-position: 0 -122px;
+}
+.global .leftside  #li3{
+    background-position: 0 -191px;
+}
+.global .leftside  #li4{
+    background-position: 0 -260px;
+}
+.global .leftside  #li5{
+    background-position: 0 -329px;
+}
+.global .leftside  #li6{
+    background-position: 0 -396px;
+}
+.global .leftside  #li7{
+    background-position: 0 -466px;
+}
+.global .leftside  #li8{
+    background-position: 0 -535px;
+}
+.global .leftside  #li9{
+    background-position: 0 -603px;
+}
+.global .leftside  #li10{
+    background-position: 0 -672px;
+}
+
+
+
+
+/* 中部右侧部分导航栏模块 */
+/* ~~~~~ */
+/* .global .leftside  div{
+    display: block;
+    width: 75px;
+    height: 75px;
+    background: url(Images/spr-all.png);
+    background-position: -64px -50px;
+    margin-left: 0;
+    color: #fff;
+    line-height: 75px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    不要管这里
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global .nav .zhubankuai .logo {
+    width: 126px;
+    height: 44px;
+    position: absolute;
+    left: 125px;
+    top: 60px;
+}
+.global .nav .zhubankuai .logo a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(Images/spr-all.png);
+    
+}
+.global .nav .zhubankuai .header {
+    width: 580px;
+    height: 300px;
+    margin-left: 225px;
+    position: relative;
+}
+.global .nav .zhubankuai .header .h2yueling{
+    width: 279px;
+    height: 161px;
+    background-image: url(Images/tit-yueling.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.global .nav .zhubankuai .header .h2liehu{
+    width: 266px;
+    height: 204px;
+    background-image: url(Images/2tit-liehu.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.global .nav .zhubankuai .header .h2biaoshi{
+    width: 274px;
+    height: 185px;
+    background-image: url(Images/3tit-biaoshi.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.global .nav .zhubankuai .header .h2youxia{
+    width: 303px;
+    height: 162px;
+    background-image: url(Images/4tit-youxia.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.global .nav .zhubankuai .header .intro{
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+.global .nav .zhubankuai .header .intro span{
+    font-size: 12px;
+    line-height: 27px;
+    color: #fff;
+    width: 60px;
+    height: 27px;
+    background-color: #cfae69;
+    padding: 0 35px 0 15px;
+    border-radius: 15px;
+    background-image: url(Images/qin.png);
+    background-repeat: no-repeat;
+    background-position: 87% 50%;
+    display: block;
+}
+.global .nav .zhubankuai .header .intro p{
+    font-size: 16px;
+    line-height: 120%;
+    font-family: '楷体';
+}
+
+.global .nav .zhubankuai .process {
+    display: block;
+    width: 580px;
+    height: 136px;
+    margin-top: 50px;
+    margin-left: 225px;
+}
+.global .nav .zhubankuai .process ol{
+    width: 100%;
+    overflow: hidden;
+    
+}
+.global .nav .zhubankuai .process li{
+    float: left;
+}
+.global .nav .zhubankuai .process .arrows{
+    width: 30px;
+    height: 136px;
+    background-image: url(Images/arrow.png);
+    background-repeat: no-repeat;
+    margin-top: 56px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+.global .nav .zhubankuai .process .step{
+    width: 136px;
+    height: 136px;
+    background-color: #2fc3a3;
+    border-radius: 68px;
+    text-align: center;
+}
+.global .nav .zhubankuai .process .step span{
+    font-size: 36px;
+    line-height: 136px;
+    font-family: "楷体";
+    font-weight: normal;   
+    color: #fff;
+}
+
+.global .nav .zhubankuai .article{
+    margin: 35px 0 0;
+}
+.global .nav .zhubankuai .article h3{
+    color: #2fc3a3;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 1px solid #d2d3d3;
+    line-height: 40px;
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.global .nav .zhubankuai .product{
+    width: 580px;
+    height: 340px; 
+    margin-left: 225px;
+    display: block;
+}
+.global .nav .zhubankuai .product .XXX{
+    margin: -15px 0 0 -17px;
+}
+.global .nav .zhubankuai .product li{
+    width: 132px;
+    height: 135px;
+    float: left;
+    margin: 15px 0 0 17px;
+}
+
+.global .nav .zhubankuai .skill{
+    width: 580px;
+    height: 235px;
+    margin-left: 225px;
+    display: block;
+}
+.global .nav .zhubankuai .skill li{
+    width: 185px;
+    height: 180px;
+    background-color: #2fc3a3;
+    float: left;  
+}
+.global .nav .zhubankuai .skill .li2{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.global .nav .zhubankuai .skill h4{
+    width: 100%;
+    height: 51px;
+    font-size: 34px;
+    margin-top: 15px;
+    color: #fff;
+    font-family: '楷体';
+    text-align: center;
+    line-height: 51px;
+}
+.global .nav .zhubankuai .skill p{
+    width: 155px;
+    height: 84px;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+   display: block;
+   font-size: 14px;
+   line-height: 18px;
+   text-align: center;
+}
+
+.global .nav .zhubankuai .skill .tupian{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.global .nav .zhubankuai .lift{
+    width: 565px;
+    height: 97px;
+    margin-left: 225px;
+    display: block;
+}
+
+.global .nav .zhubankuai .lift li{
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 15px;
+}
+
+.global .nav .zhubankuai .formation{
+    width: 490px;
+    height: 170px;
+    margin-left: 225px;
+    display: block;
+}
+
+.global .nav .zhubankuai .formation .list {
+    position: relative;
+    margin: 5px 0 0;
+    padding-left: 90px;
+    font-size: 13px;
+    line-height: 17px;
+}
+.global .nav .zhubankuai .formation .titname{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 25px;
+    width: 80px;
+    text-align: center;
+    background: #cfae69;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+.global .nav .zhubankuai .team{
+    width: 580px;
+    height: 76px;
+    margin-left: 225px;
+    display: block;
+}
+.global .nav .zhubankuai .team p{
+    margin: 5px 0 0;
+    font-size: 13px;
+    line-height: 17px;
+}
+/* 中部结束 */
+
+
+
+
+/* 底部开始 */
+.bottom{
+    /* position: absolute;
+    bottom: 0; */
+    height: 114px;
+    background-color: #000;
+}
+.bottom .box{
+    line-height: 18px;
+}
+.bottom .box p{
+    color:rgb(129, 129, 129);
+    text-align:center;
+}
+.bottom .box .hang1{
+    padding-top: 20px;
+}
+.bottom .box p a{
+    color:rgb(129, 129, 129);
+}
+
+/* 底部结束 */
+
+
+
+.global .liehu{
+    display: none;
+}
+.global .biaoshi{
+    display: none;
+}
+.global .youxia{
+    display: none;
+}

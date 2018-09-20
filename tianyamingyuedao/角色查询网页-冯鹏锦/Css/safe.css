@@ -1,0 +1,829 @@
+body,
+div,
+span,
+ul,
+ol,
+li,
+a,
+img,
+input,
+em,
+i,
+strong,
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/* 网页主体导航部分a标签的颜色 */
+a {
+	text-decoration: none;
+	color: #525252;
+}
+/* 网页主体导航部分鼠标移入a标签时的颜色 */
+a:hover {
+	color: #01b8a9;
+}
+
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+
+input {
+	border: 0 none;
+}
+
+li {
+	list-style: none;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+body {
+	background-color: #fff;
+	font: 13px/100% "微软雅黑";
+}
+
+.w {
+	width: 1285px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* 初始化代码结束 */
+
+
+
+
+
+/* 顶部通栏开始 */
+
+.topnav {
+	height: 40px;
+	position: relative;
+}
+
+.topnav .onelogo {
+	width: 220px;
+	height: 40px;
+	left: 151px;
+	position: absolute;
+}
+
+.topnav .onelogo a {
+	width: 220px;
+	height: 40px;
+	display: block;
+	background-image: url('../Images/ost-bg.png');
+	background-position: 0 -40px;
+}
+
+.topnav .basc {
+	position: absolute;
+	left: 151px;
+	z-index: 1;
+	display: none;
+}
+
+.topnav .basc a {
+	display: block;
+	width: 980px;
+	height: 185px;
+	background-image: url('../Images/NBAD.jpg');
+}
+
+.topnav .twologo {
+	width: 230px;
+	height: 40px;
+	position: absolute;
+	background-image: url('../Images/NBA.jpg');
+	left: 371px;
+}
+
+
+.topnav .three {
+	width: 220px;
+	height: 40px;
+	position: absolute;
+	left:911px;
+}
+
+.topnav .three .left {
+	float: left;
+	height: 40px;
+}
+
+.topnav .three a {
+	display: block;
+	color: #464646;
+	font-size: 12px;
+	float: left;
+	height: 40px;
+}
+
+.topnav .three .left a span:hover {
+	color: #ff4e00;
+}
+
+.topnav .three .right a:hover {
+	color: #ff4e00;
+}
+
+.topnav .three .left a span,
+.topnav .three .right a span {
+	line-height: 45px;
+}
+
+.topnav .three .left .img {
+	width: 18px;
+	height: 18px;
+	float: left;
+	background-image: url("../Images/logo1.png");
+	margin-top: 13.5px;
+}
+
+.topnav .three .right {
+	float: right;
+	height: 40px;
+}
+
+.topnav .three .right .img {
+	width: 11px;
+	height: 11px;
+	background-image: url('../Images/ost-bg.png');
+	background-position: -150px -134px;
+	float: right;
+	margin-top: 17px;
+	margin-left: 5px;
+}
+
+
+
+
+/* 顶部通栏结束 */
+
+
+/* 开始主体导航栏 */
+.wrapper {
+	height: 1821px;
+	background-image: url('../Images/bg20170524.jpg');
+	background-repeat: no-repeat;
+	background-color: #e6ebea;
+	background-position: center 0;
+}
+
+.wrapper .header {
+	height: 375px;
+	width: 1295px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.wrapper .header .logo {
+	position: absolute;
+	top: 30px;
+}
+
+.wrapper .header .logo a {
+	width: 191px;
+	height: 67px;
+	display: block;
+	background-image: url('../Images/nav-copy.png');
+}
+
+.wrapper .header .note {
+	width: 418px;
+	height: 116px;
+	background-image: url('../Images/slogn-home.png');
+	position: absolute;
+	right: 11px;
+	bottom: 30px;
+}
+
+.wrapper .header ul {
+	position: absolute;
+	left: 475px;
+	top: 30px;
+}
+
+.wrapper .header ul li {
+	float: left;
+}
+
+.wrapper .header ul .hasmg a,
+.wrapper .header ul .hasmg1 div,
+.wrapper .header ul .hasmg2 div,
+.wrapper .header ul .hasmg3 div,
+.wrapper .header ul .hasmg4 div,
+.wrapper .header ul .hasmg5 div,
+.wrapper .header ul .hasmg6 div,
+.wrapper .header ul .hasmg7 div {
+    width: 100px;
+    height: 44px;
+    background-image: url('../Images/nav-copy.png');
+}
+.wrapper .header ul .hasmg a {
+	display: block;
+    background-position: 0 -154px;
+}
+
+.wrapper .header ul .hasmg1 div {	
+    background-position: -115px -154px;
+}
+
+.wrapper .header ul .hasmg2 div {	
+    background-position: -230px -154px;
+}
+
+.wrapper .header ul .hasmg3 div {	
+    background-position: -460px -154px;
+}
+
+.wrapper .header ul .hasmg4 div {	
+    background-position: -575px -154px;
+}
+
+.wrapper .header ul .hasmg5 div {	
+    background-position: -805px -154px;
+}
+
+.wrapper .header ul .hasmg6 div {	
+    background-position: -690px -154px;
+}
+
+.wrapper .header ul .hasmg7 div {	
+    background-position: -920px -154px;
+}
+
+.wrapper .header ul i {
+	display: block;
+	margin-top: 14px;
+}
+
+.wrapper .header ul i span {
+	display: block;
+	height: 22px;
+}
+
+/* 开始中间部分 */
+
+.wrapper .content {
+	height: 1366px;
+}
+
+.wrapper .content .left {
+	width: 310px;
+	height: 575px;
+	float: left;
+}
+
+.wrapper .content .left .xiazai {
+	width: 310px;
+	height: 280px;
+}
+
+.wrapper .content .left .xiazai .g1 {
+	width: 310px;
+	height: 187px;
+	background-image: url('../Images/youxixiazai.jpg');
+	background-position: -635px 0;
+}
+
+.wrapper .content .left .xiazai .g1 a {
+	display: block;
+	width: 310px;
+	height: 187px;
+	background-color: #fff;
+	opacity: 0;
+	transition: all .3s;
+}
+
+.wrapper .content .left .xiazai .g1 a:hover {
+	opacity: .15;
+}
+
+.wrapper .content .left .xiazai .g2,
+.wrapper .content .left .xiazai .g3 {
+	float: left;
+}
+
+.wrapper .content .left .xiazai .g2 {
+	border-right: 1px solid #388d7e;
+}
+
+.wrapper .content .left .xiazai .g2 a, 
+.wrapper .content .left .xiazai .g3 a {
+	/* 问一下这里为什么一定要加display，不是给了定位元素就会自动转换成行内块元素吗  答：相对定位不会改变自身，绝对和固定才会改变*/
+	display: block;
+	width: 154.5px;
+	height: 93px;
+	position: relative;
+	background-color: #277a67;
+}
+
+.wrapper .content .left .xiazai .g2 i {
+	background-position: -29px 0;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background-image: url('../Images/jingling.png');
+	position: absolute;
+	top:35px;
+	left: 37px;
+}
+
+.wrapper .content .left .xiazai .g3 i {
+	background-position: -25px -160px;
+	width: 31px;
+	height: 19px;
+	display: inline-block;
+	background-image: url('../Images/jingling.png');
+	position: absolute;
+	top:40px;
+	left: 31px;
+}
+
+.wrapper .content .left .xiazai .g2 span,
+.wrapper .content .left .xiazai .g3 span {
+	font-size: 14px;
+	position: absolute;
+	color: #fff;
+	right: 30px;
+	top: 41px;
+}
+
+.wrapper .content .left .xinshou {
+	width: 310px;
+	height: 280px;
+	background-image: url('../Images/xiao.jpg');
+	margin-top: 15px;
+	position: relative;
+}
+
+.wrapper .content .left .xinshou ul {
+	position: absolute;
+	top: 80px;
+	left: 30px;
+}
+
+.wrapper .content .left .xinshou li {
+	line-height: 23px;
+}
+
+.wrapper .content .left .xinshou i {
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	background-image: url("../Images/jingling.png");
+	background-position: 0 -2340px;
+}
+
+.wrapper .content .left .xinshou li a {
+	color: #8b8b8b;
+}
+
+.wrapper .content .left .xinshou li a:hover {
+	color:#01b8a9
+}
+
+.wrapper .content .left .xinshou h2 {
+	font-size: 32px;
+	color: #2fc3a2;
+	line-height: 32px;
+	position: absolute;
+	top:27px;
+	left: 30px;
+}
+
+.wrapper .content .left .xinshou .gengduo {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+
+.wrapper .content .left .xinshou .gengduo a{
+	width: 86px;
+	height: 29px;
+	display: block;
+	background-color: #2fc3a2;
+	border-radius: 14.5px;
+	line-height: 29px;
+	text-align: center;
+	color: white;
+}
+
+.wrapper .content .left .xinshou .gengduo a:hover {
+	background-color: #22b090;
+}
+
+.wrapper .content .left .xinshou .gengduo a span {
+	color:#82dbc7;
+}
+
+.wrapper .content .right {
+	width: 965px;
+	height: 1366px;
+	float: right;
+}
+
+.wrapper .content .right .label {
+	width: 965px;
+	height: 71px;
+	background-color: rgba(0, 0, 0, .8);
+	position: relative;
+}
+
+.wrapper .content .right .label .juese {
+	width: 348px;
+	height: 29px;
+	background-image: url('../Images/securityspr_看图王.png');
+	background-position: 0 -171px;
+	position: absolute;
+	top: 21px;
+	left: 25px;
+}
+
+.wrapper .content .right .label .path {
+	height: 21px;
+	position: absolute;
+	right: 27px;
+	top: 25px;
+	line-height: 21px;
+	color: #bbb;
+	font-size: 14px;
+}
+
+.wrapper .content .right .label .path a {
+	color: #bbb;
+}
+
+.wrapper .content .right .label .path a:hover {
+	border-bottom: 1px dashed #bbb;
+}
+
+.wrapper .content .right .label .path1 {
+	width: 9px;
+	height: 9px;
+	background-image: url('../Images/juese.png');
+	background-position: -591px -191px;
+	position: absolute;
+	top: 31px;
+	right: 224px;
+}
+
+.wrapper .content .right .mainpart {
+	width: 965px;
+	height: 1295px;
+	background-color: #fff;
+	position: relative;
+}
+
+.wrapper .content .right .mainpart .anquan {
+	left: 53px;
+	top: 59px;
+	position: absolute;
+}
+
+.wrapper .content .right .mainpart .anquan a {
+	width: 151px;
+	height: 66px;
+	display: block;
+	background-image: url('../Images/anquan.png');
+}
+
+.wrapper .content .right .mainpart .moshi {
+	background-image: url('../Images/moshi.png');
+	left: 204px;
+	top: 59px;
+	position: absolute;
+}
+
+.wrapper .content .right .mainpart .moshi a {
+	width: 152px;
+	height: 60px;
+	background-image: url('../Images/moshi.png');
+	display: block;
+}
+
+.wrapper .content .right .mainpart .xunsu {
+	background-image: url('../Images/xunsu.png');
+	width: 863px;
+	height: 299px;
+	position: absolute;
+	top: 149px;
+	left: 53px;
+}
+
+.wrapper .content .right .mainpart .zhinan {
+	position: absolute;
+	left: 55px;
+	top: 480px;
+}
+
+.wrapper .content .right .mainpart .zhinan a {
+	display: block;
+	width: 140px;
+	height: 40px;
+	background-color: #40c7aa;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+
+.wrapper .content .right .mainpart .zhinan a:hover {
+	color: #000;
+}
+
+.wrapper .content .right .mainpart .Login-to-protect {
+	background-image: url('../Images/exe.png');
+	width: 864px;
+	height: 578px;
+	position: absolute;
+	left: 55px;
+	bottom: 160px;
+}
+
+.wrapper .content .right .mainpart .Login-to {
+	position: absolute;
+	left: 58px;
+	bottom: 95px;
+}
+
+.wrapper .content .right .mainpart .Login-to a {
+	display: block;
+	width: 140px;
+	height: 40px;
+	background-color: #40c7aa;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+
+.wrapper .content .right .mainpart .Login-to a:hover {
+	color: #000;
+}
+/* 底部 */
+
+.gfooter {
+    height: 260px;
+	font-size: 12px;
+}
+.gfooter .foot_top {
+    background-color: #1e2727;
+    height: 40px;
+    text-align: center;
+    color: #556361;
+    padding: 8px 0px;
+}
+.gfooter .foot_top .foot_up {
+    line-height: 20px;
+} 
+.gfooter .foot_top .foot_up i {
+    color: #ca2b00;
+}
+.gfooter .footcpright {
+    background-color: #000;
+    height: 204px;
+} 
+.gfooter .footcpright .foot_down{
+    position: relative;
+    height: 204px;
+}
+.gfooter .footcpright .foot_lefts{
+    position: absolute;
+    left: 56px;
+    top: 60px;
+    width: 290px;
+    height: 40px;
+}
+.gfooter .footcpright .foot_lefts a {
+    float: left;
+    width: 168px;
+    height: 100%;
+    background: url('../Images/Tencent.png') no-repeat;
+}
+.gfooter .footcpright .foot_lefts span {
+    float: right;
+    width: 90px;
+    height: 100%;
+    background: url('../Images/nav-copy.png') no-repeat -1700px 0;
+}
+.gfooter .footcpright .foot_rights {
+    position: absolute;
+    top: 54px;
+    right: 60px;
+    width: 678px;
+    height: 107px;
+    color: #4f4f4f;
+    cursor: default;
+
+
+}
+.gfooter .footcpright .foot_rights li a ,
+.gfooter .footcpright .foot_rights li p {
+    color: #4f4f4f;
+    line-height: 22px;
+}
+.gfooter .foot_rights li:first-child {
+    margin-bottom: 9px;
+}
+.gfooter .foot_rights li:first-child a{
+	line-height: 12px;
+	
+}
+
+
+
+
+
+
+
+
+
+/* 腾讯游戏排行榜 */
+.bigbox{
+    position: absolute;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 447px;
+	margin: 0 auto;
+	top:40px;
+    display: none;
+    z-index: 6;
+}
+.ost_rank{
+    float: right;
+    width: 704px;
+    height:447px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.ost_rank #rank_left,
+.ost_rank #rank_center,
+.ost_rank #rank_right{
+    width: 213px;
+    height: 422px;
+    float: left;
+    padding: 0 10px;
+    margin: 17px 0px 8px 1px;
+    /* border-left: 1px solid #ccc; */
+}
+.ost_rank div .col_head{
+    width: 207px;
+    height: 18px;
+    line-height: 18px;
+    /* position: relative; */
+    padding: 0px 5px 2px 0px;
+    border-bottom: 1px solid #ccc;
+    /* background-color: yellow; */
+}
+.ost_rank div .col_head h2{
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.ost_rank div .col_head a{
+    float: right;
+}
+.ost_rank div .col_head i{
+    float: right;
+}
+.ost_rank div .col_body{
+    width: 212px;
+    height: 376px;
+    font-size: 14px;
+}
+.ost_rank div .col_body ul{
+    width: 212px;
+    /* height: 376px; */
+    padding-top: 9px;
+    /* background-color: pink; */
+}
+.ost_rank div .col_body ul li.rank-head{
+    width: 212px;
+    height: 27px;
+    line-height: 27px;
+}
+.ost_rank div .col_body ul li.rank-head span.rank-order-hd{
+    width: 33px;
+    height: 18px;
+}
+.ost_rank div .col_body ul li.rank-head span.rank-name-hd{
+    width: 170px;
+    height: 18px;
+}
+.ost_rank div .col_body ul li.rank-item{
+    width: 212px;
+    /* height: 27px; */
+}
+.ost_rank div .col_body ul li div.rank-item-txt{
+    width: 212px;
+    height: 27px;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-gray,
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-color,
+.ost_rank div .col_body ul li.rank-item span.rank-order-color,
+.ost_rank div .col_body ul li.rank-item span.rank-order-gray{
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    color:#929191;
+    /* float: left; */
+    display: inline-block;
+    border: 1px solid #929191;
+    margin: 2px 15px 1px 4px;
+}
+/* .ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-gray, */
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-color,
+.ost_rank div .col_body ul li.rank-item span.rank-order-color{
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: #fff;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-color,
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-gray{
+    position: absolute;
+    top:-2px;
+    left: -4px;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game span.r-gray{
+    top:-3px;
+    left: -5px;
+}
+.ost_rank div .col_body ul li.rank-item  a{
+    /* width: 78px;  */
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    /* background-color: aqua; */
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game{
+    width: 194px;
+    height: 82px;
+    margin-top: -28px;
+    margin-left: 2px;
+    position: relative;
+    border: 1px solid #929191;
+    margin-bottom: 8px;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game p{
+    width: 194px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    opacity: 0.8;
+    background-color: black;
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game p a.game-link{
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    /* margin-right: 10px; */
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game p i.icon-home{
+    /* background:  */
+}
+.ost_rank div .col_body ul li.rank-item div.rank-name-game p i.icon-download{
+
+}
+.ost_rank #rank_left{
+    /* background-color: orange; */
+}
+
+.ost_rank #rank_center{
+    border-left: 1px solid #ccc;
+    /* background-color: green; */
+}
+
+.ost_rank #rank_right{
+    border-left: 1px solid #ccc;
+    /* background-color: skyblue; */
+}
+/*腾讯css代码结束*/
+

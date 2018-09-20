@@ -1,0 +1,411 @@
+﻿/* 初始化代码*/
+body,
+div,
+span,
+p,
+input,
+img,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+i,
+em,
+strong {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    color: #333;
+}
+
+i {
+    font-style: normal;
+}
+
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 文字字体固定 */
+body {
+    line-height: 20px;
+    font-size: 12px;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #6e6e6e;
+    background-color: #dedede;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* topInner的css代码 */
+.topInner {
+    width: 1000px;
+    margin: 0 auto;
+    /*background-color: pink;*/
+}
+
+/*  点击导航条改变背景颜色*/
+.navList a:hover{
+    background-color: #ffa600;
+}
+
+/* 头部大盒子的css代码 */
+.topInner .topHeader {
+    height: 149px;
+    /*background-color: yellow;*/
+}
+
+/* top顶部通栏css代码 */
+.topInner .topHeader .top {
+    height: 107px;
+    background-color: #f0f0f0;
+    border-top-right-radius: 20px;
+}
+
+/* logo的css代码 */
+.topInner .topHeader .top .logo {
+    width: 380px;
+    height: 65px;
+    background: url("../images/sparator-header.gif")no-repeat right #fbfbfb ;
+    margin: 0px 0px;
+    padding: 35px 30px 7px 30px;
+    float: left;
+    border-top-left-radius: 20px;
+}
+
+/* 右边的盒子 */
+.topInner .topHeader .top .topRight {
+    width: 268px;
+    height: 38px;
+    /*background-color: red;*/
+    padding: 35px 30px 0px 0px;
+    float: right;
+}
+
+.topInner .topHeader .top .topRight .social li {
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+}
+
+.topInner .topHeader .top .topRight .social li a {
+    height: 32px;
+    width: 32px;
+    display: block;
+}
+
+.topInner .topHeader .top .topRight .social li:nth-child(1){
+    background-image: url(../images/social/youtube.png);
+}
+
+.topInner .topHeader .top .topRight .social li:nth-child(2){
+    background-image: url(../images/social/stumbleupon.png);
+}
+
+.topInner .topHeader .top .topRight .social li:nth-child(3){
+    background-image: url(../images/social/pinterest.png);
+}
+
+.topInner .topHeader .top .topRight .social li:nth-child(4){
+    background-image: url(../images/social/twitter.png);
+}
+
+.topInner .topHeader .top .topRight .social li:nth-child(5){
+    background-image: url(../images/social/google.png);
+}
+
+.topInner .topHeader .top .topRight .social li:nth-child(6){
+    background-image: url(../images/social/facebook.png);
+}
+
+.topInner .topHeader .top .topRight .social li:hover {
+    background-position: 0px -32px;
+}
+
+/* 导航栏css代码 */
+.topInner .topHeader .nav {
+    height: 42px;
+    padding: 0px 0px;
+    background-color: #2c2c2c;
+}
+
+/* nav的 ul 代码*/
+.topInner .topHeader .nav .navList {
+    width: 772px;
+    height: 42px;
+    font-size: 14px;
+    /*background-color: red;*/
+}
+
+/* nav的a标签的代码 */
+.topInner .topHeader .nav .navList a {
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+/* nav的li标签的代码*/
+.topInner .topHeader .nav .navList .current {
+    width: 98px;
+    height: 42px;
+    float: left;
+    text-align: center;
+    line-height: 42px;
+    /* 加行高文字居中 */
+    /*background-color: green;*/
+}
+
+/* aboutContent盒子 */
+.topInner  .aboutContent {
+    height: 106px;
+    /*background-color: yellow;*/
+    border-bottom: 1px solid #ededed;
+}
+
+/* */
+.topInner .aboutContent .About {
+    height: 107px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* 左边盒子 */
+.topInner .aboutContent .About .about-left {
+    width: 550px;
+    float: left;
+    background: #fbfbfb;
+    padding-left: 30px;
+    height: 106px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/*   About  */
+.topInner .aboutContent .About .about-left .a-l {
+    margin-top: 27px;
+    float: left;
+    line-height: normal;
+}
+
+/*   About标题  */
+.topInner .aboutContent .About .about-left h1 {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size:34px;
+    line-height:28px;
+    margin-top:25px;
+}
+
+/* 左边文字 */
+.topInner .aboutContent .About .about-left .s1 {
+    float: left;
+    margin-top: 44px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+    color: #555;
+}
+
+/* 右边图片 */
+.topInner .aboutContent .About .about-right {
+    width: 390px;
+    float: left;
+    background: url(../images/sparator-bfcontent.gif) no-repeat #ffa600;
+    padding: 28px 30px 0px 0px;
+    height: 79px;
+    text-align: right;
+    color: #fff;
+}
+
+.topInner .aboutContent .About .about-right h2 {
+    font-weight:700;
+    font-family: 'Oswald', sans-serif;
+    line-height:30px;
+    font-size:24px;
+    text-transform:uppercase;
+    color:#111;
+}
+/* bg 大背景的css代码结束 */
+
+/* main主体内容的css代码 */
+.main {
+    height: 788px;
+    background-color:#fff;
+}
+
+.main .mainContent {
+    width: 940px;
+    height: 708px;
+    /*background-color: skyblue;*/
+    margin: 0 auto;
+    /* 包含塌陷  :隐藏溢出 */
+    overflow: hidden;
+    padding: 43px 0px;
+}
+
+.main  .ourTitle {
+    width: 940px;
+    height: 502px;
+    /*background-color: pink;*/
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    /* 子绝父相 */
+}
+
+/* Our History */
+.main .ourTitle h2 {
+    width: 940px;
+    font-size: 22px;
+    /*background-color: red;*/
+    margin-bottom: 15px;
+    /* 下外边距15px*/
+}
+
+/* 小文字 */
+.main  .ourTitle p {
+    margin-bottom: 20px;
+    display: block;
+    background-color: #fff;
+}
+
+.main   .ourTitle .middle {
+    width: 647px;
+    height: 315px;
+    /*background-color: red;*/
+   position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+
+.main   .ourTitle .middle li {
+    position: absolute;
+    display: none;
+}
+
+.main  .middle li:first-child {
+    display: block;
+}
+
+.arrows {
+    display: none;
+}
+
+.main  .middle:hover .arrows {
+    display: block;
+}
+
+.arrows-left,
+.arrows-right {
+    font-family: "SimSun", "宋体";
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 25px;
+}
+
+.arrows-left:hover,
+.arrows-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.arrows-left {
+    left: 0;
+}
+
+.arrows-right {
+    right: 0;
+}
+
+/* Feature and Settings */
+.main .ourTitle .up {
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.main .feature {
+    width: 291px;
+    height: 225px;
+    list-style: none;
+    margin: 0px;
+    /* 子绝父相 */
+}
+
+/* 前面小点 */
+.main  .feature li {
+    background: url("../images/square.gif") no-repeat 0px 9px;
+    padding: 0px  0px  5px  10px;
+    /* 内边距   连写 上右下左 */
+}
+
+/* 主体内容底部文字 */
+.main .bottom {
+    height: 170px;
+    /*background-color: skyblue;*/
+}
+
+.main .bottom .one {
+    width: 288px;
+    height: 170px;
+    /*background-color: yellow;*/
+    float: left;
+    margin-left: 38px;
+}
+
+.main .bottom .one:nth-child(1) {
+    margin-left :0px;
+}
+
+.main .bottom .one h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}

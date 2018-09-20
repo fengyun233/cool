@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>腾讯客服-天涯明月刀专区</title>
+    <link rel="stylesheet" href="../css/客服专区.css"/>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $('.t2 ul').find('li').on('click', function () {
+                $(this).addClass('blue').children('a').css('color','white').parent().siblings().removeClass('blue').children('a').css('color','black');
+                var idx = $(this).index();
+                console.log(idx);
+                $('.box>.tes').eq(idx).addClass('xianshi').siblings('ul').removeClass('xianshi');
+            })
+
+            $(window).on('scroll', function () {
+                var scrollTopValue = $(this).scrollTop();
+                console.log(scrollTopValue);
+                if(scrollTopValue > 1){
+                    $('.header').css({
+                        top:0
+                    }).stop(true.false).animate({
+                        height:50
+                    },200)
+
+                    $('.logo').stop(true.false).animate({
+                        height:40
+                    },200)
+
+                    $('.vidol').stop(true.false).animate({
+                        top:27,
+                        left:50
+                    },200)
+
+                    $('.in').stop(true.false).animate({
+                        top:23
+                    },200)
+                }else{
+                    $('.header').stop(true.false).animate({
+                        height:75
+                    },200)
+
+                    $('.logo').stop(true.false).animate({
+                        height:50
+                    },200)
+
+                    $('.vidol').stop(true.false).animate({
+                        top:40,
+                        left:25
+                    },200)
+
+                    $('.in').stop(true.false).animate({
+                        top:38
+                    },200)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="nav w">
+        <div>
+            <h1 class="logo">
+                <a href="#">腾讯客服</a>
+            </h1>
+        </div>
+        <div class="login">
+            <p class="vidol">
+                <i class="naba"></i>
+                <a href="#">腾讯客服招聘啦！！</a>
+            </p>
+
+            <div class="in">
+                <button>登陆</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main w">
+    <div class="left">
+        <div class="t1">
+            <img src="../images/tianc.png" alt=""/>
+        </div>
+        <div class="t2">
+            <ul>
+                <li class="blue">
+                    <a href="#">热门问题</a>
+                </li>
+                <li>
+                    <a href="">下载/登录</a>
+                </li>
+                <li>
+                    <a href="">活动查询</a>
+                </li>
+                <li>
+                    <a href="">游戏玩法</a>
+                </li>
+                <li>
+                    <a href="">账号安全</a>
+                </li>
+                <li>
+                    <a href="">违规处罚/申诉</a>
+                </li>
+                <li>
+                    <a href="">联系客服</a>
+                </li>
+                <li>
+                    <a href="">家长监护工程</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="hi">
+            <div class="t1">
+                <input type="text" placeholder="请输入产品或问题"/>
+                <button></button>
+            </div>
+        </div>
+        <div class="need">
+            <div class="box">
+                <ul class="tes xianshi">
+                    <li><a href="#">防沉迷修改问题</a></li>
+                    <li><a href="#">封号怎么查？</a></li>
+                    <li><a href="#">福利特权活动常见问题</a></li>
+                </ul>
+
+                <ul class="tes">
+                    <li><a href="#">登录提示ERROR！Maybe MetaInfo optimized怎么办</a></li>
+                    <li><a href="#">登录服务器失败怎么办？</a></li>
+                    <li><a href="#">登录提示封闭测试服怎么办？</a></li>
+                </ul>
+                <ul class="tes">
+                    <li><a href="#">游戏新服开服888元成长礼包获取的问题</a></li>
+                    <li><a href="#">1分钱会员购买方式和限制</a></li>
+                    <li><a href="#">神刀现世庆贺礼“一飞冲天”签到送神刀85直升券领取说明</a></li>
+                </ul>
+                <ul class="tes">
+                    <li><a href="#">完成主线剧情任务无法获取阅历</a></li>
+                    <li><a href="#">角色扩展卡获得方式？</a></li>
+                    <li><a href="#">【赚钱】轻松变成有钱人 流动金获取方法</a></li>
+                </ul>
+                <ul class="tes">
+                    <li><a href="#">怎么修改绑定手机？</a></li>
+                    <li><a href="#">二级密码怎么清除？</a></li>
+                    <li><a href="#">装备被盗怎么办？</a></li>
+                </ul>
+                <ul class="tes">
+                    <li><a href="#">封号申诉</a></li>
+                    <li><a href="#">封号怎么查？</a></li>
+                    <li><a href="#">福利特权活动常见问题</a></li>
+                </ul>
+                <ul class="tes">
+                    <li><a href="#">防沉迷修改问题</a></li>
+                    <li><a href="#">合服及补偿规则</a></li>
+                    <li><a href="#">如何成为官方合作公会</a></li>
+                </ul>
+                <ul class="tes">
+                    <li><a href="#">判定账号归属需要多久呢？</a></li>
+                    <li><a href="#">提交资料后，后续处理流程怎样呢？</a></li>
+                    <li><a href="#">相关资料寄往哪里呢？</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="foot">
+    <div class="foot_m">
+        <div class="foot_t w">
+            <ul>
+                <li>
+                    <i></i>
+
+                    <div class="flo">
+                        <h3>腾讯服务热线</h3>
+
+                        <p>0755-83765566</p>
+                    </div>
+                </li>
+                <li>
+                    <i></i>
+
+                    <div class="flo">
+                        <h3>财付通、手Q钱包专线</h3>
+
+                        <p>0755-86013860</p>
+                    </div>
+                </li>
+                <li>
+                    <i></i>
+
+                    <div class="flo">
+                        <h3>微信支付、理财通专线</h3>
+
+                        <p>95017</p>
+                    </div>
+                </li>
+                <li>
+                    <i></i>
+
+                    <div class="flo">
+                        <h3>未成年人游戏监管教育专线</h3>
+
+                        <p>0755-83761852</p>
+                    </div>
+                </li>
+                <li>
+                    <i></i>
+
+                    <div class="flo">
+                        <h3>QQ在线客服</h3>
+                        <a href="#" class="last">
+                            我要咨询
+                            <img src="../images/icon-consult-arrow.png" alt=""/>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot_l">
+            <p>
+                <a href="#">关于腾讯</a>
+                <span>|</span>
+                <a href="#">about Tencent</a>
+                <span>|</span>
+                <a href="#">服务条款</a>
+            </p>
+
+            <p>Copyright © 1998 - 2018 Tencent. All Rights Reserved. 腾讯公司 版权所有 粤网文[2011]0483-070号</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="ufo">
+<div class="con">
+<i class="erwei"></i>
+<p>关注微信公众号向腾讯客服提问</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页大神</title>
+    <link rel="stylesheet" href="网易大神.css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/demo.js"></script>
+
+</head>
+
+<body>
+<div id="bigBox" class='w'>
+    <div class="container">
+
+        <div class="top">
+            <div class="logo">
+                <img class="banner_p" src="images/banner_p.10bd047.png" alt="">
+                <img class="bg_phone" src="images/bg_phone.70f48be.png" alt="">
+                <img class="bg_game" src="images/bg_game.f2a6334.png" alt="">
+            </div>
+            <div class="slogan"><img src="images/slogan_p.ae937b5.png" alt=""></div>
+        </div>
+        <div class="downloads">
+            <div class="qrcode">
+                <div class="qrcode-bg">
+                    <img class="bg_color2" src="images/bg_color.2916f5d.png" alt="">
+                    <img class="qrcode-logo" src="images/qrcode-logo.e872877.png" alt="">
+                </div>
+                <div class="airship"><img src="images/bg_airship.83d609c.png" alt=""></div>
+
+            </div>
+            <div class="pics">
+                <div><a href="#"><img class="download_ios_p" src="images/download_ios_p.3e33470.png" alt=""></a></div>
+                <div><a href="#"><img class="download android" src="images/download_android_p.acfe210.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="main w">
+
+            <div class="wrap">
+                <div class="slide" id="slide">
+                    <ul class="pics">
+                        <li class="pics1"><img src="images/slidepic1.png" alt=""/><span
+                                class="word1">网 聚 大 神</span><span class="word2">实 力 开 撩</span></li>
+                        <li class="pics2"><img src="images/slidepic2.png" alt=""/><span
+                                class="word1">福 利 资 讯</span><span class="word2">看 你 所 想</span></li>
+                        <li class="pics3"><img src="images/slidepic3.png" alt=""/><span
+                                class="word1">游 戏 内 外</span><span class="word2">随 时 畅 聊</span></li>
+                        <li class="pics4"><img src="images/slidepic4.png" alt=""/><span
+                                class="word1">精 彩 时 刻</span><span class="word2">随 心 分 享</span></li>
+
+                    </ul>
+                    <div class="arrow">
+                        <a href="javascript:;" class="prev"></a>
+                        <a href="javascript:;" class="next"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="downloads1">
+                <div class="pics">
+                    <div class="code">
+                        <div class="code-bg"><img src="images/bg_color_small.404a09f.png" alt=""/></div>
+                        <div class="code-small"><img src="images/qrcode_small.e3410c1.png" alt=""/></div>
+                    </div>
+                    <div class="code-big">
+                        <img class="bg_color2" src="images/bg_color.2916f5d.png" alt="">
+                        <img class="qrcode-logo" src="images/qrcode-logo.e872877.png" alt="">
+                    </div>
+
+                    <div class="ios"><img src="images/download_android_p_hover.0118824.png" alt=""/></div>
+                    <div class="android"><img src="images/download_ios_p_hover.92aae90.png" alt=""/></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="fooder w">
+
+    <div class="logo">
+        <img src="images/netease.2.png" alt=""/>
+        <span>|</span>
+        <img src="images/nie.2.png" alt=""/>
+    </div>
+    <div class="login">
+        <ul>
+            <li><a href="#">公司简介</a> <span>-</span></li>
+            <li><a href="#">客户服务</a> <span>-</span></li>
+            <li><a href="#">相关法律</a> <span>-</span></li>
+            <li><a href="#">网易游戏</a> <span>-</span></li>
+            <li><a href="#">联系我们</a> <span>-</span></li>
+            <li><a href="#">商务合作</a> <span>-</span></li>
+            <li><a href="#">加入我们</a></li>
+
+        </ul>
+    </div>
+    <div class="word">
+        <p> 网易公司版权所有 ©1997-2018</p>
+        <a href="#">中国网络游戏版权保护联盟举报中心</a>
+    </div>
+
+</div>
+
+
+<script>
+    var code=document.getElementsByClassName("code")[0];
+    var codeBig=document.getElementsByClassName("code-big")[0];
+
+
+    code.onmouseover=function(){
+        codeBig.style.visibility="visible";
+
+        console.log("哈哈");
+    }
+    code.onmouseout=function(){
+        codeBig.style.visibility="hidden";
+    }
+</script>
+</body>
+
+</html>
